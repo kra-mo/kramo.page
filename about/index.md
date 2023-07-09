@@ -42,4 +42,4 @@ you can contact me at my [socials](/social/) or via <a href="&#109;&#97;&#105;&#
 <br>
 <br>
 
-the source code for this website is available [here](https://github.com/kra-mo)
+the source code for this website is available [here](https://github.com/kra-mo/kramo.hu)
