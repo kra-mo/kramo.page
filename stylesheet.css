@@ -1,0 +1,58 @@
+@font-face {
+  font-family: Martian Mono;
+  font-style: normal;
+  font-weight: 400;
+  src: local("Martian Mono sWd Rg"), local("MartianMono-sWdRg"), url(/fonts/martian-mono/MartianMonoVF.woff2) format("woff2");
+}
+
+@keyframes body-appear {
+  from {opacity: 0;}
+  20% {opacity: 0;}
+  to {opacity: 1;}
+}
+
+:root {
+  --fg: lightpink;
+  --bg: navy;
+  --links: skyblue;
+}
+
+body {
+  /* Fonts */
+  font-family: Martian Mono;
+  text-underline-offset: 0.2em;
+
+  /* Colors */
+  background-color: var(--bg);
+  color: var(--fg);
+
+  /* Animation */
+  opacity: 0;
+  animation: body-appear .5s forwards;
+
+  /* Spacing */
+  margin: 1em;
+  text-align: center;
+}
+
+a {
+  color: var(--links);
+}
+
+img {
+  border-radius: 6px;
+  max-width: 90%;
+  display: block;
+  margin: auto;
+}
+
+#navbar {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5em;
+}
+
+#navbar a {
+  color: var(--fg);
+  text-decoration: none;
+}
