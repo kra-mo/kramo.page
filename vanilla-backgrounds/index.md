@@ -2,13 +2,11 @@
 title: vannilla os wallpapers
 ---
 
-<head>
-    <style>
-        img {
-            width: 50em;
-        }
-    </style>
-</head>
+<style>
+    img {
+        width: 50em;
+    }
+</style>
 
 # vanilla&nbsp;os wallpapers
 

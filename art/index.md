@@ -2,28 +2,26 @@
 title: kramo's art gallery
 ---
 
-<head>
-    <style>
-        @keyframes bounce {
-            from {transform: translateY(10em) scale(1.1, 0.9); opacity: 0;}
-            50% {transform: translateY(-0.5em); opacity: 100;}
-            to {transform: translateY(0em); opacity: 100;}
-        }
+<style>
+    @keyframes bounce {
+        from {transform: translateY(10em) scale(1.1, 0.9); opacity: 0;}
+        50% {transform: translateY(-0.5em); opacity: 100;}
+        to {transform: translateY(0em); opacity: 100;}
+    }
 
-        #artwork {
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: center;
-        }
+    #artwork {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
 
-        #artwork img {
-            width: 30em;
-            display: flex;
-            margin-bottom: 2.5em;
-            animation-name: bounce;
-        }
-    </style>
-</head>
+    #artwork img {
+        width: 30em;
+        display: flex;
+        margin-bottom: 2.5em;
+        animation-name: bounce;
+    }
+</style>
 
 <div id="artwork">
     <div>

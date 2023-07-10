@@ -2,56 +2,54 @@
 title: kramo
 ---
 
-<head>
-    <style>
-        @keyframes arrow-slide {
-            from {transform: translateY(-1em);}
-            80% {transform: translateY(-1em); animation-timing-function: ease-in;}
-            to {transform: translateY(2em);}
-        }
+<style>
+    @keyframes arrow-slide {
+        from {transform: translateY(-1em);}
+        80% {transform: translateY(-1em); animation-timing-function: ease-in;}
+        to {transform: translateY(2em);}
+    }
 
-        @keyframes arrow-pulse {
-            from {opacity: 0;}
-            80% {opacity: 0;}
-            90% {opacity: 1;}
-        }
+    @keyframes arrow-pulse {
+        from {opacity: 0;}
+        80% {opacity: 0;}
+        90% {opacity: 1;}
+    }
 
-        @keyframes appear {
-            from {opacity: 0;}
-            to {opacity: 100;}
-        }
+    @keyframes appear {
+        from {opacity: 0;}
+        to {opacity: 100;}
+    }
 
-        @keyframes animate-path {
-            from {stroke-dashoffset: 2300;}
-            to {stroke-dashoffset: 0;}
-        }
+    @keyframes animate-path {
+        from {stroke-dashoffset: 2300;}
+        to {stroke-dashoffset: 0;}
+    }
 
-        .arrow {
-            margin-bottom: -1.5em;
-            opacity: 0;
-            animation: arrow-slide 4s infinite, arrow-pulse 4s infinite;
-        }
+    .arrow {
+        margin-bottom: -1.5em;
+        opacity: 0;
+        animation: arrow-slide 4s infinite, arrow-pulse 4s infinite;
+    }
 
-        .appear-later {
-            opacity: 0;
-            animation: appear 0.5s forwards;
-        }
+    .appear-later {
+        opacity: 0;
+        animation: appear 0.5s forwards;
+    }
 
-        #animated-path {
-            stroke-dasharray: 2385;
-            animation: animate-path 1s forwards;
-        }
+    #animated-path {
+        stroke-dasharray: 2385;
+        animation: animate-path 1s forwards;
+    }
 
-        body {
-            opacity: initial;
-            animation: initial;
-        }
+    body {
+        opacity: initial;
+        animation: initial;
+    }
 
-        img {
-            width: 35em;
-        }
-    </style>
-</head>
+    img {
+        width: 35em;
+    }
+</style>
 
 <svg id="animated-path" style="margin-top: 15vh" width="90" height="83.229" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
     <defs>

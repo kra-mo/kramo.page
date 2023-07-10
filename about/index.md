@@ -2,32 +2,30 @@
 title: about me
 ---
 
-<head>
-    <style>
-        @keyframes jump {
-            from {transform: translateY(-12vh); opacity: 0;}
-            30% {transform: translateY(-8vh) scale(0.6, 1.2); opacity: 1; animation-timing-function: ease-in;}
-            40% {transform: translateY(5vh) scale(3, 0.4);}
-            60% {transform: translateY(-8vh) scale(0.9, 1.1); animation-timing-function: ease-in;}
-            70% {transform: translateY(-5vh);}
-            80% {transform: translateY(2vh) scale(1.3, 0.8);}
-            to {transform: translateY(0vh);}
-        }
+<style>
+    @keyframes jump {
+        from {transform: translateY(-12vh); opacity: 0;}
+        30% {transform: translateY(-8vh) scale(0.6, 1.2); opacity: 1; animation-timing-function: ease-in;}
+        40% {transform: translateY(5vh) scale(3, 0.4);}
+        60% {transform: translateY(-8vh) scale(0.9, 1.1); animation-timing-function: ease-in;}
+        70% {transform: translateY(-5vh);}
+        80% {transform: translateY(2vh) scale(1.3, 0.8);}
+        to {transform: translateY(0vh);}
+    }
 
-        img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 10vh;
-            transition: transform 1s;
-            animation: jump 1.5s;
-        }
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10vh;
+        transition: transform 1s;
+        animation: jump 1.5s;
+    }
 
-        img:hover {
-            transform: rotate(360deg);
-        }
-    </style>
-</head>
+    img:hover {
+        transform: rotate(360deg);
+    }
+</style>
 
 ![](/images/guy.svg)
 
