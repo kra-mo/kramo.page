@@ -26,12 +26,18 @@ title: socials
     }
 
     .social-buttons a {
-        color: var(--bg);
+        color: var(--fg);
         text-decoration:none; 
         display:inline-block;
         width:100%;
         height:100%;
         padding: 1em 0em;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        .social-buttons a {
+            color: var(--bg);
+        }
     }
 
     .social-buttons div:hover {

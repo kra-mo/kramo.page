@@ -12,9 +12,17 @@
 }
 
 :root {
-  --fg: lightpink;
-  --bg: navy;
-  --links: skyblue;
+  --fg: black;
+  --bg: ghostwhite;
+  --links: royalblue;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fg: ghostwhite;
+    --bg: black;
+    --links: cornflowerblue;
+  }
 }
 
 ::selection {
@@ -38,6 +46,7 @@ body {
   /* Spacing */
   margin: 1em;
   text-align: center;
+  line-height: 1.5em;
 }
 
 a {

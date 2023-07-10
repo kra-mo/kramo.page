@@ -13,7 +13,7 @@ title: about me
         to {transform: translateY(0vh);}
     }
 
-    img {
+    #jump {
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -22,12 +22,16 @@ title: about me
         animation: jump 1.5s;
     }
 
-    img:hover {
+    #jump:hover {
         transform: rotate(360deg);
     }
 </style>
 
-![](/images/guy.svg)
+<svg id="jump" xmlns="http://www.w3.org/2000/svg" width="69" height="170" fill="none">
+    <path stroke="var(--fg)" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="m5.501 168 26-37m0 0V60m0 71 27.5 30m-27.5-101c-22 0-41.501-25.524-20-46 42-40 88.499 41.5 20 46Zm-22 14 49.5 5M22 28.5c3.167 1 11.3 1.9 18.5-2.5"/>
+    <circle cx="15" cy="29" r="2" fill="var(--fg)"/>
+    <circle cx="48" cy="24" r="2" fill="var(--fg)"/>
+</svg>
 
 # hi, im kramo
 
