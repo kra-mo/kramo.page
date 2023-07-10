@@ -51,7 +51,7 @@ title: kramo
     }
 </style>
 
-<svg id="animated-path" style="margin-top: 15vh" width="90" height="83.229" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+<svg id="animated-path" style="margin-top: 15vh; margin-left: 0.2em;" width="90" height="83.229" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
     <defs>
         <path id="a" stroke="var(--fg)" stroke-width="65"  fill="none" d="m0 0 250 250L500 0H0v250l250 250h250L250 250M0 250v250h250"/>
     </defs>
