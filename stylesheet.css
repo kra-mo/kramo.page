@@ -17,6 +17,11 @@
   --links: skyblue;
 }
 
+::selection {
+  color: var(--bg);
+  background: var(--fg);
+}
+
 body {
   /* Fonts */
   font-family: Martian Mono;
