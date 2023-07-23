@@ -1,5 +1,5 @@
 ---
-title: socials
+title: links
 ---
 
 <style>
