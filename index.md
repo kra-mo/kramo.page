@@ -1,5 +1,6 @@
 ---
 title: kramo
+description: "kramo's homepage: projects, links and contact information."
 ---
 
 <style>

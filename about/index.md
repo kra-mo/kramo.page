@@ -1,5 +1,6 @@
 ---
-title: about me
+title: About me
+description: About me, contact information and website license.
 ---
 
 <style>

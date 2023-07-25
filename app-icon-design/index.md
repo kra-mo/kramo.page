@@ -1,5 +1,6 @@
 ---
-title: app icons
+title: App Icons
+description: Icons I designed for several applications.
 ---
 
 ### [cartridges](https://github.com/kra-mo/cartridges)

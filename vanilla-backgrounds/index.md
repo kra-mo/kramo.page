@@ -1,5 +1,6 @@
 ---
-title: vannilla os wallpapers
+title: Vannilla OS Wallpapers
+description: The default wallpapers for Vanilla OS.
 ---
 
 <style>

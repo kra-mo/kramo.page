@@ -1,5 +1,6 @@
 ---
-title: links
+title: Links
+description: Links to my social media and git forges.
 ---
 
 <style>

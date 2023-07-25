@@ -1,5 +1,6 @@
 ---
-title: kramo's art gallery
+title: kramo's Art Gallery
+description: Art I made in my free time.
 ---
 
 <style>
