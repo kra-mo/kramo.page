@@ -97,7 +97,7 @@ description: "kramo's homepage: projects, links and contact information."
 <br>
 <br>
 
-### qucik touchpad toggle
+### quick touchpad toggle
 
 [check out the extension](/quick-touchpad-toggle/)
 
