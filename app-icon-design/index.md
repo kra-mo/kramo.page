@@ -79,6 +79,6 @@ test your regular expressions
 <br>
 <br>
 
-i hang out on the [gnome app icon design matrix room](https://matrix.to/#/#appicondesign:gnome.org)
+i hang out in the [gnome app icon design matrix room](https://matrix.to/#/#appicondesign:gnome.org)
 
 if you want to request an icon, you can find me there
