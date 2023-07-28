@@ -60,34 +60,40 @@ description: Links to my social media and git forges.
             matrix
         </a>
     </div>
-    <div style="animation-duration: .7s; background-color: #757e88">
-        <a href="https://github.com/kra-mo">
-            <img src="/images/github-icon.svg">
-            github
-        </a>
-    </div>
-    <div style="animation-duration: .8s; background-color: #fc6d26">
-        <a href="https://gitlab.com/kra-mo">
-            <img src="/images/gitlab-icon.svg">
-            gitlab
-        </a>
-    </div>
-    <div style="animation-duration: .9s; background-color: #4a86cf">
-        <a href="https://gitlab.gnome.org/kramo">
-            <img src="/images/gnome-icon.svg">
-            gnome gitlab
-        </a>
-    </div>
-    <div style="animation-duration: 1s; background-color: #7276ff">
+    <div style="animation-duration: .7s; background-color: #7276ff">
         <a href="https://pixelfed.social/kramo">
             <img src="/images/pixelfed-icon.svg">
             pixelfed
         </a>
     </div>
-    <div style="animation-duration: 1.1s; background-color:  #ea4c89">
+    <div style="animation-duration: .8s; background-color: #ea4c89">
         <a href="https://dribbble.com/kramo">
             <img src="/images/dribbble-icon.svg">
             dribbble
+        </a>
+    </div>
+    <div style="animation-duration: .9s; background-color: #757e88">
+        <a href="https://github.com/kra-mo">
+            <img src="/images/github-icon.svg">
+            github
+        </a>
+    </div>
+    <div style="animation-duration: 1s; background-color: #fc6d26">
+        <a href="https://gitlab.com/kra-mo">
+            <img src="/images/gitlab-icon.svg">
+            gitlab
+        </a>
+    </div>
+    <div style="animation-duration: 1.1s; background-color: #4a86cf">
+        <a href="https://gitlab.gnome.org/kramo">
+            <img src="/images/gnome-icon.svg">
+            gnome gitlab
+        </a>
+    </div>
+    <div style="animation-duration: 1.2s; background-color: #2185d0">
+        <a href="https://codeberg.org/kramo">
+            <img src="/images/codeberg-icon.svg">
+            codeberg
         </a>
     </div>
 </div>
