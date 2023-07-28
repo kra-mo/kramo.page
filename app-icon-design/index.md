@@ -14,6 +14,17 @@ launch all your games
 <br>
 <br>
 
+### [vanilla os first setup](https://github.com/vanilla-OS/first-setup)
+first setup wizard
+
+<br>
+
+![app icon preview](/images/first-setup-icon.webp)
+
+<br>
+<br>
+<br>
+
 ### [letterpress](https://gitlab.com/gregorni/Letterpress)
 turn images into text
 
