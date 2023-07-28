@@ -47,6 +47,17 @@ turn your text into ascii banners
 <br>
 <br>
 
+### [jogger](https://codeberg.org/baarkerlounger/jogger)
+fitness tracker
+
+<br>
+
+![app icon preview](/images/jogger-icon.webp)
+
+<br>
+<br>
+<br>
+
 ### [footage](https://gitlab.com/adhami3310/Footage)
 edit videos easily
 
