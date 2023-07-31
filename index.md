@@ -61,7 +61,7 @@ description: "kramo's homepage: projects, links and contact information."
 
 
 <h1 class="appear-later" style="animation-delay: 0.7s">kramo</h1>
-<p class="appear-later" style="margin-bottom: 20vh; animation-delay: 1.2s;">design & open source</p>
+<p class="appear-later" style="margin-bottom: 20vh; animation-delay: 1.2s;">design & free software</p>
 
 <p class="appear-later" style="animation-delay: 2.5s;">my work</p>
 
