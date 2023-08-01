@@ -22,7 +22,7 @@ description: "kramo's homepage: projects, links and contact information."
     }
 
     @keyframes animate-path {
-        from {stroke-dashoffset: 2300;}
+        from {stroke-dashoffset: 240;}
         to {stroke-dashoffset: 0;}
     }
 
@@ -38,7 +38,7 @@ description: "kramo's homepage: projects, links and contact information."
     }
 
     #animated-path {
-        stroke-dasharray: 2385;
+        stroke-dasharray: 240;
         animation: animate-path 1s forwards;
     }
 
@@ -52,11 +52,8 @@ description: "kramo's homepage: projects, links and contact information."
     }
 </style>
 
-<svg id="animated-path" style="margin-top: 15vh; margin-left: 0.2em;" width="90" height="83.229" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
-    <defs>
-        <path id="a" stroke="var(--fg)" stroke-width="65"  fill="none" d="m0 0 250 250L500 0H0v250l250 250h250L250 250M0 250v250h250"/>
-    </defs>
-    <use xlink:href="#a" transform="translate(4.788 4.788) scale(.1473)"/>
+<svg id="animated-path" style="margin-top: 15vh;" width="61.95" height="57" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="m3.5 3.5 25 25 25-25h-50v23.438L30.063 53.5H53.5l-25-25m-25-25 25 25 25-25h-50v23.438L30.063 53.5H3.5V26.938" stroke="var(--fg)" stroke-width="7"/>
 </svg>
 
 
