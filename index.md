@@ -53,7 +53,7 @@ description: "kramo's homepage: projects, links and contact information."
 </style>
 
 <svg id="animated-path" style="margin-top: 15vh;" width="61.95" height="57" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="m 3.5,3.5 25,25 25,-25 H 3.5 V 26.938 L 30.063,53.5 H 53.5 l -25,-25 m -25,-25 25,25 25,-25 H 3.5 V 26.938 3.5 26.938 3.5 v 50 h 26.563" stroke="var(--fg)" stroke-width="7"/>
+    <path d="m3.5 3.5 25 25 25-25h-50v23.438L30.063 53.5H53.5l-25-25m-25-25 25 25 25-25h-50v23.438V3.5v23.438V3.5v50h26.563" stroke="var(--fg)" stroke-width="7"/>
 </svg>
 
 
