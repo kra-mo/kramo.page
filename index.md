@@ -63,9 +63,9 @@ description: "kramo's homepage: projects, links and contact information."
 <p class="appear-later" style="animation-delay: 2.5s;">my work</p>
 
 <br>
-<p class="arrow" style="animation-delay: .2s;">v</p>
-<p class="arrow" style="animation-delay: .1s;">v</p>
-<p class="arrow" style="margin-bottom: 35vh;">v</p>
+<p class="arrow" style="animation-delay: .2s;" aria-hidden="true">v</p>
+<p class="arrow" style="animation-delay: .1s;" aria-hidden="true">v</p>
+<p class="arrow" style="margin-bottom: 35vh;" aria-hidden="true">v</p>
 
 ### cartridges
 
