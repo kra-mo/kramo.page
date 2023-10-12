@@ -30,6 +30,10 @@
   background: var(--fg);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   /* Fonts */
   font-family: Martian Mono;
@@ -58,6 +62,19 @@ img {
   max-width: 90%;
   display: block;
   margin: auto;
+}
+
+#skip-navigation {
+  position: absolute;
+  left: 1em;
+  padding: 1em;
+  background-color: var(--bg);
+  transform: translateY(-200%);
+  transition: transform 0.2s;
+}
+
+#skip-navigation:focus {
+  transform: translateY(0);
 }
 
 #navbar {
