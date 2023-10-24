@@ -26,18 +26,18 @@ description: Art I made in my free time.
 
 <div id="artwork">
     <div>
-        <img loading="lazy" title="Sparkling Violetear" style="animation-duration: .5s;" src="/images/violetear.jpg">
-        <img loading="lazy" title="Avocet" style="animation-duration: .8s;" src="/images/avocet.jpg">
-        <img loading="lazy" title="Cat" style="animation-duration: 1s;" src="/images/cat.jpg">
-        <img loading="lazy" title="Portrait" style="animation-duration: 1.2s;" src="/images/portrait.jpg">
-        <img loading="lazy" title="Landscape" style="animation-duration: 1.4s;" src="/images/landscape.jpg">
+        <img title="Sparkling Violetear" style="animation-duration: .5s;" src="/images/violetear.jpg">
+        <img title="Avocet" style="animation-duration: .8s;" src="/images/avocet.jpg">
+        <img title="Cat" style="animation-duration: 1s;" src="/images/cat.jpg">
+        <img title="Portrait" style="animation-duration: 1.2s;" src="/images/portrait.jpg">
+        <img title="Landscape" style="animation-duration: 1.4s;" src="/images/landscape.jpg">
     </div>
     <div>
-        <img loading="lazy" title="Cocktail" style="animation-duration: .6s;" src="/images/cocktail.jpg">
-        <img loading="lazy" title="Chicken" style="animation-duration: .7s;" src="/images/chicken.jpg">
-        <img loading="lazy" title="Mountain" style="animation-duration: .9s;" src="/images/mountain.jpg">
-        <img loading="lazy" title="Clouds" style="animation-duration: 1.1s;" src="/images/clouds.jpg">
-        <img loading="lazy" title="Fox" style="animation-duration: 1.3s;" src="/images/fox.jpg">
+        <img title="Cocktail" style="animation-duration: .6s;" src="/images/cocktail.jpg">
+        <img title="Chicken" style="animation-duration: .7s;" src="/images/chicken.jpg">
+        <img title="Mountain" style="animation-duration: .9s;" src="/images/mountain.jpg">
+        <img title="Clouds" style="animation-duration: 1.1s;" src="/images/clouds.jpg">
+        <img title="Fox" style="animation-duration: 1.3s;" src="/images/fox.jpg">
     </div>
 </div>
 
