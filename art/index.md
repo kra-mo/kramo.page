@@ -38,6 +38,7 @@ description: Art I made in my free time.
         <img title="Mountain" style="animation-duration: .9s;" src="/images/mountain.jpg">
         <img title="Clouds" style="animation-duration: 1.1s;" src="/images/clouds.jpg">
         <img title="Fox" style="animation-duration: 1.3s;" src="/images/fox.jpg">
+        <img title="Tree" style="animation-duration: 1.5s;" src="/images/tree.jpg">
     </div>
 </div>
 
