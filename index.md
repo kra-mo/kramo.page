@@ -107,4 +107,4 @@ description: "kramo's homepage: projects, links and contact information."
 
 [view the gallery](/art/)
 
-[![my art](/images/cocktail-thumb.webp)](/art/)
+[![my art](/images/cocktail.jpg)](/art/)

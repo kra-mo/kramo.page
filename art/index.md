@@ -26,38 +26,18 @@ description: Art I made in my free time.
 
 <div id="artwork">
     <div>
-        <a title="Sparkling Violetear" href="/images/bird.webp">
-            <img loading="lazy" style="animation-duration: .5s;" src="/images/bird-thumb.webp">
-        </a>
-        <a title="Avocet" href="/images/avocet.webp">
-            <img loading="lazy" style="animation-duration: .8s;" src="/images/avocet-thumb.webp">
-        </a>
-        <a title="Tree" href="/images/tree.webp">
-            <img loading="lazy" style="animation-duration: 1s;" src="/images/tree-thumb.webp">
-        </a>
-        <a title="Portrait" href="/images/portrait.webp">
-            <img loading="lazy" style="animation-duration: 1.2s;" src="/images/portrait-thumb.webp">
-        </a>
-        <a title="Landscape" href="/images/landscape.webp">
-            <img loading="lazy" style="animation-duration: 1.4s;" src="/images/landscape-thumb.webp">
-        </a>
+        <img loading="lazy" title="Sparkling Violetear" style="animation-duration: .5s;" src="/images/violetear.jpg">
+        <img loading="lazy" title="Avocet" style="animation-duration: .8s;" src="/images/avocet.jpg">
+        <img loading="lazy" title="Cat" style="animation-duration: 1s;" src="/images/cat.jpg">
+        <img loading="lazy" title="Portrait" style="animation-duration: 1.2s;" src="/images/portrait.jpg">
+        <img loading="lazy" title="Landscape" style="animation-duration: 1.4s;" src="/images/landscape.jpg">
     </div>
     <div>
-        <a title="Cocktail" href="/images/cocktail.webp">
-            <img loading="lazy" style="animation-duration: .6s;" src="/images/cocktail-thumb.webp">
-        </a>
-        <a title="Cat" href="/images/cat.webp">
-            <img loading="lazy" style="animation-duration: .7s;" src="/images/cat-thumb.webp">
-        </a>
-        <a title="Mountain" href="/images/mountain.webp">
-            <img loading="lazy" style="animation-duration: .9s;" src="/images/mountain-thumb.webp">
-        </a>
-        <a title="Clouds" href="/images/clouds.webp">
-            <img loading="lazy" style="animation-duration: 1.1s;" src="/images/clouds-thumb.webp">
-        </a>
-        <a title="Fox" href="/images/fox.webp">
-            <img loading="lazy" style="animation-duration: 1.3s;" src="/images/fox-thumb.webp">
-        </a>
+        <img loading="lazy" title="Cocktail" style="animation-duration: .6s;" src="/images/cocktail.jpg">
+        <img loading="lazy" title="Chicken" style="animation-duration: .7s;" src="/images/chicken.jpg">
+        <img loading="lazy" title="Mountain" style="animation-duration: .9s;" src="/images/mountain.jpg">
+        <img loading="lazy" title="Clouds" style="animation-duration: 1.1s;" src="/images/clouds.jpg">
+        <img loading="lazy" title="Fox" style="animation-duration: 1.3s;" src="/images/fox.jpg">
     </div>
 </div>
 
