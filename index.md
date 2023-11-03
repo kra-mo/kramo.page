@@ -16,11 +16,6 @@ description: "kramo's homepage: projects, links and contact information."
         90% {opacity: 1;}
     }
 
-    @keyframes appear {
-        from {opacity: 0;}
-        to {opacity: 100;}
-    }
-
     @keyframes animate-path {
         from {stroke-dashoffset: 300;}
         to {stroke-dashoffset: 0;}
@@ -42,6 +37,7 @@ description: "kramo's homepage: projects, links and contact information."
         animation: animate-path 1s forwards;
     }
 
+    /* Firefox doesn't seem to like the SVG animation while the fade in happens */
     body {
         opacity: initial;
         animation: initial;
@@ -49,6 +45,19 @@ description: "kramo's homepage: projects, links and contact information."
 
     img {
         width: 35em;
+    }
+
+    @media (prefers-reduced-motion) {
+        .arrow {
+            animation: appear 5s forwards;
+        }
+        .appear-later {
+            opacity: initial;
+            animation: initial;
+        }
+        #animated-path {
+            animation: initial;
+        }
     }
 </style>
 

@@ -26,6 +26,15 @@ description: About me, contact information and website license.
     #jump:hover {
         transform: rotate(360deg);
     }
+
+    @media (prefers-reduced-motion) {
+        #jump {
+            animation: initial;
+        }
+        #jump:hover {
+            transform: initial;
+        }
+    }
 </style>
 
 <svg id="jump" xmlns="http://www.w3.org/2000/svg" width="69" height="170" fill="none">

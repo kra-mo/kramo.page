@@ -22,6 +22,12 @@ description: Art I made in my free time.
         margin-bottom: 2.5em;
         animation-name: bounce;
     }
+
+    @media (prefers-reduced-motion) {
+        #artwork img {
+            animation-name: initial;
+        }
+    }
 </style>
 
 <div id="artwork">

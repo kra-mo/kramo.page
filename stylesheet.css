@@ -5,6 +5,11 @@
   src: url(/fonts/geist/GeistMonoVF.woff2) format("woff2");
 }
 
+@keyframes appear {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
 @keyframes body-appear {
   from {opacity: 0;}
   20% {opacity: 0;}
@@ -85,4 +90,14 @@ img {
 #navbar a {
   color: var(--fg);
   text-decoration: none;
+}
+
+@media (prefers-reduced-motion) {
+  body {
+    opacity: initial;
+    animation: initial;
+  }
+  #skip-navigation {
+    transition: transform 0s;
+  }
 }
