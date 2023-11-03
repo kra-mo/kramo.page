@@ -65,44 +65,11 @@ description: Links to my social media and git forges.
 </style>
 
 <div class="social-buttons">
-    <div style="animation-duration: .5s; background-color: #6364ff">
-        <a href="https://fosstodon.org/@kramo">
-            <img src="/images/mastodon-icon.svg">mastodon
+    {% for link in site.data.links %}
+    <div style="animation-duration: {{ forloop.index0 | times: 0.1 | plus: 0.5 }}s; background-color: #{{ link.color }}">
+        <a href="{{ link.url }}">
+            <img src="/images/{{ link.name | replace: ' ', '-' }}-icon.svg">{{ link.name }}
         </a>
     </div>
-    <div style="animation-duration: .6s; background-color: #0dbd8b">
-        <a href="https://matrix.to/#/@kramo:matrix.org">
-            <img src="/images/matrix-icon.svg">matrix
-        </a>
-    </div>
-    <div style="animation-duration: .7s; background-color: #7276ff">
-        <a href="https://pixelfed.social/kramo">
-            <img src="/images/pixelfed-icon.svg">pixelfed
-        </a>
-    </div>
-    <div style="animation-duration: .8s; background-color: #ea4c89">
-        <a href="https://dribbble.com/kramo">
-            <img src="/images/dribbble-icon.svg">dribbble
-        </a>
-    </div>
-    <div style="animation-duration: .9s; background-color: #757e88">
-        <a href="https://github.com/kra-mo">
-            <img src="/images/github-icon.svg">github
-        </a>
-    </div>
-    <div style="animation-duration: 1s; background-color: #fc6d26">
-        <a href="https://gitlab.com/kra-mo">
-            <img src="/images/gitlab-icon.svg">gitlab
-        </a>
-    </div>
-    <div style="animation-duration: 1.1s; background-color: #4a86cf">
-        <a href="https://gitlab.gnome.org/kramo">
-            <img src="/images/gnome-icon.svg">gnome gitlab
-        </a>
-    </div>
-    <div style="animation-duration: 1.2s; background-color: #2185d0">
-        <a href="https://codeberg.org/kramo">
-            <img src="/images/codeberg-icon.svg">codeberg
-        </a>
-    </div>
+    {% endfor %}
 </div>
