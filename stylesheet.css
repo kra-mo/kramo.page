@@ -1,8 +1,8 @@
 @font-face {
-  font-family: Martian Mono;
+  font-family: Geist Mono;
   font-style: normal;
-  font-weight: 400;
-  src: local("Martian Mono sWd Rg"), local("MartianMono-sWdRg"), url(/fonts/martian-mono/MartianMonoVF.woff2) format("woff2");
+  font-weight: 100;
+  src: url(/fonts/geist/GeistMonoVF.woff2) format("woff2");
 }
 
 @keyframes body-appear {
@@ -36,8 +36,7 @@ html {
 
 body {
   /* Fonts */
-  font-family: Martian Mono;
-  text-underline-offset: 0.2em;
+  font-family: Geist Mono;
 
   /* Colors */
   background-color: var(--bg);
