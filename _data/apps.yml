@@ -1,0 +1,31 @@
+- name: calligraphy
+  url: https://gitlab.com/gregorni/Calligraphy
+  desc: turn your text into ascii banners
+
+- name: cartridges
+  url: https://github.com/kra-mo/cartridges
+  desc: launch all your games
+
+- name: decibels
+  url: https://github.com/vixalien/decibels
+  desc: play audio files
+
+- name: footage
+  url: https://gitlab.com/adhami3310/Footage
+  desc: edit videos easily
+
+- name: jogger
+  url: https://codeberg.org/baarkerlounger/jogger
+  desc: fitness tracker
+
+- name: letterpress
+  url: https://gitlab.com/gregorni/Letterpress
+  desc: turn images into text
+
+- name: vanilla os first setup
+  url: https://github.com/vanilla-OS/first-setup
+  desc: first setup wizard
+
+- name: wildcard
+  url: https://github.com/fkinoshita/Wildcard
+  desc: test your regular expressions
