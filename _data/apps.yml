@@ -27,5 +27,5 @@
   desc: first setup wizard
 
 - name: wildcard
-  url: https://github.com/fkinoshita/Wildcard
+  url: https://gitlab.gnome.org/World/Wildcard
   desc: test your regular expressions
