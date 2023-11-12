@@ -61,7 +61,7 @@ description: "kramo's homepage: projects, links and contact information."
     }
 </style>
 
-<svg id="animated-path" style="margin-top: 15vh;" width="61.95" height="57" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg role="img" aria-label="an animated logo of the letter k" id="animated-path" style="margin-top: 15vh;" width="61.95" height="57" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="m3.5 3.5 25 25 25-25h-50v23.438L30.063 53.5H53.5l-25-25m-25-25 25 25 25-25h-50v23.438V3.5v23.438V3.5v50h26.563" stroke="var(--fg)" stroke-width="7"/>
 </svg>
 
