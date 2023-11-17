@@ -22,6 +22,10 @@
   url: https://gitlab.com/gregorni/Letterpress
   desc: turn images into text
 
+- name: psequel
+  url: https://github.com/ppvan/psequel
+  desc: run your sql query
+
 - name: vanilla os first setup
   url: https://github.com/vanilla-OS/first-setup
   desc: first setup wizard
