@@ -108,12 +108,3 @@ description: "kramo's homepage: projects, links and contact information."
 [check out the extension](/quick-touchpad-toggle/)
 
 [![quick touchpad toggle](/images/quick-touchpad-toggle.webp)](/quick-touchpad-toggle/)
-
-<br>
-<br>
-
-### my art
-
-[view the gallery](/art/)
-
-[![my art](/images/cocktail.webp)](/art/)
