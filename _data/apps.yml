@@ -1,5 +1,5 @@
 - name: calligraphy
-  url: https://gitlab.com/gregorni/Calligraphy
+  url: https://gitlab.gnome.org/World/Calligraphy
   desc: turn your text into ascii banners
 
 - name: cartridges
@@ -19,7 +19,7 @@
   desc: fitness tracker
 
 - name: letterpress
-  url: https://gitlab.com/gregorni/Letterpress
+  url: https://gitlab.gnome.org/World/Letterpress
   desc: turn images into text
 
 - name: psequel
