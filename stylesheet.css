@@ -20,6 +20,8 @@
   --fg: black;
   --bg: ghostwhite;
   --links: royalblue;
+
+  color-scheme: light dark;
 }
 
 @media (prefers-color-scheme: dark) {
