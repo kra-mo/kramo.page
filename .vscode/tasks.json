@@ -6,7 +6,7 @@
         {
             "label": "Jekyll serve toolbox",
             "type": "shell",
-            "command": "toolbox run bundle exec jekyll serve --livereload",
+            "command": "xdg-open http://127.0.0.1:4000 && toolbox run bundle exec jekyll serve --livereload",
             "problemMatcher": [],
             "group": {
                 "kind": "build",
@@ -16,7 +16,7 @@
         {
             "label": "Jekyll serve host",
             "type": "shell",
-            "command": "bundle exec jekyll serve --livereload",
+            "command": "xdg-open http://127.0.0.1:4000 && bundle exec jekyll serve --livereload",
             "problemMatcher": [],
             "group": {
                 "kind": "build"
