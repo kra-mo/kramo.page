@@ -10,10 +10,6 @@
   url: https://pixelfed.social/kramo
   color: 7276ff
 
-- name: dribbble
-  url: https://dribbble.com/kramo
-  color: ea4c89
-
 - name: github
   url: https://github.com/kra-mo
   color: 757e88
