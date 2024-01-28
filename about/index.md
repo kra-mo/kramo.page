@@ -49,9 +49,9 @@ description: About me, contact information and website license.
 
 i make software and art
 
-you can contact me at my [socials](/links/) or via <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#99;&#111;&#110;&#116;&#97;&#99;&#116;&#64;&#107;&#114;&#97;&#109;&#111;&#46;&#104;&#117;">email</a>
+you can contact me at my [socials](/links/) or via <a href="&#109;a&#105;&#108;&#116;&#111;&#58;&#99;&#111;&#110;&#116;&#97;&#99;&#116;&#64;&#107;&#114;&#97;&#109;o&period;&#112;&#97;&#103;&#101;">email</a>
 
 <br>
 <br>
 
-<sub>this site is licensed under the [agplv3](https://www.gnu.org/licenses/agpl-3.0.html)<br>the source code is available [here](https://github.com/kra-mo/kramo.hu)</sub>
+<sub>this site is licensed under the [agplv3](https://www.gnu.org/licenses/agpl-3.0.html)<br>the source code is available [here](https://github.com/kra-mo/kramo.page)</sub>
