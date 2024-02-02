@@ -6,14 +6,14 @@ description: "kramo's homepage: projects, links and contact information."
 <style>
     @keyframes scroll-circle-slide {
         from {transform: translateY(3em);}
-        70% {transform: translateY(3em); animation-timing-function: ease-in-out;}
+        60% {transform: translateY(3em); animation-timing-function: ease-in-out;}
         to {transform: translateY(0em);}
     }
 
     @keyframes scroll-circle-pulse {
         from {opacity: 0;}
-        70% {opacity: 0;}
-        85% {opacity: 0.7;}
+        60% {opacity: 0;}
+        70% {opacity: 0.7;}
         90% {opacity: 0.7;}
     }
 
@@ -26,7 +26,7 @@ description: "kramo's homepage: projects, links and contact information."
         margin-top: 3vh;
         margin-bottom: 30vh;
         opacity: 0;
-        animation: scroll-circle-slide 4s infinite, scroll-circle-pulse 4s infinite;
+        animation: scroll-circle-slide 3s infinite, scroll-circle-pulse 3s infinite;
     }
 
     .appear-later {
@@ -84,10 +84,10 @@ description: "kramo's homepage: projects, links and contact information."
 
 <img id="logo" src="/images/kramo.svg" aria-label="My logo, a fox.">
 
-<h1 class="appear-later" style="animation-delay: 0.7s;">kramo</h1>
-<p class="appear-later" style="margin-bottom: 10vh; animation-delay: 1.2s;">Design & Free Software</p>
+<h1 class="appear-later" style="animation-delay: 0.3s;">kramo</h1>
+<p class="appear-later" style="margin-bottom: 10vh; animation-delay: 0.5s;">Design & Free Software</p>
 
-<p class="appear-later" style="animation-delay: 2s;">My Work</p>
+<p class="appear-later" style="animation-delay: 1.8s;">My Work</p>
 <svg class="scroll-circle" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <circle cx="12" cy="12" r="12" fill="var(--fg)"/>
 </svg>
