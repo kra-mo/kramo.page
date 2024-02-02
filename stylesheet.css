@@ -37,9 +37,10 @@
 }
 
 :root {
-  --accent: #FF4000;
   --fg: #110f0f;
   --bg: snow;
+  --accent: #FF4000;
+  --accent-dim: color-mix(in oklab, var(--accent) 85%, white);
 
   color-scheme: light dark;
 }
@@ -63,7 +64,7 @@
 
 a::selection {
   color: white;
-  background: var(--accent);
+  background: var(--accent-dim);
 }
 
 html {
@@ -98,7 +99,7 @@ h2, h3, h4, h5, h6 {
 }
 
 a {
-  color: var(--accent);
+  color: var(--accent-dim);
   font-family: Geist Medium;
   text-decoration: none;
   transition-duration: 0.4s;
@@ -140,7 +141,7 @@ img {
 }
 
 #navbar a:hover {
-  color: var(--accent);
+  color: var(--accent-dim);
 }
 
 @media (prefers-reduced-motion) {
@@ -153,7 +154,7 @@ img {
   }
   a:hover {
     text-decoration: underline;
-    color: var(--accent);
+    color: var(--accent-dim);
   }
   #skip-navigation {
     transition: transform 0s;
