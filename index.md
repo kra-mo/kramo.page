@@ -4,16 +4,17 @@ description: "kramo's homepage: projects, links and contact information."
 ---
 
 <style>
-    @keyframes arrow-slide {
-        from {transform: translateY(-1em);}
-        80% {transform: translateY(-1em); animation-timing-function: ease-in;}
-        to {transform: translateY(2em);}
+    @keyframes scroll-circle-slide {
+        from {transform: translateY(3em);}
+        70% {transform: translateY(3em); animation-timing-function: ease-in-out;}
+        to {transform: translateY(0em);}
     }
 
-    @keyframes arrow-pulse {
+    @keyframes scroll-circle-pulse {
         from {opacity: 0;}
-        80% {opacity: 0;}
-        90% {opacity: 0.4;}
+        70% {opacity: 0;}
+        85% {opacity: 0.7;}
+        90% {opacity: 0.7;}
     }
 
     @keyframes logo {
@@ -21,11 +22,11 @@ description: "kramo's homepage: projects, links and contact information."
         to {transform: scale(1); opacity: 1;}
     }
 
-    .arrow {
-        margin-top: 1.4em;
-        margin-bottom: -1.8em;
+    .scroll-circle {
+        margin-top: 3vh;
+        margin-bottom: 30vh;
         opacity: 0;
-        animation: arrow-slide 4s infinite, arrow-pulse 4s infinite;
+        animation: scroll-circle-slide 4s infinite, scroll-circle-pulse 4s infinite;
     }
 
     .appear-later {
@@ -34,6 +35,9 @@ description: "kramo's homepage: projects, links and contact information."
     }
 
     #logo {
+        width: 80px;
+        margin-bottom: 3.5em;
+        margin-top: 20vh;
         transform: initial;
         animation: logo 0.5s;
         animation-timing-function: cubic-bezier(0.8, 0, 0, 1.4);
@@ -59,7 +63,7 @@ description: "kramo's homepage: projects, links and contact information."
     }
 
     @media (prefers-reduced-motion) {
-        .arrow {
+        .scroll-circle {
             animation: appear 5s forwards;
         }
         .appear-later {
@@ -78,16 +82,15 @@ description: "kramo's homepage: projects, links and contact information."
     }
 </style>
 
-<img id="logo" src="/images/kramo.svg" aria-label="My logo, a fox." style="width: 80px !important; margin-bottom: 3.5em; margin-top: 20vh;">
+<img id="logo" src="/images/kramo.svg" aria-label="My logo, a fox.">
 
 <h1 class="appear-later" style="animation-delay: 0.7s;">kramo</h1>
-<p class="appear-later" style="margin-bottom: 20vh; animation-delay: 1.2s;">Design & Free Software</p>
+<p class="appear-later" style="margin-bottom: 10vh; animation-delay: 1.2s;">Design & Free Software</p>
 
 <p class="appear-later" style="animation-delay: 2s;">My Work</p>
-
-<p class="arrow" style="animation-delay: .2s;" aria-hidden="true">v</p>
-<p class="arrow" style="animation-delay: .1s;" aria-hidden="true">v</p>
-<p class="arrow" style="margin-bottom: 35vh;" aria-hidden="true">v</p>
+<svg class="scroll-circle" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="12" cy="12" r="12" fill="white"/>
+</svg>
 
 ### Cartridges
 
