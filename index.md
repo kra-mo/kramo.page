@@ -89,7 +89,7 @@ description: "kramo's homepage: projects, links and contact information."
 
 <p class="appear-later" style="animation-delay: 2s;">My Work</p>
 <svg class="scroll-circle" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="12" cy="12" r="12" fill="white"/>
+    <circle cx="12" cy="12" r="12" fill="var(--fg)"/>
 </svg>
 
 ### Cartridges
