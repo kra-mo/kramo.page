@@ -13,8 +13,8 @@ description: "kramo's homepage: projects, links and contact information."
     @keyframes scroll-circle-pulse {
         from {opacity: 0;}
         60% {opacity: 0;}
-        70% {opacity: 0.7;}
-        90% {opacity: 0.7;}
+        70% {opacity: var(--opacity);}
+        90% {opacity: var(--opacity);}
     }
 
     @keyframes logo {
@@ -27,6 +27,7 @@ description: "kramo's homepage: projects, links and contact information."
         margin-bottom: 40vh;
         opacity: 0;
         animation: scroll-circle-slide 3s infinite, scroll-circle-pulse 3s infinite;
+        --opacity: 0.2;
     }
 
     .appear-later {
@@ -60,6 +61,12 @@ description: "kramo's homepage: projects, links and contact information."
 
     img {
         width: 35em;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        .scroll-circle {
+            --opacity: 0.5;
+        }
     }
 
     @media (prefers-reduced-motion) {
