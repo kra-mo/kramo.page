@@ -1,35 +1,35 @@
-- name: calligraphy
+- name: Calligraphy
   url: https://gitlab.gnome.org/World/Calligraphy
-  desc: turn your text into ascii banners
+  desc: Turn your text into ASCII banners
 
-- name: cartridges
+- name: Cartridges
   url: https://github.com/kra-mo/cartridges
-  desc: launch all your games
+  desc: Launch all your games
 
-- name: decibels
+- name: Decibels
   url: https://github.com/vixalien/decibels
-  desc: play audio files
+  desc: Play audio files
 
-- name: footage
+- name: Footage
   url: https://gitlab.com/adhami3310/Footage
-  desc: edit videos easily
+  desc: Polish your videos
 
-- name: jogger
+- name: Jogger
   url: https://codeberg.org/baarkerlounger/jogger
-  desc: fitness tracker
+  desc: Fitness tracker
 
-- name: letterpress
+- name: Letterpress
   url: https://gitlab.gnome.org/World/Letterpress
-  desc: turn images into text
+  desc: Create beautiful ASCII art
 
-- name: psequel
+- name: PSequel
   url: https://github.com/ppvan/psequel
-  desc: run your sql query
+  desc: Run your SQL query
 
-- name: vanilla os first setup
+- name: Vanilla OS First Setup
   url: https://github.com/vanilla-OS/first-setup
-  desc: first setup wizard
+  desc: First-setup wizard
 
-- name: wildcard
+- name: Wildcard
   url: https://gitlab.gnome.org/World/Wildcard
-  desc: test your regular expressions
+  desc: Test your regular expressions

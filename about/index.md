@@ -43,15 +43,13 @@ description: About me, contact information and website license.
     <circle cx="48" cy="24" r="2" fill="var(--fg)"/>
 </svg>
 
-# hi, im kramo
+## Hey, I'm kramo.
+
+I'm a hobbyist UX designer and free software developer.
+
+You can contact me at my [socials](/links/) or via <a href="&#109;a&#105;&#108;&#116;&#111;&#58;&#99;&#111;&#110;&#116;&#97;&#99;&#116;&#64;&#107;&#114;&#97;&#109;o&period;&#112;&#97;&#103;&#101;">email</a>.
 
 <br>
-
-i make software and art
-
-you can contact me at my [socials](/links/) or via <a href="&#109;a&#105;&#108;&#116;&#111;&#58;&#99;&#111;&#110;&#116;&#97;&#99;&#116;&#64;&#107;&#114;&#97;&#109;o&period;&#112;&#97;&#103;&#101;">email</a>
-
-<br>
 <br>
 
-<sub>this site is licensed under the [agplv3](https://www.gnu.org/licenses/agpl-3.0.html)<br>the source code is available [here](https://github.com/kra-mo/kramo.page)</sub>
+<sub>This site is licensed under the [AGPLv3](https://www.gnu.org/licenses/agpl-3.0.html).<br>The source code is available [here](https://github.com/kra-mo/kramo.page).</sub>

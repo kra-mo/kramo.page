@@ -1,27 +1,27 @@
-- name: mastodon
+- name: Mastodon
   url: https://fosstodon.org/@kramo
   color: 6364ff
 
-- name: matrix
+- name: Matrix
   url: https://matrix.to/#/@kramo:matrix.org
   color: 0dbd8b
 
-- name: pixelfed
+- name: Pixelfed
   url: https://pixelfed.social/kramo
   color: 7276ff
 
-- name: github
+- name: GitHub
   url: https://github.com/kra-mo
   color: 757e88
 
-- name: gnome gitlab
+- name: GNOME GitLab
   url: https://gitlab.gnome.org/kramo
   color: 4a86cf
 
-- name: gitlab
+- name: GitLab
   url: https://gitlab.com/kra-mo
   color: fc6d26
 
-- name: codeberg
+- name: Codeberg
   url: https://codeberg.org/kramo
   color: 2185d0

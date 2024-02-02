@@ -12,9 +12,7 @@ description: Icons I designed for several applications.
 {{ app.desc }}
 <br>
 <br>
-<img alt="app icon preview" src="/images/{{ app.name | replace: ' ', '-' }}-icon.webp" style="margin-bottom: 5em;">
+<img alt="App Icon Preview" src="/images/{{ app.name | downcase | replace: ' ', '-' }}-icon.webp" style="margin-bottom: 5em;">
 {% endfor %}
 
-i hang out in the [gnome app icon design matrix room](https://matrix.to/#/#appicondesign:gnome.org)
-
-if you want to request an icon, you can find me there
+I hang out in the [GNOME App Icon Design Matrix room](https://matrix.to/#/#appicondesign:gnome.org). If you want to request an icon, you can find me there.

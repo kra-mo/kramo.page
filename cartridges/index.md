@@ -3,30 +3,28 @@ title: Cartridges
 description: Cartridges is a simple game launcher written in Python using GTK4 and Libadwaita.
 ---
 
-![cartridges icon](https://raw.githubusercontent.com/kra-mo/cartridges/main/data/icons/hicolor/scalable/apps/hu.kramo.Cartridges.svg)
+![Cartridges Icon](https://raw.githubusercontent.com/kra-mo/cartridges/main/data/icons/hicolor/scalable/apps/hu.kramo.Cartridges.svg)
 
-# cartridges
+# Cartridges
 
-a gtk4 + libadwaita game launcher
+Launch all your games
+
+<br>
+
+[Flathub](https://flathub.org/apps/hu.kramo.Cartridges)
+
+[Source Code](https://github.com/kra-mo/cartridges)
+
+![Screenshot](https://raw.githubusercontent.com/kra-mo/cartridges/main/data/screenshots/1.png)
+
+![Screenshot](https://raw.githubusercontent.com/kra-mo/cartridges/main/data/screenshots/2.png)
+
+![Screenshot](https://raw.githubusercontent.com/kra-mo/cartridges/main/data/screenshots/3.png)
+
+![Screenshot](https://raw.githubusercontent.com/kra-mo/cartridges/main/data/screenshots/4.png)
 
 <br>
 
-[flathub](https://flathub.org/apps/hu.kramo.Cartridges)
+[Flathub](https://flathub.org/apps/hu.kramo.Cartridges)
 
-[source code](https://github.com/kra-mo/cartridges)
-
-![screenshot](https://raw.githubusercontent.com/kra-mo/cartridges/main/data/screenshots/1.png)
-
-![screenshot](https://raw.githubusercontent.com/kra-mo/cartridges/main/data/screenshots/2.png)
-
-![screenshot](https://raw.githubusercontent.com/kra-mo/cartridges/main/data/screenshots/3.png)
-
-![screenshot](https://raw.githubusercontent.com/kra-mo/cartridges/main/data/screenshots/4.png)
-
-<br>
-<br>
-<br>
-
-[flathub](https://flathub.org/apps/hu.kramo.Cartridges)
-
-[source code](https://github.com/kra-mo/cartridges)
+[Source Code](https://github.com/kra-mo/cartridges)

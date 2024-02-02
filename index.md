@@ -13,16 +13,17 @@ description: "kramo's homepage: projects, links and contact information."
     @keyframes arrow-pulse {
         from {opacity: 0;}
         80% {opacity: 0;}
-        90% {opacity: 1;}
+        90% {opacity: 0.4;}
     }
 
-    @keyframes animate-path {
-        from {stroke-dashoffset: 300;}
-        to {stroke-dashoffset: 0;}
+    @keyframes logo {
+        from {transform: scale(2); opacity: 0;}
+        to {transform: scale(5); opacity: 1;}
     }
 
     .arrow {
-        margin-bottom: -1.5em;
+        margin-top: 1.4em;
+        margin-bottom: -1.8em;
         opacity: 0;
         animation: arrow-slide 4s infinite, arrow-pulse 4s infinite;
     }
@@ -32,9 +33,19 @@ description: "kramo's homepage: projects, links and contact information."
         animation: appear 0.5s forwards;
     }
 
-    #animated-path {
-        stroke-dasharray: 300;
-        animation: animate-path 1s forwards;
+    #logo {
+        transform: scale(5);
+        animation: logo 0.5s;
+        animation-timing-function: cubic-bezier(0.8, 0, 0, 1.4);
+        transition: transform .1s;
+    }
+
+    #logo:hover {
+        transform: scale(5.5);
+    }
+
+    #logo:active {
+        transform: scale(5);
     }
 
     /* Firefox doesn't seem to like the SVG animation while the fade in happens */
@@ -55,56 +66,62 @@ description: "kramo's homepage: projects, links and contact information."
             opacity: initial;
             animation: initial;
         }
-        #animated-path {
+        #logo {
             animation: initial;
+        }
+        #logo:hover {
+            transform: scale(5);
+        }
+        #logo:active {
+            transform: scale(5);
         }
     }
 </style>
 
-<svg role="img" aria-label="an animated logo of the letter k" id="animated-path" style="margin-top: 15vh;" width="61.95" height="57" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="m3.5 3.5 25 25 25-25h-50v23.438L30.063 53.5H53.5l-25-25m-25-25 25 25 25-25h-50v23.438V3.5v23.438V3.5v50h26.563" stroke="var(--fg)" stroke-width="7"/>
+<svg id="logo" style="margin-bottom: 1.8em; margin-top: 20vh;" role="img" aria-label="My logo, a fox." width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="16" height="16" rx="8" fill="var(--accent)"/>
+    <path d="M4.752 9.644 8 11.5l3.248-1.856a.5.5 0 0 0 .252-.434V5.517a.3.3 0 0 0-.449-.26L8.1 6.942a.2.2 0 0 1-.198 0L4.949 5.256a.3.3 0 0 0-.449.26V9.21a.5.5 0 0 0 .252.434Z" fill="#fff"/>
 </svg>
 
 
-<h1 class="appear-later" style="animation-delay: 0.7s">kramo</h1>
-<p class="appear-later" style="margin-bottom: 20vh; animation-delay: 1.2s;">design & free software</p>
+<h1 class="appear-later" style="animation-delay: 0.7s;">kramo</h1>
+<p class="appear-later" style="margin-bottom: 20vh; animation-delay: 1.2s;">Design & Free Software</p>
 
-<p class="appear-later" style="animation-delay: 2.5s;">my work</p>
+<p class="appear-later" style="animation-delay: 2s;">My Work</p>
 
-<br>
 <p class="arrow" style="animation-delay: .2s;" aria-hidden="true">v</p>
 <p class="arrow" style="animation-delay: .1s;" aria-hidden="true">v</p>
 <p class="arrow" style="margin-bottom: 35vh;" aria-hidden="true">v</p>
 
-### cartridges
+### Cartridges
 
-[check out the project](/cartridges/)
+[Check out the project](/cartridges/)
 
-[![cartridges](/images/cartridges.webp)](/cartridges/)
-
-<br>
-<br>
-
-### app icons
-
-[view icons i designed](/app-icon-design/)
-
-[![app icons](/images/app-icon-design.svg)](/app-icon-design/)
+[![Cartridges](/images/cartridges.webp)](/cartridges/)
 
 <br>
 <br>
 
-### vanilla os wallpapers
+### App Icons
 
-[download here](/vanilla-backgrounds/)
+[View icons I designed](/app-icon-design/)
 
-[![vanilla os wallpapers](/images/vanilla-default.svg)](/vanilla-backgrounds/)
+[![App Icons](/images/app-icon-design.svg)](/app-icon-design/)
 
 <br>
 <br>
 
-### quick touchpad toggle
+### Vanilla OS Wallpapers
 
-[check out the extension](/quick-touchpad-toggle/)
+[Download here](/vanilla-backgrounds/)
 
-[![quick touchpad toggle](/images/quick-touchpad-toggle.webp)](/quick-touchpad-toggle/)
+[![Vanilla OS Wallpapers](/images/vanilla-default.svg)](/vanilla-backgrounds/)
+
+<br>
+<br>
+
+### Quick Touchpad Toggle
+
+[Check out the Extension](/quick-touchpad-toggle/)
+
+[![Quick Touchpad Toggle](/images/quick-touchpad-toggle.webp)](/quick-touchpad-toggle/)

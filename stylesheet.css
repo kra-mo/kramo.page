@@ -5,6 +5,26 @@
   src: url(/fonts/geist/GeistMonoVF.woff2) format("woff2");
 }
 
+@font-face {
+  font-family: Geist Regular;
+  src: url(/fonts/geist/Geist-Regular.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: Geist Medium;
+  src: url(/fonts/geist/Geist-Medium.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: Geist SemiBold;
+  src: url(/fonts/geist/Geist-SemiBold.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: Geist Bold;
+  src: url(/fonts/geist/Geist-Bold.woff2) format("woff2");
+}
+
 @keyframes appear {
   from {opacity: 0;}
   to {opacity: 1;}
@@ -17,24 +37,33 @@
 }
 
 :root {
-  --fg: black;
-  --bg: ghostwhite;
-  --links: royalblue;
+  --accent: #FF4000;
+  --fg: #110f0f;
+  --bg: snow;
 
   color-scheme: light dark;
 }
 
+:focus-visible {
+  outline: solid 1px var(--accent);
+  border-radius: 2px;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
-    --fg: ghostwhite;
-    --bg: black;
-    --links: cornflowerblue;
+    --fg: snow;
+    --bg: #110f0f;
   }
 }
 
 ::selection {
   color: var(--bg);
   background: var(--fg);
+}
+
+a::selection {
+  color: white;
+  background: var(--accent);
 }
 
 html {
@@ -44,7 +73,7 @@ html {
 
 body {
   /* Fonts */
-  font-family: Geist Mono;
+  font-family: Geist Regular;
 
   /* Colors */
   background-color: var(--bg);
@@ -60,8 +89,23 @@ body {
   line-height: 1.5em;
 }
 
+h1 {
+  font-family: Geist Bold;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: Geist SemiBold;
+}
+
 a {
-  color: var(--links);
+  color: var(--accent);
+  font-family: Geist Medium;
+  text-decoration: none;
+  transition-duration: 0.4s;
+}
+
+a:hover {
+  color: var(--fg);
 }
 
 img {
@@ -76,6 +120,7 @@ img {
   left: 1em;
   padding: 1em;
   background-color: var(--bg);
+  color: var(--fg);
   transform: translateY(-200%);
   transition: transform 0.2s;
 }
@@ -87,18 +132,28 @@ img {
 #navbar {
   display: flex;
   justify-content: flex-end;
-  gap: 0.5em;
+  gap: 1.2em;
 }
 
 #navbar a {
   color: var(--fg);
-  text-decoration: none;
+}
+
+#navbar a:hover {
+  color: var(--accent);
 }
 
 @media (prefers-reduced-motion) {
   body {
     opacity: initial;
     animation: initial;
+  }
+  a {
+    transition-duration: 0s;
+  }
+  a:hover {
+    text-decoration: underline;
+    color: var(--accent);
   }
   #skip-navigation {
     transition: transform 0s;

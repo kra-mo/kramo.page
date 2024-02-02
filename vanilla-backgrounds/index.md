@@ -9,26 +9,25 @@ description: The default wallpapers for Vanilla OS.
     }
 </style>
 
-# vanilla&nbsp;os wallpapers
+# Vanilla&nbsp;OS Wallpapers
 
-the default wallpapers for [vanilla&nbsp;os](https://vanillaos.org/)
+The default wallpapers for [Vanilla&nbsp;OS](https://vanillaos.org/)
+
+<br>
+
+## Vanilla
+
+![Vanilla Default](/images/vanilla-default.svg)
+
+![Vanilla Dark](/images/vanilla-dark.svg)
 
 <br>
 <br>
 
-### vanilla
+## Orchid
 
-![vanilla default](/images/vanilla-default.svg)
+![Orchid Light](/images/orchid-light.svg)
 
-![vanilla dark](/images/vanilla-dark.svg)
-
-<br>
-<br>
-
-### orchid
-
-![orchid light](/images/orchid-light.svg)
-
-![orchid dark](/images/orchid-dark.svg)
+![Orchid Dark](/images/orchid-dark.svg)
 
 {% include cc-by-sa.html %}
