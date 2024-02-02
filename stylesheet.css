@@ -40,7 +40,7 @@
   --fg: #110f0f;
   --bg: snow;
   --accent: #FF4000;
-  --accent-dim: color-mix(in oklab, var(--accent) 85%, white);
+  --accent-dim: color-mix(in srgb, var(--accent) 80%, var(--fg));
 
   color-scheme: light dark;
 }
@@ -70,6 +70,10 @@ a::selection {
 html {
   scroll-behavior: smooth;
   scrollbar-color: var(--fg) var(--bg);
+
+  /* HiDPI */
+  margin: 0 auto;
+  max-width: 80em;
 }
 
 body {

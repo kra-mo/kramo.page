@@ -24,7 +24,7 @@ description: "kramo's homepage: projects, links and contact information."
 
     .scroll-circle {
         margin-top: 3vh;
-        margin-bottom: 30vh;
+        margin-bottom: 40vh;
         opacity: 0;
         animation: scroll-circle-slide 3s infinite, scroll-circle-pulse 3s infinite;
     }
