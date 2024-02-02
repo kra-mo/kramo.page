@@ -1,27 +1,27 @@
 @font-face {
-  font-family: Geist Mono;
+  font-family: "Geist Mono";
   font-style: normal;
   font-weight: 100;
   src: url(/fonts/geist/GeistMonoVF.woff2) format("woff2");
 }
 
 @font-face {
-  font-family: Geist Regular;
+  font-family: "Geist Regular";
   src: url(/fonts/geist/Geist-Regular.woff2) format("woff2");
 }
 
 @font-face {
-  font-family: Geist Medium;
+  font-family: "Geist Medium";
   src: url(/fonts/geist/Geist-Medium.woff2) format("woff2");
 }
 
 @font-face {
-  font-family: Geist SemiBold;
+  font-family: "Geist SemiBold";
   src: url(/fonts/geist/Geist-SemiBold.woff2) format("woff2");
 }
 
 @font-face {
-  font-family: Geist Bold;
+  font-family: "Geist Bold";
   src: url(/fonts/geist/Geist-Bold.woff2) format("woff2");
 }
 
@@ -74,7 +74,7 @@ html {
 
 body {
   /* Fonts */
-  font-family: Geist Regular;
+  font-family: "Geist Regular";
 
   /* Colors */
   background-color: var(--bg);
@@ -91,16 +91,16 @@ body {
 }
 
 h1 {
-  font-family: Geist Bold;
+  font-family: "Geist Bold";
 }
 
 h2, h3, h4, h5, h6 {
-  font-family: Geist SemiBold;
+  font-family: "Geist SemiBold";
 }
 
 a {
   color: var(--accent-dim);
-  font-family: Geist Medium;
+  font-family: "Geist Medium";
   text-decoration: none;
   transition-duration: 0.4s;
 }

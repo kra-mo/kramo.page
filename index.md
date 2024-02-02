@@ -17,8 +17,8 @@ description: "kramo's homepage: projects, links and contact information."
     }
 
     @keyframes logo {
-        from {transform: scale(2); opacity: 0;}
-        to {transform: scale(5); opacity: 1;}
+        from {transform: scale(0.4); opacity: 0;}
+        to {transform: scale(1); opacity: 1;}
     }
 
     .arrow {
@@ -34,18 +34,18 @@ description: "kramo's homepage: projects, links and contact information."
     }
 
     #logo {
-        transform: scale(5);
+        transform: initial;
         animation: logo 0.5s;
         animation-timing-function: cubic-bezier(0.8, 0, 0, 1.4);
         transition: transform .1s;
     }
 
     #logo:hover {
-        transform: scale(5.5);
+        transform: scale(1.1);
     }
 
     #logo:active {
-        transform: scale(5);
+        transform: initial;
     }
 
     /* Firefox doesn't seem to like the SVG animation while the fade in happens */
@@ -70,19 +70,15 @@ description: "kramo's homepage: projects, links and contact information."
             animation: initial;
         }
         #logo:hover {
-            transform: scale(5);
+            transform: initial;
         }
         #logo:active {
-            transform: scale(5);
+            transform: initial;
         }
     }
 </style>
 
-<svg id="logo" style="margin-bottom: 1.8em; margin-top: 20vh;" role="img" aria-label="My logo, a fox." width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <rect width="16" height="16" rx="8" fill="var(--accent)"/>
-    <path d="M4.752 9.644 8 11.5l3.248-1.856a.5.5 0 0 0 .252-.434V5.517a.3.3 0 0 0-.449-.26L8.1 6.942a.2.2 0 0 1-.198 0L4.949 5.256a.3.3 0 0 0-.449.26V9.21a.5.5 0 0 0 .252.434Z" fill="#fff"/>
-</svg>
-
+<img id="logo" src="/images/kramo.svg" aria-label="My logo, a fox." style="width: 80px !important; margin-bottom: 3.5em; margin-top: 20vh;">
 
 <h1 class="appear-later" style="animation-delay: 0.7s;">kramo</h1>
 <p class="appear-later" style="margin-bottom: 20vh; animation-delay: 1.2s;">Design & Free Software</p>
@@ -122,6 +118,6 @@ description: "kramo's homepage: projects, links and contact information."
 
 ### Quick Touchpad Toggle
 
-[Check out the Extension](/quick-touchpad-toggle/)
+[Check out the extension](/quick-touchpad-toggle/)
 
 [![Quick Touchpad Toggle](/images/quick-touchpad-toggle.webp)](/quick-touchpad-toggle/)
