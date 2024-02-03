@@ -49,14 +49,6 @@ description: "kramo's homepage: projects, links and contact information."
         transition: transform .1s;
     }
 
-    #logo:hover {
-        transform: scale(1.1);
-    }
-
-    #logo:active {
-        transform: initial;
-    }
-
     /* Firefox doesn't seem to like the SVG animation while the fade in happens */
     body {
         opacity: initial;
@@ -70,6 +62,21 @@ description: "kramo's homepage: projects, links and contact information."
     @media (prefers-color-scheme: dark) {
         #scroll-circle {
             --opacity: 0.5;
+        }
+    }
+
+    @media (pointer: fine) {
+        #logo:hover {
+            transform: scale(1.1);
+        }
+        #logo:active {
+            transform: initial;
+        }
+    }
+
+    @media (pointer: coarse) {
+        #logo:active {
+            transform: scale(0.9);
         }
     }
 

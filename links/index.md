@@ -46,8 +46,19 @@ description: Links to my social media and git forges.
         margin-right: 1em;
     }
 
-    .social-buttons div:hover {
-        transform: scale(1.05);
+    @media (pointer: fine) {
+        .social-buttons div:hover {
+            transform: scale(1.05);
+        }
+        .social-buttons div:active {
+            transform: initial;
+        }
+    }
+
+    @media (pointer: coarse) {
+        .social-buttons div:active {
+            transform: scale(0.95);
+        }
     }
 
     @media (prefers-reduced-motion) {
@@ -56,6 +67,9 @@ description: Links to my social media and git forges.
             animation-name: initial;
         }
         .social-buttons div:hover {
+            transform: initial;
+        }
+        .social-buttons div:active {
             transform: initial;
         }
         .social-buttons a:hover {

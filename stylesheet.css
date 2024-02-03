@@ -164,7 +164,7 @@ img {
     text-decoration: underline;
     color: var(--accent-dim);
   }
-  
+
   #skip-navigation {
     transition: transform 0s;
   }
