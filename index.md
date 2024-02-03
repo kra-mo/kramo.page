@@ -22,17 +22,21 @@ description: "kramo's homepage: projects, links and contact information."
         to {transform: scale(1); opacity: 1;}
     }
 
-    .scroll-circle {
+    .appear-later {
+        opacity: 0;
+        animation: appear 0.5s forwards;
+    }
+
+    .reduced-motion-only {
+        display: none;
+    }
+
+    #scroll-circle {
         margin-top: 3vh;
         margin-bottom: 40vh;
         opacity: 0;
         animation: scroll-circle-slide 3s infinite, scroll-circle-pulse 3s infinite;
         --opacity: 0.2;
-    }
-
-    .appear-later {
-        opacity: 0;
-        animation: appear 0.5s forwards;
     }
 
     #logo {
@@ -64,18 +68,21 @@ description: "kramo's homepage: projects, links and contact information."
     }
 
     @media (prefers-color-scheme: dark) {
-        .scroll-circle {
+        #scroll-circle {
             --opacity: 0.5;
         }
     }
 
     @media (prefers-reduced-motion) {
-        .scroll-circle {
-            animation: appear 5s forwards;
+        .reduced-motion-only {
+            display: initial;
         }
         .appear-later {
             opacity: initial;
             animation: initial;
+        }
+        #scroll-circle {
+            display: none;
         }
         #logo {
             animation: initial;
@@ -95,7 +102,12 @@ description: "kramo's homepage: projects, links and contact information."
 <p class="appear-later" style="margin-bottom: 10vh; animation-delay: 0.5s;">Design & Free Software</p>
 
 <p class="appear-later" style="animation-delay: 1.8s;">My Work</p>
-<svg class="scroll-circle" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+{::comment} For reduced motion {:/comment}
+<p class="reduced-motion-only">↓</p>
+<br class="reduced-motion-only">
+
+<svg id="scroll-circle" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <circle cx="12" cy="12" r="12" fill="var(--fg)"/>
 </svg>
 

@@ -109,10 +109,6 @@ a {
   transition-duration: 0.4s;
 }
 
-a:hover {
-  color: var(--fg);
-}
-
 img {
   border-radius: 6px;
   max-width: 90%;
@@ -144,8 +140,14 @@ img {
   color: var(--fg);
 }
 
-#navbar a:hover {
-  color: var(--accent-dim);
+@media (pointer: fine) {
+  a:hover {
+    color: var(--fg);
+  }
+
+  #navbar a:hover {
+    color: var(--accent-dim);
+  }
 }
 
 @media (prefers-reduced-motion) {
@@ -153,13 +155,16 @@ img {
     opacity: initial;
     animation: initial;
   }
+
   a {
     transition-duration: 0s;
   }
+
   a:hover {
     text-decoration: underline;
     color: var(--accent-dim);
   }
+  
   #skip-navigation {
     transition: transform 0s;
   }
