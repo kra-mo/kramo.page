@@ -78,7 +78,7 @@ html {
 
 body {
   /* Fonts */
-  font-family: system-ui, "Geist Regular";
+  font-family: "Geist Regular";
 
   /* Colors */
   background-color: var(--bg);
@@ -95,16 +95,16 @@ body {
 }
 
 h1 {
-  font-family: system-ui, "Geist Bold";
+  font-family: "Geist Bold";
 }
 
 h2, h3, h4, h5, h6 {
-  font-family: system-ui, "Geist SemiBold";
+  font-family: "Geist SemiBold";
 }
 
 a {
   color: var(--accent-dim);
-  font-family: system-ui, "Geist Medium";
+  font-family: "Geist Medium";
   text-decoration: none;
   transition-duration: 0.4s;
 }

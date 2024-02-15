@@ -4,6 +4,10 @@ description: "kramo's homepage: projects, links and contact information."
 ---
 
 <style>
+    h2 {
+        padding-top: 3em;
+    }
+
     @keyframes scroll-circle-slide {
         from {transform: translateY(3em);}
         60% {transform: translateY(3em); animation-timing-function: ease-in-out;}
@@ -33,7 +37,7 @@ description: "kramo's homepage: projects, links and contact information."
 
     #scroll-circle {
         margin-top: 3vh;
-        margin-bottom: 40vh;
+        margin-bottom: 35vh;
         opacity: 0;
         animation: scroll-circle-slide 3s infinite, scroll-circle-pulse 3s infinite;
         --opacity: 0.2;
@@ -41,6 +45,7 @@ description: "kramo's homepage: projects, links and contact information."
 
     #logo {
         width: 80px;
+        height: 80px;
         margin-bottom: 3.5em;
         margin-top: 20vh;
         transform: initial;
@@ -103,7 +108,7 @@ description: "kramo's homepage: projects, links and contact information."
     }
 </style>
 
-<img id="logo" src="/images/kramo.svg" aria-label="My logo, a fox.">
+<a href="#cartridges"><img id="logo" src="/images/kramo.svg" aria-label="My logo, a fox."></a>
 
 <h1 class="appear-later" style="animation-delay: 0.3s;">kramo</h1>
 <p class="appear-later" style="margin-bottom: 10vh; animation-delay: 0.5s;">Design & Free Software</p>
@@ -118,34 +123,25 @@ description: "kramo's homepage: projects, links and contact information."
     <circle cx="12" cy="12" r="12" fill="var(--fg)"/>
 </svg>
 
-### Cartridges
+## Cartridges
 
 [Check out the project](/cartridges/)
 
 [![Cartridges](/images/cartridges.webp)](/cartridges/)
 
-<br>
-<br>
-
-### App Icons
+## App Icons
 
 [View icons I designed](/app-icon-design/)
 
 [![App Icons](/images/app-icon-design.svg)](/app-icon-design/)
 
-<br>
-<br>
-
-### Vanilla OS Wallpapers
+## Vanilla OS Wallpapers
 
 [Download here](/vanilla-backgrounds/)
 
 [![Vanilla OS Wallpapers](/images/vanilla-default.svg)](/vanilla-backgrounds/)
 
-<br>
-<br>
-
-### Quick Touchpad Toggle
+## Quick Touchpad Toggle
 
 [Check out the extension](/quick-touchpad-toggle/)
 
