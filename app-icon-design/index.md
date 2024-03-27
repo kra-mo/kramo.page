@@ -4,11 +4,11 @@ description: Icons I designed for several applications.
 ---
 
 {% for app in site.data.apps %}
-<h3>
+<h1>
     <a href="{{ app.url }}">
         {{ app.name }}
     </a>
-</h3>
+</h1>
 {{ app.desc }}
 <br>
 <br>

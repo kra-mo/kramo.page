@@ -3,7 +3,7 @@ title: Cartridges
 description: Cartridges is a simple game launcher written in Python using GTK4 and Libadwaita.
 ---
 
-![Cartridges Icon](https://raw.githubusercontent.com/kra-mo/cartridges/main/data/icons/hicolor/scalable/apps/hu.kramo.Cartridges.svg)
+![Cartridges Icon](/images/cartridges.svg)
 
 # Cartridges
 

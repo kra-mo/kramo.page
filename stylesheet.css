@@ -1,11 +1,4 @@
 @font-face {
-  font-family: "Geist Mono";
-  font-style: normal;
-  font-weight: 100;
-  src: url(/fonts/geist/GeistMonoVF.woff2) format("woff2");
-}
-
-@font-face {
   font-family: "Geist Regular";
   src: url(/fonts/geist/Geist-Regular.woff2) format("woff2");
 }
@@ -25,6 +18,11 @@
   src: url(/fonts/geist/Geist-Bold.woff2) format("woff2");
 }
 
+@font-face {
+  font-family: "Geist UltraBlack";
+  src: url(/fonts/geist/Geist-UltraBlack.woff2) format("woff2");
+}
+
 @keyframes appear {
   from {opacity: 0;}
   to {opacity: 1;}
@@ -41,6 +39,12 @@
   --bg: snow;
   --accent: #FF4000;
   --accent-dim: color-mix(in srgb, var(--accent) 80%, var(--fg));
+
+  --regular: "Geist Regular";
+  --medium: "Geist Medium";
+  --semibold: "Geist SemiBold";
+  --bold: "Geist Bold";
+  --black: "Geist UltraBlack";
 
   color-scheme: light dark;
 }
@@ -78,7 +82,7 @@ html {
 
 body {
   /* Fonts */
-  font-family: "Geist Regular";
+  font-family: var(--regular);
 
   /* Colors */
   background-color: var(--bg);
@@ -91,20 +95,20 @@ body {
   /* Spacing */
   margin: 1em;
   text-align: center;
-  line-height: 1.5em;
+  line-height: 1.1;
 }
 
 h1 {
-  font-family: "Geist Bold";
+  font-family: var(--black)
 }
 
 h2, h3, h4, h5, h6 {
-  font-family: "Geist SemiBold";
+  font-family: var(--semibold);
 }
 
 a {
   color: var(--accent-dim);
-  font-family: "Geist Medium";
+  font-family: var(--medium);
   text-decoration: none;
   transition-duration: 0.4s;
 }
@@ -167,5 +171,11 @@ img {
 
   #skip-navigation {
     transition: transform 0s;
+  }
+}
+
+@media (prefers-contrast: more) {
+  a {
+    text-decoration: underline;
   }
 }

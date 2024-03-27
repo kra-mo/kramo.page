@@ -17,7 +17,7 @@ description: Links to my social media and git forges.
     }
 
     .social-buttons div {
-        width: 35em;
+        width: 25em;
         max-width: 100%;
         margin: 0 auto;
         border-radius: 10em;
@@ -39,7 +39,8 @@ description: Links to my social media and git forges.
         display: block;
         width: 100%;
         height: 100%;
-        padding: 1em 0em;
+        padding: 1.1em 0em;
+        font-family: var(--bold);
     }
 
     .social-buttons a img {
