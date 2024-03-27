@@ -5,7 +5,7 @@ description: Icons I designed for several applications.
 
 {% for app in site.data.apps %}
 <h1>
-    <a href="{{ app.url }}">
+    <a style="font-family: var(--bold);" href="{{ app.url }}">
         {{ app.name }}
     </a>
 </h1>

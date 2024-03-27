@@ -98,19 +98,19 @@ body {
   line-height: 1.1;
 }
 
+a {
+  color: var(--accent-dim);
+  font-family: var(--medium);
+  text-decoration: none;
+  transition-duration: 0.4s;
+}
+
 h1 {
   font-family: var(--black)
 }
 
 h2, h3, h4, h5, h6 {
   font-family: var(--semibold);
-}
-
-a {
-  color: var(--accent-dim);
-  font-family: var(--medium);
-  text-decoration: none;
-  transition-duration: 0.4s;
 }
 
 img {
