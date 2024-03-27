@@ -49,7 +49,7 @@ I'm a hobbyist UX designer and free software developer.
 
 You can contact me at my [socials](/links/) or via <a href="&#109;a&#105;&#108;&#116;&#111;&#58;&#99;&#111;&#110;&#116;&#97;&#99;&#116;&#64;&#107;&#114;&#97;&#109;o&period;&#112;&#97;&#103;&#101;">email</a>.
 
-If you wish to support my work, you can do so through [GitHub Sponsors](https://github.com/sponsors/kra-mo) 🖤.
+If you wish to support my work, you can do so through [GitHub Sponsors](https://github.com/sponsors/kra-mo) ❤️.
 
 <br>
 
