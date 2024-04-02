@@ -5,6 +5,11 @@ layout: plain
 ---
 
 <style>
+    @keyframes card-appear {
+        from {transform: translateY(25px);}
+        to {transform: translateY(0);}
+    }
+
     .card {
         margin: auto;
         margin-bottom: 2em;
@@ -12,6 +17,7 @@ layout: plain
         max-width: 30em;
         border-radius: 12px;
         word-wrap: break-word;
+        animation: card-appear forwards;
     }
 
     .card a {
@@ -66,6 +72,9 @@ layout: plain
     }
 
     @media (prefers-reduced-motion) {
+        .card {
+            animation: initial;
+        }
         #back-to-top-button {
             transition: initial;
             animation-name: initial;
@@ -85,7 +94,7 @@ layout: plain
 
 <main id="content">
     <br>
-    <div class="card" style="color: white; background-color: color-mix(in srgb, var(--accent) 85%, black);">
+    <div class="card" style="animation-duration: 0.5s; color: white; background-color: color-mix(in srgb, var(--accent) 85%, black);">
         <br>
         <br>
         <img aria-hidden="true" width=64 height=64 src="/images/kramo.svg">
@@ -95,27 +104,27 @@ layout: plain
         <a href="/links"><p aria-label="Links">Links →</p></a>
     </div>
     <a href="/cartridges">
-      <div class="card" style="color: #f1d3f4; background: linear-gradient(#813d9c, #613583);">
+      <div class="card" style="animation-duration: 0.6s; color: #f1d3f4; background: linear-gradient(#813d9c, #613583);">
           <img aria-hidden="true" width=128 height=128 src="/images/cartridges.svg" style="filter: drop-shadow(0px 3px 2px #00000059);">
           <h1>Cartridges</h1>
         <p aria-label="Launch all Your Games">Launch all Your Games →</p>
       </div>
     </a>
     <a href="/app-icon-design">
-        <div class="card" style="color: #dfebfb; background: linear-gradient(#62a0ea, #3584e4);">
+        <div class="card" style="animation-duration: 0.7s; color: #dfebfb; background: linear-gradient(#62a0ea, #3584e4);">
             <img aria-hidden="true" width=154 height=146 src="/images/app-icon-design.svg">
             <h1>App Icons</h1>
             <p aria-label="View Icons I Designed">View Icons I Designed →</p>
         </div>
     </a>
     <a href="/quick-touchpad-toggle">
-        <div class="card" style="color: #ffeeee; background-image: url(/images/quick-touchpad-toggle-banner.webp); background-size: cover;">
+        <div class="card" style="animation-duration: 0.8s; color: #ffeeee; background-image: url(/images/quick-touchpad-toggle-banner.webp); background-size: cover;">
             <h1 style="margin-top: 300px;">Quick Touchpad Toggle</h1>
             <p aria-label="Get the Extension">Get the Extension →</p>
         </div>
     </a>
     <a href="/vanilla-backgrounds">
-        <div class="card" style="color: #fffee5; background-image: url(/images/vanilla-backgrounds-banner.webp); background-size: cover;">
+        <div class="card" style="animation-duration: 0.9s; color: #fffee5; background-image: url(/images/vanilla-backgrounds-banner.webp); background-size: cover;">
             <h1 style="margin-top: 300px;">Vanilla&nbsp;OS Wallpapers</h1>
             <p aria-label="Download Here">Download Here →</p>
         </div>
