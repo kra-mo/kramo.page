@@ -11,7 +11,7 @@ Launch all your games
 
 <br>
 
-[Flathub](https://flathub.org/apps/hu.kramo.Cartridges)
+[Flathub](https://flathub.org/apps/page.kramo.Cartridges)
 
 [Source Code](https://github.com/kra-mo/cartridges)
 
@@ -25,6 +25,6 @@ Launch all your games
 
 <br>
 
-[Flathub](https://flathub.org/apps/hu.kramo.Cartridges)
+[Flathub](https://flathub.org/apps/page.kramo.Cartridges)
 
 [Source Code](https://github.com/kra-mo/cartridges)
