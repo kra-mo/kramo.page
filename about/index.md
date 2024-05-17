@@ -45,12 +45,8 @@ description: About me, contact information and website license.
 
 ## Hey, I'm kramo.
 
-I'm a hobbyist UX designer and free software developer.
-
-You can contact me at my [socials](/links/) or via <a href="&#109;a&#105;&#108;&#116;&#111;&#58;&#99;&#111;&#110;&#116;&#97;&#99;&#116;&#64;&#107;&#114;&#97;&#109;o&period;&#112;&#97;&#103;&#101;">email</a>.
-
-If you wish to support my work, you can do so through [GitHub Sponsors](https://github.com/sponsors/kra-mo) ❤️.
-
-<br>
+<p style="margin: auto; text-align: justify; text-align-last: center; hyphens: auto; max-width:40ch;">
+    I'm an amateur UX designer and developer working on free software. You can contact me at my <a href="/links/">socials</a> or via <a href="&#109;a&#105;&#108;&#116;&#111;&#58;&#99;&#111;&#110;&#116;&#97;&#99;&#116;&#64;&#107;&#114;&#97;&#109;o&period;&#112;&#97;&#103;&#101;">email</a>. If you wish to support my work, you can do so via <a href="https://github.com/sponsors/kra-mo"><span style="hyphens: manual;">GitHub Sponsors</span></a>&nbsp;❤️
+</p>
 
 <sub>This site is licensed under the [AGPLv3](https://www.gnu.org/licenses/agpl-3.0.html). The source code is available [here](https://github.com/kra-mo/kramo.page).</sub>
