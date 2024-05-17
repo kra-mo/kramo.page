@@ -1,3 +1,7 @@
+- name: Afternoon
+  url: https://gitlab.gnome.org/kramo/afternoon
+  desc: Play videos
+
 - name: Calligraphy
   url: https://gitlab.gnome.org/World/Calligraphy
   desc: Turn your text into ASCII banners
@@ -13,6 +17,10 @@
 - name: Footage
   url: https://gitlab.com/adhami3310/Footage
   desc: Polish your videos
+
+- name: Hyperplane
+  url: https://github.com/kra-mo/hyperplane
+  desc: Organize your files freely
 
 - name: Jogger
   url: https://codeberg.org/baarkerlounger/jogger

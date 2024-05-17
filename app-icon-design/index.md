@@ -12,6 +12,7 @@ description: Icons I designed for several applications.
 {{ app.desc }}
 <br>
 <br>
+<br>
 <img alt="App Icon Preview" src="/images/{{ app.name | downcase | replace: ' ', '-' }}-icon.webp" style="margin-bottom: 5em;">
 {% endfor %}
 
