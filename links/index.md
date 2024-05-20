@@ -83,7 +83,7 @@ description: Links to my social media and git forges.
     {% for link in site.data.links %}
     <div style="animation-duration: {{ forloop.index0 | times: 0.1 | plus: 0.5 }}s; background-color: #{{ link.color }}">
         <a href="{{ link.url }}">
-            <img src="/images/{{ link.name | downcase | replace: ' ', '-' }}-icon.svg">{{ link.name }}
+            <img aria-hidden="true" src="/images/{{ link.name | downcase | replace: ' ', '-' }}-icon.svg">{{ link.name }}
         </a>
     </div>
     {% endfor %}
