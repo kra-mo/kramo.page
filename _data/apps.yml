@@ -30,6 +30,10 @@
   url: https://gitlab.gnome.org/World/Letterpress
   desc: Create beautiful ASCII art
 
+- name: Morphosis
+  url: https://gitlab.gnome.org/Monster/Morphosis
+  desc: Convert your documents
+
 - name: PSequel
   url: https://github.com/ppvan/psequel
   desc: Run your SQL query
