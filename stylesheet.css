@@ -123,6 +123,7 @@ img {
   max-width: 90%;
   display: block;
   margin: auto;
+  object-fit: contain;
 }
 
 #skip-navigation {
