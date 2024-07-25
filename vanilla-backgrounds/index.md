@@ -6,6 +6,7 @@ description: The default wallpapers for Vanilla&nbsp;OS.
 <style>
     img {
         width: 50em;
+        margin-bottom: 2em;
     }
 </style>
 
