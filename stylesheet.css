@@ -1,187 +1,204 @@
 @font-face {
-  font-family: "Geist Regular";
-  src: url(/fonts/geist/Geist-Regular.woff2) format("woff2");
-  font-display: swap;
+    font-family: "Geist Regular";
+    src: url(/fonts/geist/Geist-Regular.woff2) format("woff2");
+    font-display: swap;
 }
 
 @font-face {
-  font-family: "Geist Medium";
-  src: url(/fonts/geist/Geist-Medium.woff2) format("woff2");
-  font-display: swap;
+    font-family: "Geist Medium";
+    src: url(/fonts/geist/Geist-Medium.woff2) format("woff2");
+    font-display: swap;
 }
 
 @font-face {
-  font-family: "Geist SemiBold";
-  src: url(/fonts/geist/Geist-SemiBold.woff2) format("woff2");
-  font-display: swap;
+    font-family: "Geist SemiBold";
+    src: url(/fonts/geist/Geist-SemiBold.woff2) format("woff2");
+    font-display: swap;
 }
 
 @font-face {
-  font-family: "Geist Bold";
-  src: url(/fonts/geist/Geist-Bold.woff2) format("woff2");
-  font-display: swap;
+    font-family: "Geist Bold";
+    src: url(/fonts/geist/Geist-Bold.woff2) format("woff2");
+    font-display: swap;
 }
 
 @font-face {
-  font-family: "Geist UltraBlack";
-  src: url(/fonts/geist/Geist-UltraBlack.woff2) format("woff2");
-  font-display: swap;
+    font-family: "Geist UltraBlack";
+    src: url(/fonts/geist/Geist-UltraBlack.woff2) format("woff2");
+    font-display: swap;
 }
 
 @keyframes appear {
-  from {opacity: 0;}
-  to {opacity: 1;}
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes body-appear {
-  from {opacity: 0;}
-  20% {opacity: 0;}
-  to {opacity: 1;}
+    from {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 :root {
-  --fg: #110f0f;
-  --bg: snow;
-  --accent: #FF4000;
-  --accent-dim: color-mix(in srgb, var(--accent) 80%, var(--fg));
+    --fg: #110f0f;
+    --bg: snow;
+    --accent: #ff4000;
+    --accent-dim: color-mix(in srgb, var(--accent) 80%, var(--fg));
 
-  --regular: "Geist Regular";
-  --medium: "Geist Medium";
-  --semibold: "Geist SemiBold";
-  --bold: "Geist Bold";
-  --black: "Geist UltraBlack";
+    --regular: "Geist Regular";
+    --medium: "Geist Medium";
+    --semibold: "Geist SemiBold";
+    --bold: "Geist Bold";
+    --black: "Geist UltraBlack";
 
-  color-scheme: light dark;
+    color-scheme: light dark;
 }
 
 :focus-visible {
-  outline: solid 1px var(--accent);
-  border-radius: 2px;
+    outline: solid 1px var(--accent);
+    border-radius: 2px;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --fg: snow;
-    --bg: #110f0f;
-  }
+    :root {
+        --fg: snow;
+        --bg: #110f0f;
+    }
 }
 
 ::selection {
-  color: var(--bg);
-  background: var(--fg);
+    color: var(--bg);
+    background: var(--fg);
 }
 
 a::selection {
-  color: white;
-  background: var(--accent-dim);
+    color: white;
+    background: var(--accent-dim);
 }
 
 html {
-  scroll-behavior: smooth;
-  scrollbar-color: var(--fg) var(--bg);
+    scroll-behavior: smooth;
+    scrollbar-color: var(--fg) var(--bg);
 
-  /* HiDPI */
-  margin: 0 auto;
-  max-width: 80em;
+    /* HiDPI */
+    margin: 0 auto;
+    max-width: 80em;
 }
 
 body {
-  /* Fonts */
-  font-family: var(--regular);
+    /* Fonts */
+    font-family: var(--regular);
 
-  /* Colors */
-  background-color: var(--bg);
-  color: var(--fg);
+    /* Colors */
+    background-color: var(--bg);
+    color: var(--fg);
 
-  /* Animation */
-  opacity: 0;
-  animation: body-appear .5s forwards;
+    /* Animation */
+    opacity: 0;
+    animation: body-appear 0.5s forwards;
 
-  /* Spacing */
-  margin: 1em;
-  text-align: center;
-  line-height: 1.1;
+    /* Spacing */
+    margin: 1em;
+    text-align: center;
+    line-height: 1.1;
+
+    /* Wrapping */
+    text-wrap: balance;
 }
 
 a {
-  color: var(--accent-dim);
-  font-family: var(--medium);
-  text-decoration: none;
-  transition-duration: 0.4s;
+    color: var(--accent-dim);
+    font-family: var(--medium);
+    text-decoration: none;
+    transition-duration: 0.4s;
 }
 
 h1 {
-  font-family: var(--black)
+    font-family: var(--black);
 }
 
-h2, h3, h4, h5, h6 {
-  font-family: var(--semibold);
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--semibold);
 }
 
 img {
-  border-radius: 6px;
-  max-width: 90%;
-  display: block;
-  margin: auto;
-  object-fit: contain;
+    border-radius: 6px;
+    max-width: 90%;
+    display: block;
+    margin: auto;
+    object-fit: contain;
 }
 
 #skip-navigation {
-  position: absolute;
-  left: 1em;
-  padding: 1em;
-  background-color: var(--bg);
-  color: var(--fg);
-  transform: translateY(-200%);
-  transition: transform 0.2s;
+    position: absolute;
+    left: 1em;
+    padding: 1em;
+    background-color: var(--bg);
+    color: var(--fg);
+    transform: translateY(-200%);
+    transition: transform 0.2s;
 }
 
 #skip-navigation:focus {
-  transform: translateY(0);
+    transform: translateY(0);
 }
 
 #navbar {
-  display: flex;
-  justify-content: flex-end;
-  gap: 1.2em;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.2em;
 }
 
 #navbar a {
-  color: var(--fg);
+    color: var(--fg);
 }
 
 @media (pointer: fine) {
-  a:hover {
-    color: var(--fg);
-  }
+    a:hover {
+        color: var(--fg);
+    }
 
-  #navbar a:hover {
-    color: var(--accent-dim);
-  }
+    #navbar a:hover {
+        color: var(--accent-dim);
+    }
 }
 
 @media (prefers-reduced-motion) {
-  body {
-    opacity: initial;
-    animation: initial;
-  }
+    body {
+        opacity: initial;
+        animation: initial;
+    }
 
-  a {
-    transition-duration: 0s;
-  }
+    a {
+        transition-duration: 0s;
+    }
 
-  a:hover {
-    text-decoration: underline;
-    color: var(--accent-dim);
-  }
+    a:hover {
+        text-decoration: underline;
+        color: var(--accent-dim);
+    }
 
-  #skip-navigation {
-    transition: transform 0s;
-  }
+    #skip-navigation {
+        transition: transform 0s;
+    }
 }
 
 @media (prefers-contrast: more) {
-  a {
-    text-decoration: underline;
-  }
+    a {
+        text-decoration: underline;
+    }
 }

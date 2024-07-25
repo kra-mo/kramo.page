@@ -45,7 +45,7 @@ description: About me, contact information and website license.
 
 ## Hey, I'm kramo.
 
-<p style="margin: auto; text-align: justify; text-align-last: center; hyphens: auto; max-width:40ch;">
+<p style="margin: auto; text-wrap: initial; text-align: justify; text-align-last: center; hyphens: auto; max-width:40ch;">
     I'm an amateur UX designer and developer working on free software. You can contact me at my <a href="/links/">socials</a> or via <a href="&#109;a&#105;&#108;&#116;&#111;&#58;&#99;&#111;&#110;&#116;&#97;&#99;&#116;&#64;&#107;&#114;&#97;&#109;o&period;&#112;&#97;&#103;&#101;">email</a>. If you wish to support my work, you can do so via <a href="https://github.com/sponsors/kra-mo"><span style="hyphens: manual;">GitHub Sponsors</span></a>&nbsp;❤️
 </p>
 
