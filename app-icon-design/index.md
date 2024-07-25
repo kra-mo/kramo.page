@@ -39,13 +39,13 @@ description: Icons I designed for several applications.
 {{ app.desc }}
 <br>
 <br>
-<div class="icons" style="background-color: color-mix(in oklch, var(--bg), {{ app.color }} 30%);">
-    <img alt="App Icon Preview" width=16 height=16 src="/images/icons/{{ app.name | downcase | replace: ' ', '-' }}-symbolic.svg" class="symbolic">
-    <img alt="App Icon Preview" width=32 height=32 src="/images/icons/{{ app.name | downcase | replace: ' ', '-' }}.svg">
-    <img alt="App Icon Preview" width=64 height=64 src="/images/icons/{{ app.name | downcase | replace: ' ', '-' }}.svg">
-    <img alt="App Icon Preview" width=128 height=128 src="/images/icons/{{ app.name | downcase | replace: ' ', '-' }}.svg">
+<div class="icons" style="background-color: color-mix(in oklch, var(--bg), #{{ app.color }} 30%);">
+    <img alt="App Icon Preview" width=16 height=16 src="/images/app-icons/{{ app.name | downcase | replace: ' ', '-' }}-symbolic.svg" class="symbolic">
+    <img alt="App Icon Preview" width=32 height=32 src="/images/app-icons/{{ app.name | downcase | replace: ' ', '-' }}.svg">
+    <img alt="App Icon Preview" width=64 height=64 src="/images/app-icons/{{ app.name | downcase | replace: ' ', '-' }}.svg">
+    <img alt="App Icon Preview" width=128 height=128 src="/images/app-icons/{{ app.name | downcase | replace: ' ', '-' }}.svg">
     {% if app.on-macos == true %}
-        <img alt="App Icon Preview" width=150 height=150 src="/images/icons/{{ app.name | downcase | replace: ' ', '-' }}-macos.png">
+        <img alt="App Icon Preview" width=150 height=150 src="/images/app-icons/{{ app.name | downcase | replace: ' ', '-' }}-macos.png">
     {% endif %}
 </div>
 <br>

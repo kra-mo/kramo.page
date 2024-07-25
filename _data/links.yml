@@ -6,10 +6,6 @@
   url: https://matrix.to/#/@kramo:matrix.org
   color: 0dbd8b
 
-- name: Pixelfed
-  url: https://pixelfed.social/kramo
-  color: 7276ff
-
 - name: GitHub
   url: https://github.com/kra-mo
   color: 757e88

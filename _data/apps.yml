@@ -1,61 +1,61 @@
 - name: Calligraphy
   url: https://gitlab.gnome.org/World/Calligraphy
   desc: Turn your text into ASCII banners
-  color: "#7e6ae0"
+  color: 7e6ae0
 
 - name: Cartridges
   url: https://github.com/kra-mo/cartridges
   desc: Launch all your games
-  color: "#b466c5"
+  color: b466c5
   on-macos: true
 
 - name: Decibels
   url: https://gitlab.gnome.org/GNOME/Incubator/decibels
   desc: Play audio files
-  color: "#ee8031"
+  color: ee8031
 
 - name: Footage
   url: https://gitlab.com/adhami3310/Footage
   desc: Polish your videos
-  color: "#9d6dca"
+  color: 9d6dca
 
 - name: Hyperplane
   url: https://github.com/kra-mo/hyperplane
   desc: Organize your files freely
-  color: "#69ce82"
+  color: 69ce82
 
 - name: Jogger
   url: https://codeberg.org/baarkerlounger/jogger
   desc: Fitness tracker
-  color: "#4b82dd"
+  color: 4b82dd
 
 - name: Letterpress
   url: https://gitlab.gnome.org/World/Letterpress
   desc: Create beautiful ASCII art
-  color: "#ee8031"
+  color: ee8031
 
 - name: Morphosis
   url: https://gitlab.gnome.org/World/morphosis
   desc: Convert your documents
-  color: "#60bf84"
+  color: 60bf84
 
 - name: PSequel
   url: https://github.com/ppvan/psequel
   desc: Run your SQL query
-  color: "#4b82dd"
+  color: 4b82dd
 
 - name: Showtime
   url: https://gitlab.gnome.org/GNOME/Incubator/showtime
   desc: Play videos
-  color: "#5d6dcd"
+  color: 5d6dcd
   on-macos: true
 
 - name: Vanilla OS First Setup
   url: https://github.com/vanilla-OS/first-setup
   desc: First-setup wizard
-  color: "#f6c567"
+  color: f6c567
 
 - name: Wildcard
   url: https://gitlab.gnome.org/World/Wildcard
   desc: Test your regular expressions
-  color: "#ce3530"
+  color: ce3530
