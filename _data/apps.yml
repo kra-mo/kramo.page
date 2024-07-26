@@ -46,7 +46,7 @@
 
 - name: Showtime
   url: https://gitlab.gnome.org/GNOME/Incubator/showtime
-  desc: Play videos
+  desc: Watch without distraction
   color: 5d6dcd
   on-macos: true
 
