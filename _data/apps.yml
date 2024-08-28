@@ -39,6 +39,11 @@
   desc: Convert your documents
   color: 60bf84
 
+- name: Navigator
+  url: https://gitlab.gnome.org/monster/navigator
+  desc: Explore the web
+  color: b466c5
+
 - name: PSequel
   url: https://github.com/ppvan/psequel
   desc: Run your SQL query
