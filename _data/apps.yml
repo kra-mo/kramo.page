@@ -55,6 +55,12 @@
   color: 5d6dcd
   on-macos: true
 
+- name: Sly
+  url: https://github.com/kra-mo/sly
+  desc: Edit your images easily
+  color: ff5233
+  on-macos: true
+
 - name: Vanilla OS First Setup
   url: https://github.com/vanilla-OS/first-setup
   desc: First-setup wizard
