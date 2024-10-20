@@ -28,6 +28,14 @@ layout: plain
         color: inherit;
     }
 
+    .card a p {
+        transition: transform 0.3s;
+    }
+
+    .card a span {
+        transition: margin-left 0.4s;
+    }
+
     .card a:hover {
         color: inherit;
     }
@@ -42,7 +50,7 @@ layout: plain
         max-width: 100%;
         margin: 0 auto;
         border-radius: 10em;
-        transition: transform 0.1s;
+        transition: transform 0.3s;
         text-align: center;
     }
 
@@ -57,15 +65,23 @@ layout: plain
     }
 
     @media (pointer: fine) {
-        .card a:hover {
-            font-family: var(--bold);
+        .card a:hover p {
+            transform: scale(1.1);
+        }
+
+        .card a:hover span {
+            margin-left: 0.4em;
+        }
+
+        .card a:active p {
+            transform: scale(0.98);
         }
 
         #back-to-top-button:hover {
             transform: scale(1.05);
         }
         #back-to-top-button:active {
-            transform: initial;
+            transform: scale(0.9);
         }
     }
 
@@ -73,11 +89,26 @@ layout: plain
         #back-to-top-button:active {
             transform: scale(0.95);
         }
+
+        .card a:hover span {
+            margin-left: 0.4em;
+        }
     }
 
     @media (prefers-reduced-motion) {
         .card {
             animation: initial;
+        }
+        .card a p,
+        .card a span {
+            transition: initial;
+        }
+        .card a:hover p,
+        .card a:active p {
+            transform: initial;
+        }
+        .card a:hover span {
+            margin-left: initial;
         }
         #back-to-top-button {
             transition: initial;

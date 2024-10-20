@@ -110,7 +110,6 @@ body {
     /* Spacing */
     margin: 1em;
     text-align: center;
-    line-height: 1.1;
 
     /* Wrapping */
     text-wrap: balance;
@@ -189,7 +188,6 @@ img {
 
     a:hover {
         text-decoration: underline;
-        color: var(--accent-dim);
     }
 
     #skip-navigation {
