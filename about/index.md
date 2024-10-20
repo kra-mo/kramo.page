@@ -1,5 +1,5 @@
 ---
-title: About me
+title: About Me
 description: About me, contact information and website license.
 ---
 
@@ -19,12 +19,16 @@ description: About me, contact information and website license.
         margin-left: auto;
         margin-right: auto;
         margin-top: 10vh;
-        transition: transform 1s;
+        transition: transform 0.2s;
         animation: jump 1.5s;
     }
 
     #jump:hover {
-        transform: rotate(360deg);
+        transform: scale(1.06) rotate(4deg);
+    }
+
+    #jump:active {
+        transform: scale(1.4, 0.8);
     }
 
     @media (prefers-reduced-motion) {
@@ -32,6 +36,9 @@ description: About me, contact information and website license.
             animation: initial;
         }
         #jump:hover {
+            transform: initial;
+        }
+        #jump:active {
             transform: initial;
         }
     }
