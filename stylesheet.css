@@ -134,12 +134,28 @@ h6 {
     font-family: var(--semibold);
 }
 
-img {
-    border-radius: 18px;
+img,
+video {
     max-width: 90%;
     display: block;
     margin: auto;
     object-fit: contain;
+}
+
+img {
+    border-radius: 18px;
+}
+
+video {
+    border-radius: 12px;
+}
+
+a.arrow-link > * {
+    transition: transform 0.3s;
+}
+
+a.arrow-link span {
+    transition: margin-left 0.4s;
 }
 
 #skip-navigation {
@@ -171,6 +187,18 @@ img {
         color: var(--fg);
     }
 
+    a.arrow-link:hover > * {
+        transform: scale(1.1);
+    }
+
+    a.arrow-link:hover span {
+        margin-left: 0.4em;
+    }
+
+    a.arrow-link:active > * {
+        transform: scale(0.98);
+    }
+
     #navbar a:hover {
         color: var(--accent-dim);
     }
@@ -188,6 +216,17 @@ img {
 
     a:hover {
         text-decoration: underline;
+    }
+
+    a.arrow-link > * {
+        transition: initial;
+    }
+    a.arrow-link:hover > *,
+    a.arrow-link:active > * {
+        transform: initial;
+    }
+    a.arrow-link:hover span {
+        margin-left: initial;
     }
 
     #skip-navigation {

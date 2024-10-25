@@ -1,0 +1,169 @@
+---
+title: kramo's Portfolio
+description: UI and UX work I've conducted and engaged in.
+---
+
+<style>
+    @keyframes card-appear {
+        from {
+            transform: translateY(25px);
+        }
+        to {
+            transform: translateY(0);
+        }
+    }
+
+    .card img,
+    .card video {
+        max-width: 100%;
+        border-radius: 12px;
+    }
+
+    .card {
+        margin-bottom: 1em;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 40em;
+        padding: 3vw;
+        border-radius: 24px;
+        word-wrap: break-word;
+        animation: card-appear forwards;
+        background-color: color-mix(in srgb, var(--bg) 97%, var(--fg));
+        border: 1px color-mix(in srgb, var(--bg) 90%, var(--fg)) solid;
+    }
+
+    .card p,
+    .card h1,
+    .card h2,
+    .card h3,
+    .card h4,
+    .card h5,
+    .card h6 {
+        padding: 0 1em;
+    }
+
+    @media (prefers-reduced-motion) {
+        .card {
+            animation: initial;
+        }
+    }
+</style>
+
+<br />
+<br />
+
+<div class="card" style="animation-duration: 0.8s">
+    <h2>Interactions and Animation</h2>
+    <p>
+        I believe that the smallest interactions can make a product feel natural
+        and alive. I strive towards creating immersive experiences for the user
+        without distracting them.
+    </p>
+    <br />
+    <video controls>
+        <source src="/videos/animations.mp4" type="video/mp4" />
+        Your browser does not support this video.
+    </video>
+</div>
+
+<br />
+<br />
+
+<div class="card" style="animation-duration: 0.5s">
+    <h2>Showtime</h2>
+
+    <a
+        href="https://gitlab.gnome.org/GNOME/Incubator/showtime/-/raw/main/data/screenshots/1.png"
+    >
+        <img
+            alt="Screenshot"
+            src="https://gitlab.gnome.org/GNOME/Incubator/showtime/-/raw/main/data/screenshots/1.png"
+        />
+    </a>
+    <p>
+        Video Player, codenamed “Showtime” was designed to replace the previous
+        default video player in GNOME. It was designed to be familiar to users
+        of the existing project, with
+        <a
+            href="https://gitlab.gnome.org/Teams/Design/app-mockups/-/raw/749f85e0dae6c0ed1d4014898218099ca282989d/videos/videos.png"
+            >initial mockups</a
+        >
+        based on its design. After discussions regarding similar styling across
+        the ecosystem, I decided to give the project its own vidual identity,
+        retaining a friendly, user-centered experience.
+    </p>
+
+    <a class="arrow-link" href="/showtime"
+        ><p>More Information <span aria-hidden="true"> →</span></p></a
+    >
+    <br />
+</div>
+
+<br />
+
+<div class="card" style="animation-duration: 0.6s">
+    <h2>Cartridges</h2>
+
+    <a
+        href="https://raw.githubusercontent.com/kra-mo/cartridges/main/data/screenshots/1.png"
+    >
+        <img
+            alt="Screenshot"
+            src="https://raw.githubusercontent.com/kra-mo/cartridges/main/data/screenshots/1.png"
+        />
+    </a>
+    <p>
+        The first significant project whose design I was responsible to lead. It
+        taught me how to apply the skills that I had learned by creating
+        prototypes and making smaller contributions to create a wholistic
+        experience. I have learned how to closely work within a comprehensive
+        design system and successfully apply it to a specific use case.
+    </p>
+
+    <a class="arrow-link" href="/cartridges"
+        ><p>More Information<span aria-hidden="true"> →</span></p></a
+    >
+    <br />
+</div>
+
+<br />
+
+<div class="card" style="animation-duration: 0.7s">
+    <h2>Sly</h2>
+
+    <a
+        href="https://raw.githubusercontent.com/kra-mo/sly/refs/heads/main/packaging/screenshot.png"
+    >
+        <img
+            alt="Screenshot"
+            src="https://raw.githubusercontent.com/kra-mo/sly/refs/heads/main/packaging/screenshot.png"
+        />
+    </a>
+    <p>
+        A project I had taken on to learn how to craft my own design system and
+        build a product straight from scratch. I decided to go with a friendly
+        but professional look and feel to fit the target audience. I designed
+        the user interface, as well as all of its icons with this philosophy in
+        mind. Through user testing and feedback, I have succeeded in creating a
+        friendly photo editing experience that I am still iterating on.
+    </p>
+
+    <a class="arrow-link" href="/sly"
+        ><p>More Information<span aria-hidden="true"> →</span></p></a
+    >
+    <br />
+</div>
+
+<br />
+<br />
+
+<div class="card" style="animation-duration: 0.9s">
+    <h2>Icons</h2>
+    <p>
+        I have designed icons from symbolics and app icons to even emoji. You
+        can view some of my app icon design portfolio
+        <a href="/app-icon-design">here</a>.
+    </p>
+    <br />
+    <img alt="An explosion of colorful icons" src="/images/icons.webp" />
+</div>
