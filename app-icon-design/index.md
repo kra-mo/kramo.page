@@ -39,7 +39,13 @@ description: Icons I designed for several applications.
 {{ app.desc }}
 <br>
 <br>
-<div class="icons" style="background-color: color-mix(in srgb, var(--bg), #{{ app.color }} 30%);">
+<div
+    class="icons"
+    style="
+      background-color: color-mix(in srgb, var(--bg), #{{ app.color }} 30%);
+      border: 1px color-mix(in srgb, var(--bg), #{{ app.color }} 50%) solid;
+    "
+>
     <img alt="Symbolic App Icon" width=16 height=16 src="/images/app-icons/{{ app.name | downcase | replace: ' ', '-' }}-symbolic.svg" class="symbolic">
     <img alt="App Icon" width=32 height=32 src="/images/app-icons/{{ app.name | downcase | replace: ' ', '-' }}.svg">
     <img alt="App Icon" width=64 height=64 src="/images/app-icons/{{ app.name | downcase | replace: ' ', '-' }}.svg">
