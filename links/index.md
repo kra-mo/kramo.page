@@ -56,12 +56,6 @@ description: Links to my social media and git forges.
         }
     }
 
-    @media (pointer: coarse) {
-        .social-buttons div:active {
-            transform: scale(0.95);
-        }
-    }
-
     @media (prefers-reduced-motion) {
         .social-buttons div {
             transition: initial;
