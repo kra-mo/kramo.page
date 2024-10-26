@@ -21,7 +21,7 @@ description: Links to my social media and git forges.
         max-width: 100%;
         margin: 0 auto;
         border-radius: 10em;
-        transition: transform .1s;
+        transition: transform .3s;
         text-align: center;
         animation-name: bounce;
     }
