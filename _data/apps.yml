@@ -22,7 +22,7 @@
 - name: Housemaid
   url: https://gitlab.gnome.org/World/housemaid
   desc: Clean your SVGs
-  color: dbdce0
+  color: 373b42
 
 - name: Hyperplane
   url: https://github.com/kra-mo/hyperplane
