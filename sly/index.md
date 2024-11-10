@@ -15,7 +15,7 @@ Friendly Image Editor
 
 <br>
 
-[Flathub](https://flathub.org/apps/page.kramo.Sly)
+[Flathub](https://flathub.org/apps/page.kramo.Sly) - [Google Play](https://play.google.com/store/apps/details?id=page.kramo.sly)
 
 [Source Code](https://github.com/kra-mo/sly)
 
@@ -27,6 +27,6 @@ Friendly Image Editor
 
 <br>
 
-[Flathub](https://flathub.org/apps/page.kramo.Sly)
+[Flathub](https://flathub.org/apps/page.kramo.Sly) - [Google Play](https://play.google.com/store/apps/details?id=page.kramo.sly)
 
 [Source Code](https://github.com/kra-mo/sly)
