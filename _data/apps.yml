@@ -18,6 +18,11 @@
   url: https://gitlab.com/adhami3310/Footage
   desc: Polish your videos
   color: 9d6dca
+  
+- name: Housemaid
+  url: https://gitlab.gnome.org/World/housemaid
+  desc: Clean your SVGs
+  color: dbdce0
 
 - name: Hyperplane
   url: https://github.com/kra-mo/hyperplane
