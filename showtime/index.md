@@ -7,7 +7,7 @@ description: Showtime is a video player written in Python using GTK4 and Libadwa
   img { max-height: 35em }
 </style>
 
-![Showtime Icon](/images/app-icons/showtime.svg)
+<img width=128 height=128 src="/images/app-icons/showtime.svg" alt="Showtime Icon" />
 
 # Showtime
 
