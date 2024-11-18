@@ -50,7 +50,7 @@ description: About me, contact information and website license.
     <circle cx="48" cy="24" r="2" fill="var(--fg)"/>
 </svg>
 
-## Hey, I'm kramo.
+## Hey, I'm Laura Kramolis
 
 <p style="margin: auto; max-width: 50ch;">
     I'm a UI/UX designer and developer working on free&nbsp;software.

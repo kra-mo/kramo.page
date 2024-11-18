@@ -50,7 +50,7 @@
 }
 
 :root {
-    --fg: #110f0f;
+    --fg: #302a25;
     --bg: snow;
     --accent: #ff4000;
     --accent-dim: color-mix(in srgb, var(--accent) 80%, var(--fg));
