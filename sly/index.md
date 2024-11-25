@@ -7,7 +7,7 @@ description: Sly is a friendly image editor built with Flutter.
   img { max-height: 35em }
 </style>
 
-<img width=150 height=150 src="/images/app-icons/sly-macos.png" alt="Sly Icon" />
+<img width=150 height=150 src="/images/app-icons/sly-macos.webp" alt="Sly Icon" />
 
 # Sly
 
