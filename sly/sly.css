@@ -1,0 +1,329 @@
+/* General */
+
+:root {
+    font-size: 13pt;
+    --card-bg: rgb(from var(--fg) r g b / 3%);
+    --card-border: rgb(from var(--fg) r g b / 7%);
+}
+
+html {
+    max-width: initial;
+}
+
+body {
+    margin: initial;
+}
+
+img {
+    border-radius: initial;
+}
+
+a {
+    color: var(--fg);
+}
+
+a:hover {
+    color: var(--accent);
+}
+
+a[href^="http"]:after {
+    display: inline-block;
+    margin: 0 2px 0 6px;
+    content: url("/images/extlink-d.svg");
+}
+
+a[href^="http"]:has(img, svg):after {
+    content: none;
+}
+
+/* Header */
+
+@keyframes slide-appear {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-appear-button {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    80% {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header {
+    display: flex;
+    align-items: center;
+    column-gap: 100px;
+    overflow-x: hidden;
+    padding-left: 100px;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+header > div {
+    min-width: 400px;
+    padding-bottom: 150px;
+}
+
+header > img {
+    width: 900px;
+}
+
+h1 {
+    font-family: "Geist SemiBold";
+}
+
+#logo {
+    width: 90px;
+    margin-bottom: -25px;
+}
+
+#title > span {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(15px);
+    animation: slide-appear 0.5s forwards;
+}
+
+#hero {
+    padding: 50px 0 30px;
+}
+
+#button {
+    background-color: var(--fg);
+    color: var(--bg);
+    padding: 0.7em 2em;
+    margin-top: 24px;
+    border-radius: 9999px;
+    display: inline-block;
+    animation: slide-appear-button 3.5s;
+    font-family: "Geist Bold";
+}
+
+/* Cards */
+
+main {
+    max-width: 80em;
+    margin: 30px auto;
+}
+
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    align-content: center;
+}
+
+.card {
+    flex: 1;
+    min-width: 250px;
+    padding: 10px 25px;
+    border-radius: 16px;
+    border: 1px solid var(--card-border);
+    background-color: var(--card-bg);
+}
+
+#cards > .card {
+    text-align: start;
+}
+
+/* Carousel */
+
+#carousel {
+    display: flex;
+    max-width: 1500px;
+    height: 700px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 100px 0;
+}
+
+#carousel > button {
+    min-width: 50px;
+    min-height: 50px;
+    border-radius: 50%;
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+}
+
+#carousel > button:hover {
+    background-color: color-mix(in srgb, var(--card-bg), var(--fg) 5%);
+    cursor: pointer;
+}
+
+#carousel-image-wrapper {
+    width: 100%;
+}
+
+.carousel-image {
+    max-height: 700px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.carousel-image.show {
+    opacity: 1;
+}
+
+/* OS */
+
+#icon {
+    width: 120px;
+    margin-top: 60px;
+}
+
+#os-buttons > button {
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#os-buttons > button:hover {
+    background-color: var(--card-bg);
+}
+
+#os-buttons > button[aria-pressed="false"] > * {
+    opacity: 0.4;
+}
+
+#os-content {
+    min-height: 200px;
+    max-width: 450px;
+    align-content: center;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#os-content > * {
+    transition: opacity 0.5s ease;
+    opacity: 0;
+}
+
+#os-content > *.show {
+    opacity: 1;
+}
+
+/* Footer */
+
+footer {
+    background-color: rgb(from var(--fg) r g b / 5%);
+    padding-bottom: 30px;
+    margin-top: 100px;
+}
+
+footer > div {
+    display: flex;
+    justify-content: center;
+    column-gap: 40px;
+}
+
+footer > div > ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer > div > ul > li {
+    display: inline-block;
+    padding: 20px;
+}
+
+footer > p {
+    margin: 0 25px;
+    padding-top: 20px;
+}
+
+/* Media queries */
+
+@media (max-width: 900px) {
+    header {
+        margin-top: 92px;
+        padding-left: initial;
+    }
+
+    header > div {
+        padding-bottom: 40px;
+    }
+
+    header,
+    #cards {
+        flex-direction: column;
+    }
+
+    #cards > .card {
+        max-width: 500px;
+    }
+
+    #carousel {
+        height: 400px;
+        margin: 50px 0;
+    }
+
+    .carousel-image {
+        max-height: 400px;
+    }
+
+    footer > div > ul > li {
+        display: block;
+        text-align: start;
+        padding: 10px;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    #logo,
+    #os-buttons > button > img,
+    #carousel > button > img {
+        filter: invert();
+    }
+
+    a[href^="http"]:after {
+        content: url("/images/extlink-l.svg");
+    }
+}
+
+@media (pointer: fine) {
+    #button:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
+    #button:active {
+        transform: scale(0.9);
+    }
+}
+
+@media (prefers-reduced-motion) {
+    #title > span,
+    #button {
+        opacity: initial;
+        transform: initial;
+        animation: initial;
+        animation-delay: initial;
+    }
+
+    #button:hover {
+        transform: initial;
+        text-decoration: underline;
+    }
+
+    #button:active {
+        transform: initial;
+    }
+}
