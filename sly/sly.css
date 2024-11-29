@@ -26,8 +26,11 @@ a:hover {
     color: var(--accent);
 }
 
+a[href^="http"] {
+    white-space: nowrap;
+}
+
 a[href^="http"]:after {
-    display: inline-block;
     margin: 0 2px 0 6px;
     content: url("/images/extlink-d.svg");
 }
