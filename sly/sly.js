@@ -1,7 +1,12 @@
+document.querySelectorAll(".js-disabled").forEach((element) => {
+  element.classList.remove("js-disabled");
+});
+
 const images = document.querySelectorAll(".carousel-image");
 let currentIndex = 0;
 
 images.forEach((image) => {
+  image.classList.remove("show");
   image.style.display = "none";
 });
 

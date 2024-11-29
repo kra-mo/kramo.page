@@ -68,25 +68,25 @@
                     </p>
                 </div>
             </div>
-            <div id="carousel">
-                <button onClick="switchCarousel(false)">
+            <div id="carousel" class="js-disabled">
+                <button class="js-disabled" onClick="switchCarousel(false)">
                     <img src="/images/previous.svg" />
                 </button>
                 <div id="carousel-image-wrapper">
                     <img
-                        class="carousel-image"
+                        class="carousel-image show"
                         src="https://raw.githubusercontent.com/kra-mo/sly/refs/heads/main/packaging/linux/screenshots/1.png"
                     />
                     <img
-                        class="carousel-image"
+                        class="carousel-image show"
                         src="https://raw.githubusercontent.com/kra-mo/sly/refs/heads/main/packaging/linux/screenshots/2.png"
                     />
                     <img
-                        class="carousel-image"
+                        class="carousel-image show"
                         src="https://raw.githubusercontent.com/kra-mo/sly/refs/heads/main/packaging/linux/screenshots/3.png"
                     />
                 </div>
-                <button onClick="switchCarousel(true)">
+                <button class="js-disabled" onClick="switchCarousel(true)">
                     <img src="/images/next.svg" />
                 </button>
             </div>
@@ -95,7 +95,7 @@
                 <h1 id="get-sly">Get Sly</h1>
                 <p>Download for free on your platform</p>
             </div>
-            <div id="os-buttons">
+            <div id="os-buttons" class="js-disabled">
                 <button onclick="showContent('android')">
                     <img src="/images/os/Android.svg" />
                     <span>Android</span>
@@ -113,18 +113,22 @@
             <div id="os-content">
                 <a
                     id="android"
+                    class="show"
                     href="https://play.google.com/store/apps/details?id=page.kramo.sly&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
                     ><img
                         height="120"
                         alt="Get it on Google Play"
                         src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
                 /></a>
-                <a id="linux" href="https://flathub.org/apps/page.kramo.Sly"
+                <a
+                    id="linux"
+                    class="show"
+                    href="https://flathub.org/apps/page.kramo.Sly"
                     ><img
                         alt="Get it on Flathub"
                         src="https://flathub.org/api/badge?svg&locale=en"
                 /></a>
-                <div id="apple" class="card">
+                <div id="apple" class="card show js-disabled">
                     <h2>Coming Soon</h2>
                     <p>
                         While you’re waiting, you can try the

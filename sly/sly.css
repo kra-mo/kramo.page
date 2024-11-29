@@ -154,12 +154,20 @@ main {
     margin: 100px 0;
 }
 
+#carousel.js-disabled {
+    height: initial;
+}
+
 #carousel > button {
     min-width: 50px;
     min-height: 50px;
     border-radius: 50%;
     background-color: var(--card-bg);
     border: 1px solid var(--card-border);
+}
+
+#carousel > button.js-disabled {
+    display: none;
 }
 
 #carousel > button:hover {
@@ -203,6 +211,10 @@ main {
     opacity: 0.4;
 }
 
+#os-buttons.js-disabled {
+    display: none;
+}
+
 #os-content {
     min-height: 200px;
     max-width: 450px;
@@ -218,6 +230,10 @@ main {
 
 #os-content > *.show {
     opacity: 1;
+}
+
+#os-content > .card.js-disabled {
+    margin-top: 20px;
 }
 
 /* Footer */
