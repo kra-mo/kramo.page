@@ -22,7 +22,7 @@
     <body>
         <header id="header">
             <div>
-                <img src="/images/sly.svg" id="logo" class="symbolic" />
+                <img src="/images/sly.svg" id="logo" class="symbolic" alt="" />
                 <h1 id="title">
                     <span style="animation-delay: 0.3s">The</span>
                     <span style="animation-delay: 0.5s"> Photo</span>
@@ -34,7 +34,7 @@
                 </h1>
                 <a href="#get-sly" id="button">Get Sly</a>
             </div>
-            <img id="hero" src="/images/sly-hero.webp" />
+            <img alt="" id="hero" src="/images/sly-hero.webp" />
         </header>
         <main>
             <div id="cards">
@@ -67,45 +67,72 @@
                 </div>
             </div>
             <div id="carousel" class="js-disabled">
-                <button class="js-disabled" onClick="switchCarousel(false)">
-                    <img src="/images/previous.svg" />
+                <button
+                    class="js-disabled"
+                    onClick="switchCarousel(false)"
+                    aria-label="Go to previous image"
+                >
+                    <img alt="" src="/images/previous.svg" />
                 </button>
                 <div id="carousel-image-wrapper">
                     <img
+                        alt=""
                         class="carousel-image show"
                         src="https://raw.githubusercontent.com/kra-mo/sly/refs/heads/main/packaging/linux/screenshots/1.png"
                     />
                     <img
+                        alt=""
                         class="carousel-image show"
                         src="https://raw.githubusercontent.com/kra-mo/sly/refs/heads/main/packaging/linux/screenshots/2.png"
                     />
                     <img
+                        alt=""
                         class="carousel-image show"
                         src="https://raw.githubusercontent.com/kra-mo/sly/refs/heads/main/packaging/linux/screenshots/3.png"
                     />
                 </div>
-                <button class="js-disabled" onClick="switchCarousel(true)">
-                    <img src="/images/next.svg" />
+                <button
+                    class="js-disabled"
+                    onClick="switchCarousel(true)"
+                    aria-label="Go to next image"
+                >
+                    <img alt="" src="/images/next.svg" />
                 </button>
             </div>
             <div>
-                <img src="/images/app-icons/sly-macos.webp" id="icon" />
+                <img alt="" src="/images/app-icons/sly-macos.webp" id="icon" />
                 <h1 id="get-sly">Get Sly</h1>
                 <p>Download for free on your platform</p>
             </div>
             <div id="os-buttons" class="js-disabled">
-                <button onclick="showContent('android')">
-                    <img src="/images/os/Android.svg" />
+                <button
+                    onclick="showContent('android')"
+                    aria-label="Show Android install option"
+                >
+                    <img alt="" src="/images/os/Android.svg" />
                     <span>Android</span>
                 </button>
-                <button onclick="showContent('linux')">
-                    <img src="/images/os/Linux.svg" /><span>Linux</span>
+                <button
+                    onclick="showContent('linux')"
+                    aria-label="Show Linux install option"
+                >
+                    <img alt="" src="/images/os/Linux.svg" /><span>Linux</span>
                 </button>
-                <button onclick="showContent('apple')">
-                    <img src="/images/os/Apple.svg" /><span>iOS, macOS</span>
+                <button
+                    onclick="showContent('apple')"
+                    aria-label="Show iOS and macOS install options"
+                >
+                    <img alt="" src="/images/os/Apple.svg" /><span
+                        >iOS, macOS</span
+                    >
                 </button>
-                <button onclick="showContent('windows')">
-                    <img src="/images/os/Windows.svg" /><span>Windows</span>
+                <button
+                    onclick="showContent('windows')"
+                    aria-label="Show Windows install option"
+                >
+                    <img alt="" src="/images/os/Windows.svg" /><span
+                        >Windows</span
+                    >
                 </button>
             </div>
             <div id="os-content">
