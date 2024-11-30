@@ -93,6 +93,10 @@ h1 {
     margin-bottom: -25px;
 }
 
+#title {
+    white-space: nowrap;
+}
+
 #title > span {
     display: inline-block;
     opacity: 0;
@@ -199,6 +203,10 @@ main {
     margin-top: 60px;
 }
 
+#os-buttons {
+    white-space: nowrap;
+}
+
 #os-buttons > button {
     background-color: transparent;
     border: none;
@@ -255,6 +263,7 @@ footer > div {
 
 footer > div > ul {
     list-style-type: none;
+    white-space: nowrap;
     padding: 0;
 }
 
