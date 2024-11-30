@@ -7,7 +7,7 @@ description: Links to my social media and git forges.
     @keyframes bounce {
         from {transform: translateY(5em); opacity: 0;}
         50% {transform: translateY(-0.5em); opacity: 100;}
-        to {transform: translateY(0em); opacity: 100;}
+        to {transform: translateY(0); opacity: 100;}
     }
 
     .social-buttons {
