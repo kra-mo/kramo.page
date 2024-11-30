@@ -346,3 +346,14 @@ footer > p {
         transform: initial;
     }
 }
+
+@media (prefers-contrast: more) {
+    #carousel > button,
+    #os-buttons > button[aria-pressed="true"] {
+        border: 1px solid var(--fg);
+    }
+
+    #os-buttons > button[aria-pressed="false"] > * {
+        opacity: initial;
+    }
+}
