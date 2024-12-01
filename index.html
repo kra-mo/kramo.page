@@ -15,12 +15,11 @@ layout: plain
     }
 
     .card {
-        margin: auto;
-        margin-bottom: 2em;
+        margin: 0 auto 2em auto;
         padding: 2.5em 1em;
+        min-width: 17.5em;
         max-width: 30em;
         border-radius: 18px;
-        word-wrap: break-word;
         animation: card-appear forwards;
     }
 
@@ -30,6 +29,19 @@ layout: plain
 
     .card a:hover {
         color: inherit;
+    }
+
+    .card a[href^="http"] {
+        white-space: nowrap;
+    }
+
+    .card a[href^="http"]:after {
+        margin: 0 2px 0 6px;
+        content: url("/images/extlink-d.svg");
+    }
+
+    .card a[href^="http"]:has(img, svg):after {
+        content: none;
     }
 
     .card img {
@@ -61,13 +73,21 @@ layout: plain
             height="64"
             src="/images/kramo.svg"
         />
-        <h1>kramo</h1>
-        <br />
-        <a class="arrow-link" href="/about"
-            ><p>About Me<span aria-hidden="true"> →</span></p></a
-        >
+        <h1 style="margin-bottom: -0.2em">kramo</h1>
+        <p style="white-space: nowrap; margin-bottom: 2em">
+            Free software designer and developer.
+            <br />
+            Support my work on
+            <a href="https://liberapay.com/kramo">Liberapay</a>
+            <br />
+            or
+            <a href="https://github.com/sponsors/kra-mo">GitHub Sponsors</a>.
+        </p>
         <a class="arrow-link" href="/portfolio"
             ><p>Portfolio<span aria-hidden="true"> →</span></p></a
+        >
+        <a class="arrow-link" href="/links"
+            ><p>Contact<span aria-hidden="true"> →</span></p></a
         >
     </div>
     <a href="/sly">
