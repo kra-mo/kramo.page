@@ -5,9 +5,18 @@ description: Links to my social media and git forges.
 
 <style>
     @keyframes bounce {
-        from {transform: translateY(5em); opacity: 0;}
-        50% {transform: translateY(-0.5em); opacity: 100;}
-        to {transform: translateY(0); opacity: 100;}
+        from {
+            transform: translateY(5em);
+            opacity: 0;
+        }
+        50% {
+            transform: translateY(-0.5em);
+            opacity: 100;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 100;
+        }
     }
 
     .social-buttons {
@@ -57,8 +66,15 @@ description: Links to my social media and git forges.
 
 <div class="social-buttons">
     {% for link in site.data.links %}
-    <a class="button suggested" href="{{ link.url }}" style="animation-duration: {{ forloop.index0 | times: 0.1 | plus: 0.5 }}s; background-color: #{{ link.color }}">
-        <img aria-hidden="true" src="/images/{{ link.name | downcase | replace: ' ', '-' }}-icon.svg">{{ link.name }}
+    <a
+        class="button suggested"
+        href="{{ link.url }}"
+        style="animation-duration: {{ forloop.index0 | times: 0.1 | plus: 0.5 }}s; background-color: #{{ link.color }}"
+    >
+        <img
+            aria-hidden="true"
+            src="/images/{{ link.name | downcase | replace: ' ', '-' }}-icon.svg"
+        />{{ link.name }}
     </a>
     {% endfor %}
 </div>

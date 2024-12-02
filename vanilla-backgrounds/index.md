@@ -14,7 +14,7 @@ description: Default wallpapers for Vanilla&nbsp;OS.
 
 Default wallpapers for [Vanilla&nbsp;OS](https://vanillaos.org/)
 
-<br>
+<br />
 
 ## Vanilla
 
@@ -22,8 +22,8 @@ Default wallpapers for [Vanilla&nbsp;OS](https://vanillaos.org/)
 
 ![Vanilla Dark](/images/vanilla-dark.svg)
 
-<br>
-<br>
+<br />
+<br />
 
 ## Orchid
 

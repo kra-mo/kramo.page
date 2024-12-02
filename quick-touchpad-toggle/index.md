@@ -16,8 +16,8 @@ description: A GNOME Shell extension to more easily toggle the &quot;Disable Tou
     Source Code
 </a>
 
-<br>
+<br />
 
 ![screenshot](/images/quick-touchpad-toggle.webp)
 
-<br>
+<br />
