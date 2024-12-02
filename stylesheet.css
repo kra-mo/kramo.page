@@ -192,7 +192,8 @@ a.button.suggested:hover {
     color: var(--bg);
 }
 
-a.button .arrow {
+a .arrow {
+    margin-left: 0.3em;
     transition: margin-left 0.4s;
 }
 
@@ -200,7 +201,7 @@ a[href^="http"] {
     white-space: nowrap;
 }
 
-a[href^="http"]:not(.button:has(.arrow)):not(:has(img)):not(:has(svg))::after {
+a[href^="http"]:not(:has(.arrow)):not(:has(img)):not(:has(svg))::after {
     margin: 0 0.1em 0 0.2em;
     content: "";
     display: inline-block;
@@ -258,8 +259,8 @@ footer a:hover {
         color: var(--fg);
     }
 
-    a.button:hover .arrow {
-        margin-left: 0.4em;
+    a:hover .arrow {
+        margin-left: 0.6em;
     }
 
     a.button:hover {
@@ -285,7 +286,7 @@ footer a:hover {
         text-decoration: underline;
     }
 
-    a.button:hover .arrow {
+    a:hover .arrow {
         margin-left: initial;
     }
 
