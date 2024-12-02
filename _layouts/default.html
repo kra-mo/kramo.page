@@ -2,32 +2,14 @@
 layout: plain
 ---
 
-<header>
-    <a href="#content" id="skip-navigation">Skip to content</a>
-    <nav id="navbar">
-        <a href="/" style="margin-right: auto">
-            <div>
-                <svg
-                    style="margin-right: 0.2em; margin-bottom: -0.09em"
-                    aria-hidden="true"
-                    width="14"
-                    height="13"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                >
-                    <path
-                        d="M.504 9.288 7 13l6.496-3.712A1 1 0 0 0 14 8.42V1.034a.6.6 0 0 0-.898-.521L7.198 3.887a.4.4 0 0 1-.396 0L.898.513a.6.6 0 0 0-.898.52V8.42a1 1 0 0 0 .504.868Z"
-                        fill="var(--accent)"
-                    />
-                </svg>
-                <span>kramo</span>
-            </div>
-        </a>
-        <a href="/portfolio/">Portfolio</a>
-        <a href="/links/">Contact</a>
-    </nav>
-</header>
 <br />
 <main id="content">{{ content }}</main>
-<br />
-<br />
+<footer>
+    <div>
+        <ul>
+            <li><a href="/">{% include kramo.html %}</a></li>
+            <li><a href="/portfolio/">Portfolio</a></li>
+            <li><a href="/links/">Contact</a></li>
+        </ul>
+    </div>
+</footer>

@@ -1,3 +1,5 @@
+/* Fonts */
+
 @font-face {
     font-family: "Geist Regular";
     src: url(/fonts/geist/Geist-Regular.woff2) format("woff2");
@@ -28,6 +30,8 @@
     font-display: swap;
 }
 
+/* Animations */
+
 @keyframes appear {
     from {
         opacity: 0;
@@ -48,6 +52,8 @@
         opacity: 1;
     }
 }
+
+/* General */
 
 :root {
     --fg: #302a25;
@@ -87,16 +93,19 @@ a::selection {
 }
 
 html {
+    height: 100%;
     scroll-behavior: smooth;
     scrollbar-color: var(--fg) var(--bg);
-
-    /* HiDPI */
-    margin: 0 auto;
-    max-width: 80em;
 }
 
 body {
+    /* Layout */
+    margin: 0 auto;
+    height: 100%;
+    text-align: center;
+
     /* Fonts */
+    text-wrap: balance;
     font-family: var(--regular);
 
     /* Colors */
@@ -106,20 +115,19 @@ body {
     /* Animation */
     opacity: 0;
     animation: body-appear 0.5s forwards;
-
-    /* Spacing */
-    margin: 1em;
-    text-align: center;
-
-    /* Wrapping */
-    text-wrap: balance;
 }
 
-a {
-    color: var(--accent-dim);
-    font-family: var(--medium);
-    text-decoration: none;
-    transition-duration: 0.4s;
+body#plain-body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+main#content {
+    margin: 0 1em;
 }
 
 h1 {
@@ -150,48 +158,13 @@ video {
     border-radius: 12px;
 }
 
-a.button .arrow {
-    transition: margin-left 0.4s;
-}
+/* Links */
 
-a[href^="http"] {
-    white-space: nowrap;
-}
-
-a[href^="http"]:not(.button:has(.arrow)):not(:has(img)):not(:has(svg))::after {
-    margin: 0 0.1em 0 0.2em;
-    content: "";
-    display: inline-block;
-    width: 0.75em;
-    height: 0.75em;
-    mask-image: url("data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMSIgaGVpZ2h0PSIxMSIgZmlsbD0ibm9uZSI+PHBhdGggc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjgiIGQ9Ik04IDd2LjVhMiAyIDAgMCAxLTIgMkgzYTIgMiAwIDAgMS0yLTJ2LTNhMiAyIDAgMCAxIDItMmguNW0xIDMuNSA1LTVtMCAwSDZtMy41IDB2My41Ii8+PC9zdmc+");
-    mask-repeat: no-repeat;
-    mask-size: contain;
-    background-color: currentColor;
-}
-
-#skip-navigation {
-    position: absolute;
-    left: 1em;
-    padding: 1em;
-    background-color: var(--bg);
-    color: var(--fg);
-    transform: translateY(-200%);
-    transition: transform 0.2s;
-}
-
-#skip-navigation:focus {
-    transform: translateY(0);
-}
-
-#navbar {
-    display: flex;
-    justify-content: flex-end;
-    gap: 1.2em;
-}
-
-#navbar a {
-    color: var(--fg);
+a {
+    color: var(--accent-dim);
+    font-family: var(--medium);
+    text-decoration: none;
+    transition-duration: 0.4s;
 }
 
 a.button {
@@ -217,6 +190,66 @@ a.button.suggested:hover {
     color: var(--bg);
 }
 
+a.button .arrow {
+    transition: margin-left 0.4s;
+}
+
+a[href^="http"] {
+    white-space: nowrap;
+}
+
+a[href^="http"]:not(.button:has(.arrow)):not(:has(img)):not(:has(svg))::after {
+    margin: 0 0.1em 0 0.2em;
+    content: "";
+    display: inline-block;
+    width: 0.75em;
+    height: 0.75em;
+    mask-image: url("data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMSIgaGVpZ2h0PSIxMSIgZmlsbD0ibm9uZSI+PHBhdGggc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjgiIGQ9Ik04IDd2LjVhMiAyIDAgMCAxLTIgMkgzYTIgMiAwIDAgMS0yLTJ2LTNhMiAyIDAgMCAxIDItMmguNW0xIDMuNSA1LTVtMCAwSDZtMy41IDB2My41Ii8+PC9zdmc+");
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    background-color: currentColor;
+}
+
+/* Footer */
+
+footer {
+    flex-shrink: 0;
+    background-color: rgb(from var(--fg) r g b / 5%);
+    margin-top: 5em;
+}
+
+footer > div {
+    display: flex;
+    justify-content: center;
+    column-gap: 2em;
+}
+
+footer > div > ul {
+    list-style-type: none;
+    white-space: nowrap;
+    padding: 0;
+}
+
+footer > div > ul > li {
+    display: inline-block;
+    padding: 1em;
+}
+
+footer > p {
+    margin: 0 1.25em;
+    padding: 1em 0 1.5em;
+}
+
+footer a {
+    color: var(--fg);
+}
+
+footer a:hover {
+    color: var(--accent);
+}
+
+/* Media Queries */
+
 @media (pointer: fine) {
     a:hover {
         color: var(--fg);
@@ -224,10 +257,6 @@ a.button.suggested:hover {
 
     a.button:hover .arrow {
         margin-left: 0.4em;
-    }
-
-    #navbar a:hover {
-        color: var(--accent-dim);
     }
 
     a.button:hover {
@@ -255,10 +284,6 @@ a.button.suggested:hover {
 
     a.button:hover .arrow {
         margin-left: initial;
-    }
-
-    #skip-navigation {
-        transition: transform 0s;
     }
 
     .button:hover {
