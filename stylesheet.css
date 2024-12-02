@@ -216,8 +216,9 @@ a[href^="http"]:not(.button:has(.arrow)):not(:has(img)):not(:has(svg))::after {
 
 footer {
     flex-shrink: 0;
-    background-color: rgb(from var(--fg) r g b / 5%);
     margin-top: 5em;
+    background-color: rgb(from var(--fg) r g b / 5%);
+    border-top: 1px solid rgb(from var(--fg) r g b / 5%);
 }
 
 footer > div {
