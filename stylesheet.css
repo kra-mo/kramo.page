@@ -104,9 +104,10 @@ body {
     height: 100%;
     text-align: center;
 
-    /* Fonts */
+    /* Text */
     text-wrap: balance;
     font-family: var(--regular);
+    text-underline-offset: 0.15em;
 
     /* Colors */
     background-color: var(--bg);
