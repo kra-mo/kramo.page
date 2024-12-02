@@ -150,11 +150,7 @@ video {
     border-radius: 12px;
 }
 
-a.arrow-link > * {
-    transition: transform 0.3s;
-}
-
-a.arrow-link span {
+a.button .arrow {
     transition: margin-left 0.4s;
 }
 
@@ -182,25 +178,48 @@ a.arrow-link span {
     color: var(--fg);
 }
 
+a.button {
+    border: 2px solid var(--fg);
+    padding: 0.7em 2em;
+    border-radius: 9999px;
+    display: inline-block;
+    font-family: var(--bold);
+    color: var(--fg);
+    margin: 0.6em 0.8%;
+}
+
+a.button:hover {
+    color: var(--fg);
+}
+
+a.button.suggested {
+    background-color: var(--fg);
+    color: var(--bg);
+}
+
+a.button.suggested:hover {
+    color: var(--bg);
+}
+
 @media (pointer: fine) {
     a:hover {
         color: var(--fg);
     }
 
-    a.arrow-link:hover > * {
-        transform: scale(1.1);
-    }
-
-    a.arrow-link:hover span {
+    a.button:hover .arrow {
         margin-left: 0.4em;
-    }
-
-    a.arrow-link:active > * {
-        transform: scale(0.98);
     }
 
     #navbar a:hover {
         color: var(--accent-dim);
+    }
+
+    a.button:hover {
+        transform: scale(1.1);
+    }
+
+    a.button:active {
+        transform: scale(0.9);
     }
 }
 
@@ -218,19 +237,21 @@ a.arrow-link span {
         text-decoration: underline;
     }
 
-    a.arrow-link > * {
-        transition: initial;
-    }
-    a.arrow-link:hover > *,
-    a.arrow-link:active > * {
-        transform: initial;
-    }
-    a.arrow-link:hover span {
+    a.button:hover .arrow {
         margin-left: initial;
     }
 
     #skip-navigation {
         transition: transform 0s;
+    }
+
+    .button:hover {
+        transform: initial;
+        text-decoration: underline;
+    }
+
+    .button:active {
+        transform: initial;
     }
 }
 

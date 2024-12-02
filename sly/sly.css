@@ -85,7 +85,7 @@ header > img {
 }
 
 h1 {
-    font-family: "Geist SemiBold";
+    font-family: var(--semibold);
 }
 
 #logo {
@@ -108,15 +108,9 @@ h1 {
     padding: 50px 0 30px;
 }
 
-#button {
-    background-color: var(--fg);
-    color: var(--bg);
-    padding: 0.7em 2em;
+.button {
     margin-top: 24px;
-    border-radius: 9999px;
-    display: inline-block;
     animation: slide-appear-button 3.5s;
-    font-family: "Geist Bold";
 }
 
 /* Cards */
@@ -326,33 +320,13 @@ footer > p {
     }
 }
 
-@media (pointer: fine) {
-    #button:hover {
-        transform: scale(1.1);
-        cursor: pointer;
-    }
-
-    #button:active {
-        transform: scale(0.9);
-    }
-}
-
 @media (prefers-reduced-motion) {
     #title > span,
-    #button {
+    .button {
         opacity: initial;
         transform: initial;
         animation: initial;
         animation-delay: initial;
-    }
-
-    #button:hover {
-        transform: initial;
-        text-decoration: underline;
-    }
-
-    #button:active {
-        transform: initial;
     }
 }
 
