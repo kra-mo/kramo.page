@@ -26,19 +26,6 @@ a:hover {
     color: var(--accent);
 }
 
-a[href^="http"] {
-    white-space: nowrap;
-}
-
-a[href^="http"]:after {
-    margin: 0 2px 0 6px;
-    content: url("/images/extlink-d.svg");
-}
-
-a[href^="http"]:has(img, svg):after {
-    content: none;
-}
-
 /* Header */
 
 @keyframes slide-appear {
@@ -313,10 +300,6 @@ footer > p {
     #os-buttons > button > img,
     #carousel > button > img {
         filter: invert();
-    }
-
-    a[href^="http"]:after {
-        content: url("/images/extlink-l.svg");
     }
 }
 

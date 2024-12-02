@@ -31,9 +31,7 @@ description: Icons I designed for several applications.
 <br />
 {% for app in site.data.apps %}
 <h1>
-    <a style="font-family: var(--bold)" href="{{ app.url }}">
-        {{ app.name }}
-    </a>
+    <a style="font-family: var(--bold)" href="{{ app.url }}">{{ app.name }}</a>
 </h1>
 {{ app.desc }}
 <br />
@@ -83,11 +81,12 @@ description: Icons I designed for several applications.
 <br />
 <br />
 {% endfor %}
-<p style="max-width: 50ch; margin: auto">
-    I hang out in the
-    <a href="https://matrix.to/#/#appicondesign:gnome.org"
-        >GNOME App Icon Design Matrix room</a
-    >. If you want to request an icon, you can find me there.
+<p style="margin: 0 auto">
+    I hang out in the GNOME
+    <a href="https://matrix.to/#/#appicondesign:gnome.org">App Icon Design</a>
+    Matrix room.
+    <br />
+    If you want to request an icon, you can find me there.
 </p>
 <br />
 {% include back-to-top.html %}
