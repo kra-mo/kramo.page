@@ -169,7 +169,8 @@ a {
 }
 
 a.button {
-    border: 2px solid var(--fg);
+    border: 1px solid rgb(from var(--fg) r g b / 5%);
+    background-color: rgb(from var(--fg) r g b / 9%);
     padding: 0.7em 2em;
     border-radius: 9999px;
     display: inline-block;
