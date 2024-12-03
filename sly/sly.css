@@ -26,6 +26,10 @@ a:hover {
     color: var(--accent);
 }
 
+button {
+    color: var(--fg);
+}
+
 /* Header */
 
 @keyframes slide-appear {
