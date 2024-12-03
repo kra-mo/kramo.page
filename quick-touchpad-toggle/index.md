@@ -18,6 +18,6 @@ description: A GNOME Shell extension to more easily toggle the &quot;Disable Tou
 
 <br />
 
-![Screenshot](/images/quick-touchpad-toggle.webp)
+![Screenshot](/images/screenshots/quick-touchpad-toggle.webp)
 
 <br />

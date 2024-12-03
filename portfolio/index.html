@@ -46,7 +46,7 @@ description: UI and UX work I've conducted and engaged in.
         }
     }
 </style>
-<div class="card" style="animation-duration: 0.8s">
+<div class="card" style="animation-duration: 0.5s">
     <h2>Interactions and Animation</h2>
     <p>
         I believe that the smallest interactions can make the user interface
@@ -59,15 +59,31 @@ description: UI and UX work I've conducted and engaged in.
         Your browser does not support this video.
     </video>
 </div>
-<div class="card" style="animation-duration: 0.5s">
-    <h2>Showtime</h2>
-    <a
-        href="https://gitlab.gnome.org/GNOME/Incubator/showtime/-/raw/main/data/screenshots/1.png"
+<div class="card" style="animation-duration: 0.6s">
+    <h2>Sly</h2>
+    <a href="/images/screenshots/sly.webp">
+        <img alt="Screenshot" src="/images/screenshots/sly.webp" />
+    </a>
+    <p>
+        A project I had taken on to learn how to craft my own design system and
+        build a product straight from scratch. I decided to go with a friendly
+        but professional look and feel to fit the target audience of the desktop
+        and web application. I designed the user interface, as well as all of
+        its icons with this philosophy in mind. Through user testing and
+        feedback, I have succeeded in creating a friendly photo editing
+        experience that I am still iterating on.
+    </p>
+    <a class="button" href="/sly"
+        ><div>
+            More Information<span class="arrow" aria-hidden="true">→</span>
+        </div></a
     >
-        <img
-            alt="Screenshot"
-            src="https://gitlab.gnome.org/GNOME/Incubator/showtime/-/raw/main/data/screenshots/1.png"
-        />
+    <br />
+</div>
+<div class="card" style="animation-duration: 0.7s">
+    <h2>Showtime</h2>
+    <a href="/images/screenshots/showtime.webp">
+        <img alt="Screenshot" src="/images/screenshots/showtime.webp" />
     </a>
     <p>
         Video Player, codenamed “Showtime” was designed to replace the previous
@@ -88,15 +104,10 @@ description: UI and UX work I've conducted and engaged in.
     >
     <br />
 </div>
-<div class="card" style="animation-duration: 0.6s">
+<div class="card" style="animation-duration: 0.8s">
     <h2>Cartridges</h2>
-    <a
-        href="https://raw.githubusercontent.com/kra-mo/cartridges/main/data/screenshots/1.png"
-    >
-        <img
-            alt="Screenshot"
-            src="https://raw.githubusercontent.com/kra-mo/cartridges/main/data/screenshots/1.png"
-        />
+    <a href="/images/screenshots/cartridges.webp">
+        <img alt="Screenshot" src="/images/screenshots/cartridges.webp" />
     </a>
     <p>
         The first significant project whose design I was responsible to lead. It
@@ -113,31 +124,6 @@ description: UI and UX work I've conducted and engaged in.
     >
     <br />
 </div>
-<div class="card" style="animation-duration: 0.7s">
-    <h2>Sly</h2>
-    <a
-        href="https://raw.githubusercontent.com/kra-mo/sly/refs/heads/main/packaging/screenshot.png"
-    >
-        <img
-            alt="Screenshot"
-            src="https://raw.githubusercontent.com/kra-mo/sly/refs/heads/main/packaging/screenshot.png"
-        />
-    </a>
-    <p>
-        A project I had taken on to learn how to craft my own design system and
-        build a product straight from scratch. I decided to go with a friendly
-        but professional look and feel to fit the target audience. I designed
-        the user interface, as well as all of its icons with this philosophy in
-        mind. Through user testing and feedback, I have succeeded in creating a
-        friendly photo editing experience that I am still iterating on.
-    </p>
-    <a class="button" href="/sly"
-        ><div>
-            More Information<span class="arrow" aria-hidden="true">→</span>
-        </div></a
-    >
-    <br />
-</div>
 <div class="card" style="animation-duration: 0.9s">
     <h2>Icons</h2>
     <p>
@@ -146,6 +132,15 @@ description: UI and UX work I've conducted and engaged in.
         <a href="/app-icon-design">here</a>.
     </p>
     <br />
-    <img alt="An explosion of colorful icons" src="/images/icons.webp" />
+    <picture>
+        <source
+            srcset="/images/icons-dark.webp"
+            media="(prefers-color-scheme:dark)"
+        />
+        <img
+            alt="An explosion of colorful icons"
+            src="/images/icons-light.webp"
+        />
+    </picture>
 </div>
 {% include back-to-top.html %}
