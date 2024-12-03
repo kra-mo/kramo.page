@@ -38,13 +38,13 @@ layout: null
         />
 
         <link rel="stylesheet" type="text/css" href="/stylesheet.css?v=1.2" />
-        <link rel="stylesheet" type="text/css" href="sly.css" />
+        <link rel="stylesheet" type="text/css" href="sly.css?v=1.1" />
         <script src="sly.js" defer></script>
     </head>
     <body>
         <header id="header">
             <div>
-                <img src="/images/sly.svg" id="logo" class="symbolic" alt="" />
+                <div id="logo">{% include sly.svg %}</div>
                 <h1 id="title">
                     <span style="animation-delay: 0.3s">The</span>
                     <span style="animation-delay: 0.5s"> Photo</span>
@@ -94,7 +94,9 @@ layout: null
                     onClick="switchCarousel(false)"
                     aria-hidden="true"
                 >
-                    <img alt="" src="/images/previous.svg" />
+                    <div style="transform: scaleX(-1)">
+                        {% include arrow.svg %}
+                    </div>
                 </button>
                 <div id="carousel-image-wrapper">
                     <a aria-hidden="true" href="/images/screenshots/sly-1.webp"
@@ -121,7 +123,7 @@ layout: null
                     onClick="switchCarousel(true)"
                     aria-hidden="true"
                 >
-                    <img alt="" src="/images/next.svg" />
+                    {% include arrow.svg %}
                 </button>
             </div>
             <div>
@@ -134,28 +136,25 @@ layout: null
                     onclick="showContent('android')"
                     aria-label="Show Android install option"
                 >
-                    <img alt="" src="/images/android.svg" />
-                    <span>Android</span>
+                    {% include android.svg %}<span>Android</span>
                 </button>
                 <button
                     onclick="showContent('linux')"
                     aria-label="Show Linux install option"
                 >
-                    <img alt="" src="/images/linux.svg" /><span>Linux</span>
+                    {% include linux.svg %}<span>Linux</span>
                 </button>
                 <button
                     onclick="showContent('apple')"
                     aria-label="Show iOS and macOS install options"
                 >
-                    <img alt="" src="/images/apple.svg" /><span
-                        >iOS, macOS</span
-                    >
+                    {% include apple.svg %}<span>iOS, macOS</span>
                 </button>
                 <button
                     onclick="showContent('windows')"
                     aria-label="Show Windows install option"
                 >
-                    <img alt="" src="/images/windows.svg" /><span>Windows</span>
+                    {% include windows.svg %}<span>Windows</span>
                 </button>
             </div>
             <div id="os-content">

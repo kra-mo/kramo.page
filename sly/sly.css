@@ -76,8 +76,8 @@ h1 {
 }
 
 #logo {
-    width: 90px;
-    margin-bottom: -25px;
+    transform: scale(1.8);
+    margin-bottom: -1em;
 }
 
 #title {
@@ -196,6 +196,10 @@ main {
     border-radius: 10px;
 }
 
+#os-buttons > button > * {
+    margin: 0 auto;
+}
+
 #os-buttons > button:hover {
     background-color: var(--card-bg);
 }
@@ -263,14 +267,6 @@ main {
         display: block;
         text-align: start;
         padding: 10px;
-    }
-}
-
-@media (prefers-color-scheme: light) {
-    #logo,
-    #os-buttons > button > img,
-    #carousel > button > img {
-        filter: invert();
     }
 }
 
