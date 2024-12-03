@@ -100,7 +100,7 @@ html {
 
 body {
     /* Layout */
-    margin: 0 auto;
+    margin: 0 auto 0;
     height: 100%;
     text-align: center;
 
@@ -128,7 +128,7 @@ main {
 }
 
 main#content {
-    margin: 0 1em;
+    margin: 1em 1em 0;
 }
 
 h1 {
