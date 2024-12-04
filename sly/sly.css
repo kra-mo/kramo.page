@@ -76,7 +76,7 @@ header > img {
 }
 
 h1 {
-    font-family: var(--semibold);
+    font-family: var(--bold);
 }
 
 #logo {

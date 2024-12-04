@@ -13,20 +13,14 @@
 }
 
 @font-face {
-    font-family: "Geist SemiBold";
-    src: url(/fonts/geist/Geist-SemiBold.woff2) format("woff2");
+    font-family: "Inter Bold";
+    src: url(/fonts/inter/Inter-Bold.woff2) format("woff2");
     font-display: swap;
 }
 
 @font-face {
-    font-family: "Geist Bold";
-    src: url(/fonts/geist/Geist-Bold.woff2) format("woff2");
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Geist UltraBlack";
-    src: url(/fonts/geist/Geist-UltraBlack.woff2) format("woff2");
+    font-family: "Inter ExtraBold";
+    src: url(/fonts/inter/Inter-ExtraBold.woff2) format("woff2");
     font-display: swap;
 }
 
@@ -63,9 +57,8 @@
 
     --regular: "Geist Regular";
     --medium: "Geist Medium";
-    --semibold: "Geist SemiBold";
-    --bold: "Geist Bold";
-    --black: "Geist UltraBlack";
+    --bold: "Inter Bold";
+    --extrabold: "Inter ExtraBold";
 
     color-scheme: light dark;
 }
@@ -132,7 +125,7 @@ main#content {
 }
 
 h1 {
-    font-family: var(--black);
+    font-family: var(--extrabold);
 }
 
 h2,
@@ -140,7 +133,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: var(--semibold);
+    font-family: var(--bold);
 }
 
 img,
