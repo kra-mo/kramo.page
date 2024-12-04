@@ -55,7 +55,7 @@ layout: plain
 
 <main id="content">
     <br />
-    {% for item in site.data.home %} {% if item.url %}
+    {% for item in home %} {% if item.url %}
     <a href="{{ item.url }}">
         {% endif %}
         <div
@@ -79,7 +79,7 @@ layout: plain
         </div>
         {% if item.url %}
     </a>
-    {% endif %} {% endfor %} {% include back-to-top.html %}
+    {% endif %} {% endfor %} {% include "back-to-top.liquid" %}
 </main>
 <footer>
     <p class="selectable" style="padding: 2em 0.5em 1em">

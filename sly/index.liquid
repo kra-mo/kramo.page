@@ -1,8 +1,3 @@
----
-permalink: /sly
-layout: null
----
-
 <!doctype html>
 <html lang="en">
     <head>
@@ -45,7 +40,7 @@ layout: null
     <body>
         <header id="header">
             <div>
-                <div id="logo">{% include sly.svg %}</div>
+                <div id="logo">{% include "sly.svg" %}</div>
                 <h1 class="selectable" id="title">
                     <span style="animation-delay: 0.3s">The</span>
                     <span style="animation-delay: 0.5s"> Photo</span>
@@ -96,7 +91,7 @@ layout: null
                     aria-hidden="true"
                 >
                     <div style="transform: scaleX(-1)">
-                        {% include arrow.svg %}
+                        {% include "arrow.svg" %}
                     </div>
                 </button>
                 <div id="carousel-image-wrapper">
@@ -124,7 +119,7 @@ layout: null
                     onClick="switchCarousel(true)"
                     aria-hidden="true"
                 >
-                    {% include arrow.svg %}
+                    {% include "arrow.svg" %}
                 </button>
             </div>
             <div>
@@ -137,25 +132,25 @@ layout: null
                     onclick="showContent('android')"
                     aria-label="Show Android install option"
                 >
-                    {% include android.svg %}<span>Android</span>
+                    {% include "android.svg" %}<span>Android</span>
                 </button>
                 <button
                     onclick="showContent('linux')"
                     aria-label="Show Linux install option"
                 >
-                    {% include linux.svg %}<span>Linux</span>
+                    {% include "linux.svg" %}<span>Linux</span>
                 </button>
                 <button
                     onclick="showContent('apple')"
                     aria-label="Show iOS and macOS install options"
                 >
-                    {% include apple.svg %}<span>iOS, macOS</span>
+                    {% include "apple.svg" %}<span>iOS, macOS</span>
                 </button>
                 <button
                     onclick="showContent('windows')"
                     aria-label="Show Windows install option"
                 >
-                    {% include windows.svg %}<span>Windows</span>
+                    {% include "windows.svg" %}<span>Windows</span>
                 </button>
             </div>
             <div id="os-content">
@@ -212,7 +207,7 @@ layout: null
                         <a href="#header">Back to Top</a>
                     </li>
                     <li>
-                        <a href="/">{% include kramo.html %}</a>
+                        <a href="/">{% include "kramo.liquid" %}</a>
                     </li>
                 </ul>
             </div>

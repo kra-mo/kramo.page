@@ -1,7 +1,7 @@
 ---
-permalink: /app-icon-design
 title: App Icons
 description: Icons I designed for several applications.
+layout: default
 ---
 
 <style>
@@ -29,7 +29,7 @@ description: Icons I designed for several applications.
         }
     }
 </style>
-{% for app in site.data.apps %}
+{% for app in apps %}
 <h1 class="selectable">
     <a style="font-family: var(--bold)" href="{{ app.url }}">{{ app.name }}</a>
 </h1>
@@ -88,4 +88,4 @@ description: Icons I designed for several applications.
     If you want to request an icon, you can find me there.
 </p>
 <br />
-{% include back-to-top.html %}
+{% include "back-to-top.liquid" %}
