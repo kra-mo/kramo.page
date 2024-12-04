@@ -1,0 +1,58 @@
+- content: |
+    <img
+        aria-hidden="true"
+        width="64"
+        height="64"
+        src="/images/kramo.svg"
+        style="margin-top: 0.5em"
+    />
+    <h1 class="selectable" style="margin-bottom: -0.2em">Laura Kramolis</h1>
+    <p class="selectable" style="margin-bottom: 1.5em">
+        Free software designer and developer
+    </p>
+    <p style="white-space: nowrap; margin-bottom: 0em">
+        <a class="button" href="/links">Contact</a>
+        <a class="button suggested" href="/portfolio">Portfolio</a>
+    </p>
+  color: fff
+  bg: color-mix(in srgb, var(--accent) 85%, black)
+
+- name: Sly
+  url: /sly
+  desc: Edit Your Images
+  color: f9dfd1
+  img: 'width="200" src="/images/sly.webp" style="margin-top: 6px; margin-bottom: -24px"'
+  bg: "linear-gradient(#ec6649, #d24e32)"
+
+- name: Showtime
+  url: https://apps.gnome.org/Showtime/
+  desc: Watch Without Distraction
+  color: e0d4f2
+  img: 'width="128" height="128" src="/images/showtime.webp" style="filter: drop-shadow(0px 3px 2px #00000059)"'
+  bg: "linear-gradient(#60539c, #584990)"
+
+- name: Cartridges
+  url: https://apps.gnome.org/Cartridges/
+  desc: Launch all Your Games
+  color: f1d3f4
+  img: 'width="128" height="128" src="/images/app-icons/cartridges.svg" style="filter: drop-shadow(0px 3px 2px #00000059)"'
+  bg: "linear-gradient(#813d9c, #613583)"
+
+- name: App Icons
+  url: /app-icon-design
+  desc: View Icons I Designed
+  color: dfebfb
+  img: width="154" height="146" src="/images/app-icon-design.svg"
+  bg: "linear-gradient(#62a0ea, #3584e4)"
+
+- name: Quick Touchpad Toggle
+  url: /quick-touchpad-toggle
+  desc: Get the Extension
+  color: ffeeee
+  bg: center / cover url(/images/quick-touchpad-toggle-banner.webp)
+
+- name: Vanilla OS Wallpapers
+  url: /vanilla-backgrounds
+  desc: Download Here
+  color: fffee5
+  bg: center / cover url(/images/vanilla-backgrounds-banner.webp)

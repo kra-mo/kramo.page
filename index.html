@@ -26,10 +26,7 @@ layout: plain
         animation: card-appear forwards;
     }
 
-    .card a {
-        color: inherit;
-    }
-
+    .card a,
     .card a:hover {
         color: inherit;
     }
@@ -58,155 +55,31 @@ layout: plain
 
 <main id="content">
     <br />
-    <div
-        class="card"
-        style="
-            animation-duration: 0.5s;
-            color: white;
-            background-color: color-mix(in srgb, var(--accent) 85%, black);
-        "
-    >
-        <img
-            aria-hidden="true"
-            width="64"
-            height="64"
-            src="/images/kramo.svg"
-            style="margin-top: 0.5em"
-        />
-        <h1 class="selectable" style="margin-bottom: -0.2em">Laura Kramolis</h1>
-        <p class="selectable" style="margin-bottom: 1.5em">
-            Free software designer and developer
-        </p>
-        <p style="white-space: nowrap; margin-bottom: 0em">
-            <a class="button" href="/links">Contact</a>
-            <a class="button suggested" href="/portfolio">Portfolio</a>
-        </p>
-    </div>
-    <a href="/sly">
+    {% for item in site.data.home %} {% if item.url %}
+    <a href="{{ item.url }}">
+        {% endif %}
         <div
             class="card"
             style="
-                animation-duration: 0.6s;
-                color: #f9dfd1;
-                background: linear-gradient(#ec6649, #d24e32);
+                animation-duration: {{ forloop.index0 | times: 0.1 | plus: 0.6 }}s;
+                color: #{{ item.color }};
+                background: {{ item.bg }};
             "
         >
-            <img
-                aria-hidden="true"
-                width="200"
-                src="/images/sly.webp"
-                style="margin-top: 6px; margin-bottom: -24px"
-            />
-            <h1>Sly</h1>
+            {{ item.content }} {% unless item.content %} {% if item.img %}
+            <img aria-hidden="true" {{ item.img }} />
+            {% else %}
+            <p style="height: 17em" />
+            {% endif %}
+            <h1>{{ item.name }}</h1>
             <p>
-                Edit Your Images<span class="arrow" aria-hidden="true">→</span>
+                {{ item.desc }}<span class="arrow" aria-hidden="true">→</span>
             </p>
+            {% endunless %}
         </div>
+        {% if item.url %}
     </a>
-    <a href="https://apps.gnome.org/Showtime/">
-        <div
-            class="card"
-            style="
-                animation-duration: 0.7s;
-                color: #e0d4f2;
-                background: linear-gradient(#60539c, #584990);
-            "
-        >
-            <img
-                aria-hidden="true"
-                width="128"
-                height="128"
-                src="/images/showtime.webp"
-                style="filter: drop-shadow(0px 3px 2px #00000059)"
-            />
-            <h1>Showtime</h1>
-            <p>
-                Watch Without Distraction<span class="arrow" aria-hidden="true"
-                    >→</span
-                >
-            </p>
-        </div>
-    </a>
-    <a href="https://apps.gnome.org/Cartridges/">
-        <div
-            class="card"
-            style="
-                animation-duration: 0.8s;
-                color: #f1d3f4;
-                background: linear-gradient(#813d9c, #613583);
-            "
-        >
-            <img
-                aria-hidden="true"
-                width="128"
-                height="128"
-                src="/images/app-icons/cartridges.svg"
-                style="filter: drop-shadow(0px 3px 2px #00000059)"
-            />
-            <h1>Cartridges</h1>
-            <p>
-                Launch all Your Games<span class="arrow" aria-hidden="true"
-                    >→</span
-                >
-            </p>
-        </div>
-    </a>
-    <a href="/app-icon-design">
-        <div
-            class="card"
-            style="
-                animation-duration: 0.9s;
-                color: #dfebfb;
-                background: linear-gradient(#62a0ea, #3584e4);
-            "
-        >
-            <img
-                aria-hidden="true"
-                width="154"
-                height="146"
-                src="/images/app-icon-design.svg"
-            />
-            <h1>App Icons</h1>
-            <p>
-                View Icons I Designed<span class="arrow" aria-hidden="true"
-                    >→</span
-                >
-            </p>
-        </div>
-    </a>
-    <a href="/quick-touchpad-toggle">
-        <div
-            class="card"
-            style="
-                animation-duration: 1s;
-                color: #ffeeee;
-                background-image: url(/images/quick-touchpad-toggle-banner.webp);
-                background-size: cover;
-            "
-        >
-            <h1 style="margin-top: 300px">Quick Touchpad Toggle</h1>
-            <p>
-                Get the Extension<span class="arrow" aria-hidden="true">
-                    →</span
-                >
-            </p>
-        </div>
-    </a>
-    <a href="/vanilla-backgrounds">
-        <div
-            class="card"
-            style="
-                animation-duration: 1.1s;
-                color: #fffee5;
-                background-image: url(/images/vanilla-backgrounds-banner.webp);
-                background-size: cover;
-            "
-        >
-            <h1 style="margin-top: 300px">Vanilla&nbsp;OS Wallpapers</h1>
-            <p>Download Here<span class="arrow" aria-hidden="true">→</span></p>
-        </div>
-    </a>
-    {% include back-to-top.html %}
+    {% endif %} {% endfor %} {% include back-to-top.html %}
 </main>
 <footer>
     <p class="selectable" style="padding: 2em 0.5em 1em">
