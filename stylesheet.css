@@ -55,10 +55,10 @@
     --accent: #ff4000;
     --accent-dim: color-mix(in srgb, var(--accent) 80%, var(--fg));
 
-    --regular: "Geist Regular";
-    --medium: "Geist Medium";
-    --bold: "Inter Bold";
-    --extrabold: "Inter ExtraBold";
+    --regular: "Geist Regular", sans-serif;
+    --medium: "Geist Medium", sans-serif;
+    --bold: "Inter Bold", sans-serif;
+    --extrabold: "Inter ExtraBold", sans-serif;
 
     color-scheme: light dark;
 }
