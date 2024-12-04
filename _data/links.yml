@@ -14,6 +14,10 @@
   url: https://matrix.to/#/@kramo:matrix.org
   color: 2ba278
 
+- name: Mastodon
+  url: https://fosstodon.org/@kramo
+  color: 6364ff
+
 - name: GNOME GitLab
   url: https://gitlab.gnome.org/kramo
   color: 4a86cf
@@ -21,7 +25,3 @@
 - name: Codeberg
   url: https://codeberg.org/kramo
   color: 2185d0
-
-- name: Mastodon
-  url: https://fosstodon.org/@kramo
-  color: 6364ff
