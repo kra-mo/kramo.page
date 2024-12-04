@@ -14,10 +14,13 @@ layout: plain
         }
     }
 
+    body {
+        min-width: 22em;
+    }
+
     .card {
         margin: 0 auto 2em auto;
         padding: 2.5em 1em;
-        min-width: 17.5em;
         max-width: 30em;
         border-radius: 18px;
         animation: card-appear forwards;
@@ -68,23 +71,14 @@ layout: plain
             width="64"
             height="64"
             src="/images/kramo.svg"
-            style="margin-top: 1em"
+            style="margin-top: 0.5em"
         />
         <h1 style="margin-bottom: -0.2em">Laura Kramolis</h1>
-        <p style="white-space: nowrap; margin-bottom: -0.3em">
-            Free software designer and developer
-        </p>
-        <p style="white-space: nowrap; margin-bottom: 1em">
-            Support my work on
-            <a href="https://liberapay.com/kramo">Liberapay</a>
-            <br />
-            or
-            <a href="https://github.com/sponsors/kra-mo">GitHub Sponsors</a>
-        </p>
-        <span style="white-space: nowrap">
+        <p style="margin-bottom: 1.5em">Free software designer and developer</p>
+        <p style="white-space: nowrap; margin-bottom: 0em">
             <a class="button" href="/links">Contact</a>
             <a class="button suggested" href="/portfolio">Portfolio</a>
-        </span>
+        </p>
     </div>
     <a href="/sly">
         <div
@@ -213,11 +207,16 @@ layout: plain
     {% include back-to-top.html %}
 </main>
 <footer>
-    <p style="margin: 0.5em; line-height: 1.8em">
-        This site is licensed under the
-        <a href="https://www.gnu.org/licenses/agpl-3.0.en.html">AGPL-3.0</a>
-        <br />
-        The source code is available on
+    <p style="padding: 2em 0.5em 1em">
+        You can support my work on
+        <a href="https://liberapay.com/kramo">Liberapay</a>
+        or
+        <a href="https://github.com/sponsors/kra-mo">GitHub Sponsors</a>
+    </p>
+    <p style="padding: 0 0.5em 2em">
+        This site's source code is available on
         <a href="https://github.com/kra-mo/kramo.page">GitHub</a>
+        under the
+        <a href="https://www.gnu.org/licenses/agpl-3.0.en.html">AGPL-3.0</a>
     </p>
 </footer>
