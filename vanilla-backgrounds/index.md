@@ -10,13 +10,12 @@ description: Default wallpapers for Vanilla&nbsp;OS.
     }
 </style>
 
-# Vanilla&nbsp;OS Wallpapers
-
-Default wallpapers for [Vanilla&nbsp;OS](https://vanillaos.org/)
+<h1 class="selectable">Vanilla&nbsp;OS Wallpapers</h1>
+<p class="selectable">Default wallpapers for <a href="https://vanillaos.org/">Vanilla&nbsp;OS</a></p>
 
 <br />
 
-## Vanilla
+<h1 class="selectable">Vanilla</h1>
 
 ![Vanilla Default](/images/vanilla-default.svg)
 
@@ -25,7 +24,7 @@ Default wallpapers for [Vanilla&nbsp;OS](https://vanillaos.org/)
 <br />
 <br />
 
-## Orchid
+<h1 class="selectable">Orchid</h1>
 
 ![Orchid Light](/images/orchid-light.svg)
 

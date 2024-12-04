@@ -3,9 +3,9 @@ title: Quick Touchpad Toggle
 description: A GNOME Shell extension to more easily toggle the &quot;Disable Touchpad While Typing&quot; setting.
 ---
 
-# Quick Touchpad Toggle
+<h1 class="selectable">Quick Touchpad Toggle</h1>
 
-<p style="max-width: 40ch; margin: 0 auto;">
+<p class="selectable" style="max-width: 40ch; margin: 0 auto;">
     A GNOME Shell Extension to more easily toggle the "disable touchpad while typing" setting
 </p>
 

@@ -29,11 +29,10 @@ description: Icons I designed for several applications.
     }
 </style>
 {% for app in site.data.apps %}
-<h1>
+<h1 class="selectable">
     <a style="font-family: var(--bold)" href="{{ app.url }}">{{ app.name }}</a>
 </h1>
-{{ app.desc }}
-<br />
+<p class="selectable">{{ app.desc }}</p>
 <br />
 <div
     class="icons"
@@ -80,7 +79,7 @@ description: Icons I designed for several applications.
 <br />
 <br />
 {% endfor %}
-<p style="margin: 0 auto">
+<p class="selectable" style="margin: 0 auto">
     I hang out in the GNOME
     <a href="https://matrix.to/#/#appicondesign:gnome.org">App Icon Design</a>
     Matrix room.

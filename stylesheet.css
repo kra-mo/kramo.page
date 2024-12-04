@@ -102,6 +102,11 @@ body {
     font-family: var(--regular);
     text-underline-offset: 0.15em;
 
+    /* Selection */
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: default;
+
     /* Colors */
     background-color: var(--bg);
     color: var(--fg);
@@ -204,6 +209,12 @@ a[href^="http"]:not(:has(.arrow)):not(:has(img)):not(:has(svg))::after {
     mask-repeat: no-repeat;
     mask-size: contain;
     background-color: currentColor;
+}
+
+.selectable {
+    -webkit-user-select: initial;
+    user-select: initial;
+    cursor: initial;
 }
 
 /* Footer */
