@@ -143,17 +143,17 @@ h6 {
 
 img,
 video {
-    max-width: 90%;
+    max-width: clamp(0px, 90%, 60em);
     display: block;
     margin: auto;
     object-fit: contain;
 }
 
-img {
+img.rounded {
     border-radius: 18px;
 }
 
-video {
+video.rounded {
     border-radius: 12px;
 }
 

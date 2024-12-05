@@ -14,10 +14,6 @@ body {
     margin: initial;
 }
 
-img {
-    border-radius: initial;
-}
-
 a {
     color: var(--fg);
 }
