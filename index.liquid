@@ -18,12 +18,18 @@ layout: plain
         min-width: 22em;
     }
 
+    main {
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.8em;
+    }
+
     .card {
-        margin: 0 auto 2em auto;
-        padding: 2.5em 1em;
-        max-width: 30em;
+        padding: 2.5em 4vw;
         border-radius: 18px;
         animation: card-appear forwards;
+        color: white;
     }
 
     .card a,
@@ -54,32 +60,40 @@ layout: plain
 </style>
 
 <main id="content">
-    <br />
-    {% for item in home %} {% if item.url %}
+    {% for item in home %}
+
+    {% if item.url %}
     <a href="{{ item.url }}">
-        {% endif %}
+    {% endif %}
+
         <div
             class="card"
             style="
                 animation-duration: {{ forloop.index0 | times: 0.1 | plus: 0.6 }}s;
-                color: #{{ item.color }};
                 background: {{ item.bg }};
             "
         >
             {{ item.content }} {% unless item.content %} {% if item.img %}
             <img aria-hidden="true" {{ item.img }} />
             {% else %}
-            <p style="height: 17em" />
+            <p style="height: 14em" />
             {% endif %}
-            <h1>{{ item.name }}</h1>
-            <p>
-                {{ item.desc }}<span class="arrow" aria-hidden="true">→</span>
-            </p>
+            <div style="opacity: 0.75">
+                <h1>{{ item.name }}</h1>
+                <p>
+                    {{ item.desc }}<span class="arrow" aria-hidden="true">→</span>
+                </p>
+            </div>
             {% endunless %}
         </div>
-        {% if item.url %}
+
+    {% if item.url %}
     </a>
-    {% endif %} {% endfor %} {% include "back-to-top.liquid" %}
+    {% endif %}
+
+    {% endfor %}
+
+    {% include "back-to-top.liquid" %}
 </main>
 <footer>
     <p class="selectable" style="padding: 2em 0.5em 1em">

@@ -20,7 +20,7 @@ layout: default
     }
 
     .icons img:not(.symbolic) {
-        filter: drop-shadow(0px 3px 2px rgba(0 0 0 / 15%));
+        filter: drop-shadow(0 0 3px rgb(0 0 0 / 25%));
     }
 
     @media (prefers-color-scheme: dark) {
@@ -39,7 +39,7 @@ layout: default
     class="icons"
     style="
       background-color: color-mix(in srgb, var(--bg), #{{ app.color }} 30%);
-      border: 1px color-mix(in srgb, var(--bg), #{{ app.color }} 35%) solid;
+      border: 1px color-mix(in srgb, var(--bg), #{{ app.color }} 40%) solid;
     "
 >
     <img
