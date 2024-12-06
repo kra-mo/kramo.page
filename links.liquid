@@ -20,15 +20,15 @@ layout: default
         }
     }
 
-    .social-buttons {
+    main {
+        justify-content: center;
         display: flex;
-        flex-flow: column nowrap;
-        gap: 1em;
+        flex-direction: column;
+        row-gap: 1em;
     }
 
-    .social-buttons a.button {
+    main a.button {
         width: 100%;
-        height: 100%;
         max-width: 25em;
         margin: 0 auto;
         padding: 1.1em 0em;
@@ -37,11 +37,11 @@ layout: default
         animation-name: bounce;
     }
 
-    .social-buttons a.button:hover {
+    main a.button:hover {
         color: white;
     }
 
-    .social-buttons a.button img {
+    main a.button img {
         height: 1.2em;
         display: inline;
         vertical-align: text-top;
@@ -49,23 +49,22 @@ layout: default
     }
 
     @media (pointer: fine) {
-        .social-buttons a.button:hover {
+        main a.button:hover {
             transform: scale(1.05);
         }
-        .social-buttons a.button:active {
+        main a.button:active {
             transform: scale(0.9);
         }
     }
 
     @media (prefers-reduced-motion) {
-        .social-buttons a.button {
+        main a.button {
             animation: initial;
         }
     }
 </style>
 
-<div class="social-buttons">
-    {% for link in links %}
+{% for link in links %}
     <a
         class="button suggested"
         href="{{ link.url }}"
@@ -76,5 +75,4 @@ layout: default
             src="/images/icons/{{ link.name | downcase | replace: ' ', '-' }}.svg"
         />{{ link.name }}
     </a>
-    {% endfor %}
-</div>
+{% endfor %}
