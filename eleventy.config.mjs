@@ -5,12 +5,16 @@ export default function (eleventyConfig) {
     yaml.load(contents),
   );
 
-  eleventyConfig.addPassthroughCopy("fonts");
-  eleventyConfig.addPassthroughCopy("images");
-  eleventyConfig.addPassthroughCopy("videos");
-  eleventyConfig.addPassthroughCopy("sly");
-  eleventyConfig.addPassthroughCopy("style.css");
-  eleventyConfig.addPassthroughCopy(".well-known");
+  const paths = [
+    "fonts",
+    "images",
+    "videos",
+    "sly",
+    "style.css",
+    ".well-known",
+  ];
+
+  for (const path of paths) eleventyConfig.addPassthroughCopy(path);
 
   eleventyConfig.addLayoutAlias("plain", "plain.liquid");
   eleventyConfig.addLayoutAlias("default", "default.liquid");
