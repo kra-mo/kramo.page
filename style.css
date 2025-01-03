@@ -1,136 +1,136 @@
 /* Fonts */
 
 @font-face {
-    font-family: "Geist Regular";
-    src: url(/fonts/geist/Geist-Regular.woff2) format("woff2");
-    font-display: swap;
+  font-family: "Inter Regular";
+  src: url(/fonts/inter/Inter-Regular.woff2) format("woff2");
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Geist Medium";
-    src: url(/fonts/geist/Geist-Medium.woff2) format("woff2");
-    font-display: swap;
+  font-family: "Inter Medium";
+  src: url(/fonts/inter/Inter-Medium.woff2) format("woff2");
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Inter Bold";
-    src: url(/fonts/inter/Inter-Bold.woff2) format("woff2");
-    font-display: swap;
+  font-family: "Inter Bold";
+  src: url(/fonts/inter/Inter-Bold.woff2) format("woff2");
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Inter ExtraBold";
-    src: url(/fonts/inter/Inter-ExtraBold.woff2) format("woff2");
-    font-display: swap;
+  font-family: "Inter ExtraBold";
+  src: url(/fonts/inter/Inter-ExtraBold.woff2) format("woff2");
+  font-display: swap;
 }
 
 /* Animations */
 
 @keyframes appear {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes body-appear {
-    from {
-        opacity: 0;
-    }
-    20% {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* General */
 
 :root {
-    --fg: #302a25;
-    --bg: snow;
-    --accent: #ff4000;
-    --accent-dim: color-mix(in srgb, var(--accent) 80%, var(--fg));
+  --fg: #302a25;
+  --bg: snow;
+  --accent: #ff4000;
+  --accent-dim: color-mix(in srgb, var(--accent) 80%, var(--fg));
 
-    --regular: "Geist Regular", sans-serif;
-    --medium: "Geist Medium", sans-serif;
-    --bold: "Inter Bold", sans-serif;
-    --extrabold: "Inter ExtraBold", sans-serif;
+  --regular: "Inter Regular", sans-serif;
+  --medium: "Inter Medium", sans-serif;
+  --bold: "Inter Bold", sans-serif;
+  --extrabold: "Inter ExtraBold", sans-serif;
 
-    color-scheme: light dark;
+  color-scheme: light dark;
 }
 
 :focus-visible {
-    outline: solid 1px var(--accent);
-    border-radius: 2px;
+  outline: solid 1px var(--accent);
+  border-radius: 2px;
 }
 
 @media (prefers-color-scheme: dark) {
-    :root {
-        --fg: snow;
-        --bg: #110f0f;
-    }
+  :root {
+    --fg: snow;
+    --bg: #110f0f;
+  }
 }
 
 ::selection {
-    color: var(--bg);
-    background: var(--fg);
+  color: var(--bg);
+  background: var(--fg);
 }
 
 a::selection {
-    color: white;
-    background: var(--accent-dim);
+  color: white;
+  background: var(--accent-dim);
 }
 
 html {
-    height: 100%;
-    scroll-behavior: smooth;
-    scrollbar-color: var(--fg) var(--bg);
+  height: 100%;
+  scroll-behavior: smooth;
+  scrollbar-color: var(--fg) var(--bg);
 }
 
 body {
-    /* Layout */
-    margin: 0 auto 0;
-    height: 100%;
-    text-align: center;
+  /* Layout */
+  margin: 0 auto 0;
+  height: 100%;
+  text-align: center;
 
-    /* Text */
-    text-wrap: balance;
-    font-family: var(--regular);
-    text-underline-offset: 0.15em;
+  /* Text */
+  text-wrap: balance;
+  font-family: var(--regular);
+  text-underline-offset: 0.15em;
 
-    /* Selection */
-    -webkit-user-select: none;
-    user-select: none;
-    cursor: default;
+  /* Selection */
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: default;
 
-    /* Colors */
-    background-color: var(--bg);
-    color: var(--fg);
+  /* Colors */
+  background-color: var(--bg);
+  color: var(--fg);
 
-    /* Animation */
-    opacity: 0;
-    animation: body-appear 0.5s forwards;
+  /* Animation */
+  opacity: 0;
+  animation: body-appear 0.5s forwards;
 }
 
 body#plain-body {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 main {
-    flex: 1 0 auto;
+  flex: 1 0 auto;
 }
 
 main#content {
-    margin: 1em 1em 0;
+  margin: 1em 1em 0;
 }
 
 h1 {
-    font-family: var(--extrabold);
+  font-family: var(--extrabold);
 }
 
 h2,
@@ -138,174 +138,174 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: var(--bold);
+  font-family: var(--bold);
 }
 
 img,
 video {
-    max-width: clamp(0px, 90%, 60em);
-    display: block;
-    margin: auto;
-    object-fit: contain;
+  max-width: clamp(0px, 90%, 60em);
+  display: block;
+  margin: auto;
+  object-fit: contain;
 }
 
 img.rounded {
-    border-radius: 18px;
+  border-radius: 18px;
 }
 
 video.rounded {
-    border-radius: 12px;
+  border-radius: 12px;
 }
 
 /* Links */
 
 a {
-    color: var(--accent-dim);
-    font-family: var(--medium);
-    text-decoration: none;
-    transition-duration: 0.4s;
+  color: var(--accent-dim);
+  font-family: var(--medium);
+  text-decoration: none;
+  transition-duration: 0.4s;
 }
 
 a.button {
-    border: 1px solid rgb(from var(--fg) r g b / 5%);
-    background-color: rgb(from var(--fg) r g b / 9%);
-    padding: 0.7em 2em;
-    border-radius: 9999px;
-    display: inline-block;
-    font-family: var(--bold);
-    color: var(--fg);
-    margin: 0.6em 0.8%;
+  border: 1px solid rgb(from var(--fg) r g b / 5%);
+  background-color: rgb(from var(--fg) r g b / 9%);
+  padding: 0.7em 2em;
+  border-radius: 9999px;
+  display: inline-block;
+  font-family: var(--bold);
+  color: var(--fg);
+  margin: 0.6em 0.8%;
 }
 
 a.button:hover {
-    color: var(--fg);
+  color: var(--fg);
 }
 
 a.button.suggested {
-    background-color: var(--fg);
-    color: var(--bg);
+  background-color: var(--fg);
+  color: var(--bg);
 }
 
 a.button.suggested:hover {
-    color: var(--bg);
+  color: var(--bg);
 }
 
 a .arrow {
-    margin-left: 0.3em;
-    transition: margin-left 0.4s;
+  margin-left: 0.3em;
+  transition: margin-left 0.4s;
 }
 
 a[href^="http"] {
-    white-space: nowrap;
+  white-space: nowrap;
 }
 
 a[href^="http"]:not(:has(.arrow)):not(:has(img)):not(:has(svg))::after {
-    margin: 0 0.1em 0 0.2em;
-    content: "";
-    display: inline-block;
-    width: 0.75em;
-    height: 0.75em;
-    mask-image: url("data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMSIgaGVpZ2h0PSIxMSIgZmlsbD0ibm9uZSI+PHBhdGggc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjgiIGQ9Ik04IDd2LjVhMiAyIDAgMCAxLTIgMkgzYTIgMiAwIDAgMS0yLTJ2LTNhMiAyIDAgMCAxIDItMmguNW0xIDMuNSA1LTVtMCAwSDZtMy41IDB2My41Ii8+PC9zdmc+");
-    mask-repeat: no-repeat;
-    mask-size: contain;
-    background-color: currentColor;
+  margin: 0 0.1em 0 0.2em;
+  content: "";
+  display: inline-block;
+  width: 0.75em;
+  height: 0.75em;
+  mask-image: url("data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMSIgaGVpZ2h0PSIxMSIgZmlsbD0ibm9uZSI+PHBhdGggc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjgiIGQ9Ik04IDd2LjVhMiAyIDAgMCAxLTIgMkgzYTIgMiAwIDAgMS0yLTJ2LTNhMiAyIDAgMCAxIDItMmguNW0xIDMuNSA1LTVtMCAwSDZtMy41IDB2My41Ii8+PC9zdmc+");
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  background-color: currentColor;
 }
 
 .selectable {
-    -webkit-user-select: initial;
-    user-select: initial;
-    cursor: initial;
+  -webkit-user-select: initial;
+  user-select: initial;
+  cursor: initial;
 }
 
 /* Footer */
 
 footer {
-    flex-shrink: 0;
-    margin-top: 5em;
-    background-color: rgb(from var(--fg) r g b / 5%);
-    border-top: 1px solid rgb(from var(--fg) r g b / 5%);
+  flex-shrink: 0;
+  margin-top: 5em;
+  background-color: rgb(from var(--fg) r g b / 5%);
+  border-top: 1px solid rgb(from var(--fg) r g b / 5%);
 }
 
 footer > div {
-    display: flex;
-    justify-content: center;
-    column-gap: 2em;
+  display: flex;
+  justify-content: center;
+  column-gap: 2em;
 }
 
 footer > div > ul {
-    list-style-type: none;
-    white-space: nowrap;
-    padding: 0;
+  list-style-type: none;
+  white-space: nowrap;
+  padding: 0;
 }
 
 footer > div > ul > li {
-    display: inline-block;
-    padding: 1em;
+  display: inline-block;
+  padding: 1em;
 }
 
 footer > p {
-    margin: 0 1.25em;
-    padding: 1em 0 1.5em;
+  margin: 0 1.25em;
+  padding: 1em 0 1.5em;
 }
 
 footer a {
-    color: var(--fg);
+  color: var(--fg);
 }
 
 footer a:hover {
-    color: var(--accent);
+  color: var(--accent);
 }
 
 /* Media Queries */
 
 @media (pointer: fine) {
-    a:hover {
-        color: var(--fg);
-    }
+  a:hover {
+    color: var(--fg);
+  }
 
-    a:hover .arrow {
-        margin-left: 0.6em;
-    }
+  a:hover .arrow {
+    margin-left: 0.6em;
+  }
 
-    a.button:hover {
-        transform: scale(1.1);
-    }
+  a.button:hover {
+    transform: scale(1.1);
+  }
 
-    a.button:active {
-        transform: scale(0.9);
-    }
+  a.button:active {
+    transform: scale(0.9);
+  }
 }
 
 @media (prefers-reduced-motion) {
-    body {
-        opacity: initial;
-        animation: initial;
-    }
+  body {
+    opacity: initial;
+    animation: initial;
+  }
 
-    a {
-        transition-duration: 0s;
-    }
+  a {
+    transition-duration: 0s;
+  }
 
-    a:hover {
-        text-decoration: underline;
-    }
+  a:hover {
+    text-decoration: underline;
+  }
 
-    a:hover .arrow {
-        margin-left: initial;
-    }
+  a:hover .arrow {
+    margin-left: initial;
+  }
 
-    .button:hover {
-        transform: initial;
-        text-decoration: underline;
-    }
+  .button:hover {
+    transform: initial;
+    text-decoration: underline;
+  }
 
-    .button:active {
-        transform: initial;
-    }
+  .button:active {
+    transform: initial;
+  }
 }
 
 @media (prefers-contrast: more) {
-    a {
-        text-decoration: underline;
-    }
+  a {
+    text-decoration: underline;
+  }
 }
