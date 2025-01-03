@@ -3,76 +3,76 @@ title: Links
 description: "Links to my social media and git forges"
 layout: default
 ---
-
 <style>
-    @keyframes bounce {
-        from {
-            transform: translateY(5em);
-            opacity: 0;
-        }
-        50% {
-            transform: translateY(-0.5em);
-            opacity: 100;
-        }
-        to {
-            transform: translateY(0);
-            opacity: 100;
-        }
+  @keyframes bounce {
+    from {
+      transform: translateY(5em);
+      opacity: 0;
     }
-
-    main {
-        justify-content: center;
-        display: flex;
-        flex-direction: column;
-        row-gap: 1em;
+    50% {
+      transform: translateY(-0.5em);
+      opacity: 100;
     }
-
-    main a.button {
-        width: 100%;
-        max-width: 25em;
-        margin: 0 auto;
-        padding: 1.1em 0em;
-        color: white;
-        border: initial;
-        animation-name: bounce;
+    to {
+      transform: translateY(0);
+      opacity: 100;
     }
+  }
 
+  main {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+  }
+
+  main a.button {
+    width: 100%;
+    max-width: 25em;
+    margin: 0 auto;
+    padding: 1.1em 0em;
+    color: white;
+    border: initial;
+    animation-name: bounce;
+  }
+
+  main a.button:hover {
+    color: white;
+  }
+
+  main a.button img {
+    height: 1.2em;
+    display: inline;
+    vertical-align: text-top;
+    margin-right: 1em;
+  }
+
+  @media (pointer: fine) {
     main a.button:hover {
-        color: white;
+      transform: scale(1.05);
     }
+    main a.button:active {
+      transform: scale(0.9);
+    }
+  }
 
-    main a.button img {
-        height: 1.2em;
-        display: inline;
-        vertical-align: text-top;
-        margin-right: 1em;
+  @media (prefers-reduced-motion) {
+    main a.button {
+      animation: initial;
     }
-
-    @media (pointer: fine) {
-        main a.button:hover {
-            transform: scale(1.05);
-        }
-        main a.button:active {
-            transform: scale(0.9);
-        }
-    }
-
-    @media (prefers-reduced-motion) {
-        main a.button {
-            animation: initial;
-        }
-    }
+  }
 </style>
 
 {% for link in links %}
-    <a
-        class="button suggested"
-        href="{{ link.url }}"
-        style="animation-duration: {{ forloop.index0 | times: 0.1 | plus: 0.5 }}s; background-color: #{{ link.color }}"
+  <a
+    class="button suggested"
+    href="{{ link.url }}"
+    style="animation-duration: {{ forloop.index0 | times: 0.1 | plus: 0.5 }}s; background-color: #{{ link.color }}"
+  >
+    <img
+      aria-hidden="true"
+      src="/images/icons/{{ link.name | downcase | replace: ' ', '-' }}.svg"
     >
-        <img
-            aria-hidden="true"
-            src="/images/icons/{{ link.name | downcase | replace: ' ', '-' }}.svg"
-        />{{ link.name }}
-    </a>
+    {{- link.name }}
+  </a>
 {% endfor %}

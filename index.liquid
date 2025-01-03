@@ -3,106 +3,106 @@ title: kramo
 description: "The homepage of Laura Kramolis: projects, portfolio, and contact information"
 layout: plain
 ---
-
 <style>
-    @keyframes card-appear {
-        from {
-            transform: translateY(25px);
-        }
-        to {
-            transform: translateY(0);
-        }
+  @keyframes card-appear {
+    from {
+      transform: translateY(25px);
     }
-
-    body {
-        min-width: 22em;
-        margin-top: 1em;
+    to {
+      transform: translateY(0);
     }
+  }
 
-    main {
-        align-self: center;
-        display: flex;
-        flex-direction: column;
-        row-gap: 1.8em;
-    }
+  body {
+    min-width: 22em;
+    margin-top: 1em;
+  }
 
+  main {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.8em;
+  }
+
+  .card {
+    padding: 2.5em 4vw;
+    border-radius: 18px;
+    animation: card-appear forwards;
+    color: white;
+  }
+
+  .card a,
+  .card a:hover {
+    color: inherit;
+  }
+
+  .card a.button {
+    border-color: rgb(255 255 255 / 7%);
+    background-color: rgb(255 255 255 / 15%);
+    color: white;
+  }
+
+  .card a.button.suggested {
+    background-color: white;
+    color: black;
+  }
+
+  @media (prefers-reduced-motion) {
     .card {
-        padding: 2.5em 4vw;
-        border-radius: 18px;
-        animation: card-appear forwards;
-        color: white;
+      animation: initial;
     }
-
-    .card a,
-    .card a:hover {
-        color: inherit;
-    }
-
-    .card a.button {
-        border-color: rgb(255 255 255 / 7%);
-        background-color: rgb(255 255 255 / 15%);
-        color: white;
-    }
-
-    .card a.button.suggested {
-        background-color: white;
-        color: black;
-    }
-
-    @media (prefers-reduced-motion) {
-        .card {
-            animation: initial;
-        }
-    }
+  }
 </style>
 
 <main id="content">
-    {% for item in home %}
-
+  {% for item in home %}
     {% if item.url %}
-    <a href="{{ item.url }}">
+      <a href="{{ item.url }}">
     {% endif %}
 
-        <div
-            class="card"
-            style="
-                animation-duration: {{ forloop.index0 | times: 0.1 | plus: 0.6 }}s;
-                background: {{ item.bg }};
-            "
-        >
-            {{ item.content }} {% unless item.content %} {% if item.img %}
-            <img aria-hidden="true" {{ item.img }} />
-            {% else %}
-            <p style="height: 14em" />
-            {% endif %}
-            <div style="opacity: 0.75">
-                <h1>{{ item.name }}</h1>
-                <p>
-                    {{ item.desc }}<span class="arrow" aria-hidden="true">→</span>
-                </p>
-            </div>
-            {% endunless %}
+    <div
+      class="card"
+      style="
+        animation-duration: {{ forloop.index0 | times: 0.1 | plus: 0.6 }}s;
+        background: {{ item.bg }};
+      "
+    >
+      {{ item.content }}
+      {% unless item.content %}
+        {% if item.img %}
+          <img aria-hidden="true" {{ item.img }}>
+        {% else %}
+          <p style="height: 14em" />
+        {% endif %}
+        <div style="opacity: 0.75">
+          <h1>{{ item.name }}</h1>
+          <p>
+            {{ item.desc -}}
+            <span class="arrow" aria-hidden="true">→</span>
+          </p>
         </div>
+      {% endunless %}
+    </div>
 
     {% if item.url %}
-    </a>
+      </a>
     {% endif %}
+  {% endfor %}
 
-    {% endfor %}
-
-    {% include "back-to-top.liquid" %}
+  {% include 'back-to-top.liquid' %}
 </main>
 <footer>
-    <p class="selectable" style="padding: 2em 0.5em 1em">
-        You can support my work on
-        <a href="https://liberapay.com/kramo">Liberapay</a>
-        or
-        <a href="https://github.com/sponsors/kra-mo">GitHub Sponsors</a>
-    </p>
-    <p class="selectable" style="padding: 0 0.5em 2em">
-        This site's source code is available on
-        <a href="https://github.com/kra-mo/kramo.page">GitHub</a>
-        under the
-        <a href="https://www.gnu.org/licenses/agpl-3.0.en.html">AGPL-3.0</a>
-    </p>
+  <p class="selectable" style="padding: 2em 0.5em 1em">
+    You can support my work on
+    <a href="https://liberapay.com/kramo">Liberapay</a>
+    or
+    <a href="https://github.com/sponsors/kra-mo">GitHub Sponsors</a>
+  </p>
+  <p class="selectable" style="padding: 0 0.5em 2em">
+    This site's source code is available on
+    <a href="https://github.com/kra-mo/kramo.page">GitHub</a>
+    under the
+    <a href="https://www.gnu.org/licenses/agpl-3.0.en.html">AGPL-3.0</a>
+  </p>
 </footer>

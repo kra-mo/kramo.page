@@ -1,220 +1,215 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta
-            name="description"
-            content="Sly is a friendly image editor built with Flutter."
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <head>
+    <meta charset="UTF-8">
+    <meta
+      name="description"
+      content="Sly is a friendly image editor built with Flutter."
+    >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="canonical" href="https://kramo.page/sly" />
+    <link rel="canonical" href="https://kramo.page/sly">
 
-        <title>Sly</title>
-        <link rel="icon" type="image/svg+xml" href="/images/sly-favicon.svg" />
-        <link rel="icon" type="image/png" href="/images/sly-favicon.png" />
-        <link rel="apple-touch-icon" href="/images/sly-apple-touch-icon.png" />
+    <title>Sly</title>
+    <link rel="icon" type="image/svg+xml" href="/images/sly-favicon.svg">
+    <link rel="icon" type="image/png" href="/images/sly-favicon.png">
+    <link rel="apple-touch-icon" href="/images/sly-apple-touch-icon.png">
 
-        <!-- Open Graph metadata -->
-        <meta property="og:title" content="Sly" />
-        <meta
-            property="og:description"
-            content="A friendly image editor that doesn't store your photos and requires no preexisting expertise. Just open a photo and have at it."
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://sly.kramo.page" />
-        <meta
-            property="og:image"
-            content="https://raw.githubusercontent.com/kra-mo/sly/main/packaging/screenshot.png"
-        />
-        <meta property="og:image:type" content="image/png" />
-        <meta
-            property="og:image:alt"
-            content="Editing an image with the application"
-        />
+    <!-- Open Graph metadata -->
+    <meta property="og:title" content="Sly">
+    <meta
+      property="og:description"
+      content="A friendly image editor that doesn't store your photos and requires no preexisting expertise. Just open a photo and have at it."
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sly.kramo.page">
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/kra-mo/sly/main/packaging/screenshot.png"
+    >
+    <meta property="og:image:type" content="image/png">
+    <meta
+      property="og:image:alt"
+      content="Editing an image with the application"
+    >
 
-        <link rel="stylesheet" type="text/css" href="/style.css?v=2.0" />
-        <link rel="stylesheet" type="text/css" href="/sly/style.css?v=2.0" />
-        <script src="/sly/script.js" defer></script>
-    </head>
-    <body>
-        <header id="header">
-            <div>
-                <div id="logo">{% include "sly.svg" %}</div>
-                <h1 class="selectable" id="title">
-                    <span style="animation-delay: 0.3s">The</span>
-                    <span style="animation-delay: 0.5s"> Photo</span>
-                    <span style="animation-delay: 0.8s"> Editor</span>
-                    <br />
-                    <span style="animation-delay: 1.3s"> that</span>
-                    <span style="animation-delay: 1.6s"> Respects</span>
-                    <span style="animation-delay: 2.1s"> You</span>
-                </h1>
-                <a href="#icon" class="button suggested">Get Sly</a>
-            </div>
-            <img alt="" id="hero" src="/images/sly-hero.webp" />
-        </header>
-        <main>
-            <div id="cards">
-                <div class="card">
-                    <h2 class="selectable">Completely Free</h2>
-                    <p class="selectable">
-                        Sly is developed, by a passionate solo developer for
-                        free. There are no ads, or subscriptions.
-                        <a href="https://github.com/sponsors/kra-mo"
-                            >Donations</a
-                        >
-                        are appreciated.
-                    </p>
-                </div>
-                <div class="card">
-                    <h2 class="selectable">Private & Transparent</h2>
-                    <p class="selectable">
-                        You own your data. None of your photos are uploaded or
-                        analyzed. Additionally, the app is released under an
-                        <a href="https://github.com/kra-mo/sly">open source</a>
-                        license, meaning anyone can audit it.
-                    </p>
-                </div>
-                <div class="card">
-                    <h2 class="selectable">Friendly</h2>
-                    <p class="selectable">
-                        Sly requires no preexisting expertise, just open a photo
-                        and have at it.
-                    </p>
-                </div>
-            </div>
-            <div id="carousel" class="js-disabled">
-                <button
-                    class="js-disabled"
-                    onClick="switchCarousel(false)"
-                    aria-hidden="true"
-                >
-                    <div style="transform: scaleX(-1)">
-                        {% include "arrow.svg" %}
-                    </div>
-                </button>
-                <div id="carousel-image-wrapper">
-                    <a aria-hidden="true" href="/images/screenshots/sly-1.webp"
-                        ><img
-                            alt=""
-                            class="carousel-image show"
-                            src="/images/screenshots/sly-1.webp"
-                    /></a>
-                    <a aria-hidden="true" href="/images/screenshots/sly-2.webp"
-                        ><img
-                            alt=""
-                            class="carousel-image show"
-                            src="/images/screenshots/sly-2.webp"
-                    /></a>
-                    <a aria-hidden="true" href="/images/screenshots/sly-3.webp"
-                        ><img
-                            alt=""
-                            class="carousel-image show"
-                            src="/images/screenshots/sly-3.webp"
-                    /></a>
-                </div>
-                <button
-                    class="js-disabled"
-                    onClick="switchCarousel(true)"
-                    aria-hidden="true"
-                >
-                    {% include "arrow.svg" %}
-                </button>
-            </div>
-            <div>
-                <img alt="" src="/images/app-icons/sly-macos.webp" id="icon" />
-                <h1 class="selectable">Get Sly</h1>
-                <p class="selectable">Download for free on your platform</p>
-            </div>
-            <div id="os-buttons" class="js-disabled">
-                <button
-                    onclick="showContent('android')"
-                    aria-label="Show Android install option"
-                >
-                    {% include "android.svg" %}<span>Android</span>
-                </button>
-                <button
-                    onclick="showContent('linux')"
-                    aria-label="Show Linux install option"
-                >
-                    {% include "linux.svg" %}<span>Linux</span>
-                </button>
-                <button
-                    onclick="showContent('apple')"
-                    aria-label="Show iOS and macOS install options"
-                >
-                    {% include "apple.svg" %}<span>iOS, macOS</span>
-                </button>
-                <button
-                    onclick="showContent('windows')"
-                    aria-label="Show Windows install option"
-                >
-                    {% include "windows.svg" %}<span>Windows</span>
-                </button>
-            </div>
-            <div id="os-content">
-                <a
-                    id="android"
-                    class="show"
-                    href="https://play.google.com/store/apps/details?id=page.kramo.sly&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
-                    ><img
-                        height="120"
-                        alt="Get it on Google Play"
-                        src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
-                /></a>
-                <a
-                    id="linux"
-                    class="show"
-                    href="https://flathub.org/apps/page.kramo.Sly"
-                    ><img
-                        alt="Get it on Flathub"
-                        src="https://flathub.org/api/badge?svg&locale=en"
-                /></a>
-                <div id="apple" class="card show js-disabled">
-                    <h2 class="selectable">
-                        <noscript>Other Platforms </noscript>Coming Soon
-                    </h2>
-                    <p class="selectable">
-                        While you’re waiting, you can try the
-                        <a href="https://sly.kramo.page">web demo</a>
-                    </p>
-                </div>
-                <div id="windows" class="card">
-                    <h2 class="selectable">Coming Soon</h2>
-                    <p class="selectable">
-                        While you’re waiting, you can try the
-                        <a href="https://sly.kramo.page">web demo</a>
-                    </p>
-                </div>
-            </div>
-        </main>
-        <footer>
-            <div>
-                <ul>
-                    <li>
-                        <a href="https://github.com/sponsors/kra-mo">Donate</a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/kra-mo/sly">Source Code</a>
-                    </li>
-                    <li>
-                        <a href="/sly/privacy">Privacy</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <a href="#header">Back to Top</a>
-                    </li>
-                    <li>
-                        <a href="/">{% include "kramo.liquid" %}</a>
-                    </li>
-                </ul>
-            </div>
-            <p class="selectable">
-                Website design by kramo, developed by
-                <a href="https://jamie.garden">Jamie Gravendeel</a>
-            </p>
-        </footer>
-    </body>
+    <link rel="stylesheet" type="text/css" href="/style.css?v=2.0">
+    <link rel="stylesheet" type="text/css" href="/sly/style.css?v=2.0">
+    <script src="/sly/script.js" defer></script>
+  </head>
+  <body>
+    <header id="header">
+      <div>
+        <div id="logo">{% include 'sly.svg' %}</div>
+        <h1 class="selectable" id="title">
+          <span style="animation-delay: 0.3s">The</span>
+          <span style="animation-delay: 0.5s"> Photo</span>
+          <span style="animation-delay: 0.8s"> Editor</span>
+          <br>
+          <span style="animation-delay: 1.3s"> that</span>
+          <span style="animation-delay: 1.6s"> Respects</span>
+          <span style="animation-delay: 2.1s"> You</span>
+        </h1>
+        <a href="#icon" class="button suggested">Get Sly</a>
+      </div>
+      <img alt="" id="hero" src="/images/sly-hero.webp">
+    </header>
+    <main>
+      <div id="cards">
+        <div class="card">
+          <h2 class="selectable">Completely Free</h2>
+          <p class="selectable">
+            Sly is developed, by a passionate solo developer for free. There are no ads, or subscriptions.
+            <a href="https://github.com/sponsors/kra-mo">Donations</a>
+            are appreciated.
+          </p>
+        </div>
+        <div class="card">
+          <h2 class="selectable">Private & Transparent</h2>
+          <p class="selectable">
+            You own your data. None of your photos are uploaded or analyzed. Additionally, the app is released under an
+            <a href="https://github.com/kra-mo/sly">open source</a>
+            license, meaning anyone can audit it.
+          </p>
+        </div>
+        <div class="card">
+          <h2 class="selectable">Friendly</h2>
+          <p class="selectable">Sly requires no preexisting expertise, just open a photo and have at it.</p>
+        </div>
+      </div>
+      <div id="carousel" class="js-disabled">
+        <button
+          class="js-disabled"
+          onClick="switchCarousel(false)"
+          aria-hidden="true"
+        >
+          <div style="transform: scaleX(-1)">
+            {% include 'arrow.svg' %}
+          </div>
+        </button>
+        <div id="carousel-image-wrapper">
+          <a aria-hidden="true" href="/images/screenshots/sly-1.webp"
+            ><img
+              alt=""
+              class="carousel-image show"
+              src="/images/screenshots/sly-1.webp"
+          ></a>
+          <a aria-hidden="true" href="/images/screenshots/sly-2.webp"
+            ><img
+              alt=""
+              class="carousel-image show"
+              src="/images/screenshots/sly-2.webp"
+          ></a>
+          <a aria-hidden="true" href="/images/screenshots/sly-3.webp"
+            ><img
+              alt=""
+              class="carousel-image show"
+              src="/images/screenshots/sly-3.webp"
+          ></a>
+        </div>
+        <button
+          class="js-disabled"
+          onClick="switchCarousel(true)"
+          aria-hidden="true"
+        >
+          {% include 'arrow.svg' %}
+        </button>
+      </div>
+      <div>
+        <img alt="" src="/images/app-icons/sly-macos.webp" id="icon">
+        <h1 class="selectable">Get Sly</h1>
+        <p class="selectable">Download for free on your platform</p>
+      </div>
+      <div id="os-buttons" class="js-disabled">
+        <button
+          onclick="showContent('android')"
+          aria-label="Show Android install option"
+        >
+          {% include 'android.svg' -%}
+          <span>Android</span>
+        </button>
+        <button
+          onclick="showContent('linux')"
+          aria-label="Show Linux install option"
+        >
+          {% include 'linux.svg' -%}
+          <span>Linux</span>
+        </button>
+        <button
+          onclick="showContent('apple')"
+          aria-label="Show iOS and macOS install options"
+        >
+          {% include 'apple.svg' -%}
+          <span>iOS, macOS</span>
+        </button>
+        <button
+          onclick="showContent('windows')"
+          aria-label="Show Windows install option"
+        >
+          {% include 'windows.svg' -%}
+          <span>Windows</span>
+        </button>
+      </div>
+      <div id="os-content">
+        <a
+          id="android"
+          class="show"
+          href="https://play.google.com/store/apps/details?id=page.kramo.sly&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+          ><img
+            height="120"
+            alt="Get it on Google Play"
+            src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+        ></a>
+        <a
+          id="linux"
+          class="show"
+          href="https://flathub.org/apps/page.kramo.Sly"
+          ><img
+            alt="Get it on Flathub"
+            src="https://flathub.org/api/badge?svg&locale=en"
+        ></a>
+        <div id="apple" class="card show js-disabled">
+          <h2 class="selectable"><noscript>Other Platforms </noscript>Coming Soon</h2>
+          <p class="selectable">
+            While you’re waiting, you can try the
+            <a href="https://sly.kramo.page">web demo</a>
+          </p>
+        </div>
+        <div id="windows" class="card">
+          <h2 class="selectable">Coming Soon</h2>
+          <p class="selectable">
+            While you’re waiting, you can try the
+            <a href="https://sly.kramo.page">web demo</a>
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div>
+        <ul>
+          <li>
+            <a href="https://github.com/sponsors/kra-mo">Donate</a>
+          </li>
+          <li>
+            <a href="https://github.com/kra-mo/sly">Source Code</a>
+          </li>
+          <li>
+            <a href="/sly/privacy">Privacy</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="#header">Back to Top</a>
+          </li>
+          <li>
+            <a href="/">{% include 'kramo.liquid' %}</a>
+          </li>
+        </ul>
+      </div>
+      <p class="selectable">
+        Website design by kramo, developed by
+        <a href="https://jamie.garden">Jamie Gravendeel</a>
+      </p>
+    </footer>
+  </body>
 </html>

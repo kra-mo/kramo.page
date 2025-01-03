@@ -3,6 +3,8 @@
     "js-yaml": "^4.1.0"
   },
   "devDependencies": {
-    "@types/js-yaml": "^4.0.9"
+    "@shopify/prettier-plugin-liquid": "^1.6.3",
+    "@types/js-yaml": "^4.0.9",
+    "prettier": "^3.4.2"
   }
 }
