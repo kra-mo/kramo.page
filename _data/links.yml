@@ -15,7 +15,7 @@
   color: 2ba278
 
 - name: Mastodon
-  url: https://fosstodon.org/@kramo
+  url: https://chaos.social/@kramo
   color: 6364ff
 
 - name: GNOME GitLab
