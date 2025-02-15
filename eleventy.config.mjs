@@ -5,8 +5,8 @@ export default function (eleventyConfig) {
     yaml.load(contents),
   );
 
-  ["fonts", "images", "videos", "sly", ".well-known"].forEach((path) =>
-    eleventyConfig.addPassthroughCopy(path),
+  ["fonts", "images", "videos", "sly", "style.css", ".well-known"].forEach(
+    (path) => eleventyConfig.addPassthroughCopy(path),
   );
 
   eleventyConfig.addLayoutAlias("plain", "plain.liquid");
