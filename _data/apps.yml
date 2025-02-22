@@ -1,3 +1,9 @@
+- name: Bril
+  url: https://gitlab.gnome.org/monster/bril
+  desc: Brilliant feed aggregator
+  color: 6f8396
+  on-macos: true
+
 - name: Calligraphy
   url: https://gitlab.gnome.org/World/Calligraphy
   desc: Turn your text into ASCII banners
@@ -48,6 +54,11 @@
   url: https://gitlab.gnome.org/monster/navigator
   desc: Explore the web
   color: b466c5
+
+- name: OpenEmail
+  url: https://github.com/Open-Email/OpenEmail-GTK
+  desc: Take back control of your inbox
+  color: 3a74ea
 
 - name: PSequel
   url: https://github.com/ppvan/psequel
