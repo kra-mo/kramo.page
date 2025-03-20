@@ -5,6 +5,7 @@ export default function (eleventyConfig) {
     yaml.load(contents),
   );
 
+  eleventyConfig.ignores.add("README.md");
   ["fonts", "images", "videos", "sly", "style.css", ".well-known"].forEach(
     (path) => eleventyConfig.addPassthroughCopy(path),
   );
