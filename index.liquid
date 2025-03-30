@@ -71,7 +71,7 @@ layout: plain
       {{ item.content }}
       {% unless item.content %}
         {% if item.img %}
-          <img aria-hidden="true" {{ item.img }}>
+          <img alt="" {{ item.img }}>
         {% else %}
           <p style="height: 14em" />
         {% endif %}
