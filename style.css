@@ -267,7 +267,6 @@ main.post {
   text-align: left;
   text-wrap: initial;
   align-self: center;
-  line-height: 1.5em;
 
   -webkit-user-select: initial;
   user-select: initial;
@@ -275,9 +274,13 @@ main.post {
 }
 
 main.post p,
-main.post li,
-main.post hr {
+main.post li {
+  line-height: 1.5em;
   color: rgb(from var(--fg) r g b / 85%);
+}
+
+main.post hr {
+  color: rgb(from var(--fg) r g b / 50%);
 }
 
 main.post h2,
