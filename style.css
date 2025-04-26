@@ -157,6 +157,10 @@ video.rounded {
   border-radius: 12px;
 }
 
+hr {
+  margin: 2em 0 2.5em;
+}
+
 /* Links */
 
 a {
@@ -254,6 +258,34 @@ footer a {
 
 footer a:hover {
   color: var(--accent);
+}
+
+/* Posts */
+
+main.post {
+  max-width: 45em;
+  text-align: left;
+  text-wrap: initial;
+  align-self: center;
+  line-height: 1.5em;
+
+  -webkit-user-select: initial;
+  user-select: initial;
+  cursor: initial;
+}
+
+main.post p,
+main.post li,
+main.post hr {
+  color: rgb(from var(--fg) r g b / 85%);
+}
+
+main.post h2,
+main.post h3,
+main.post h4,
+main.post h5,
+main.post h6 {
+  margin-top: 1.5em;
 }
 
 /* Media Queries */
