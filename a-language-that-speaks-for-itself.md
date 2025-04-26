@@ -1,6 +1,7 @@
 ---
 tags: post
 title: A Language That Speaks for Itself
+description: "I wish for a language that encourages thinking"
 layout: default
 ---
 
