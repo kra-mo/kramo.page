@@ -45,6 +45,11 @@
   desc: Create beautiful ASCII art
   color: ee8031
 
+- name: Libfancy
+  url: https://gitlab.gnome.org/TheEvilSkeleton/libfancy
+  desc: Accessible yet cute widgets
+  color: e5b7d5
+
 - name: Morphosis
   url: https://gitlab.gnome.org/World/morphosis
   desc: Convert your documents
