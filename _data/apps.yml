@@ -10,7 +10,7 @@
   color: 7e6ae0
 
 - name: Cartridges
-  url: https://github.com/kra-mo/cartridges
+  url: https://git.kramo.page/cartridges
   desc: Launch all your games
   color: b466c5
   on-macos: true
@@ -31,7 +31,7 @@
   color: 373b42
 
 - name: Hyperplane
-  url: https://github.com/kra-mo/hyperplane
+  url: https://git.kramo.page/hyperplane
   desc: Organize your files freely
   color: 69ce82
 
@@ -72,7 +72,7 @@
   on-macos: true
 
 - name: Sly
-  url: https://github.com/kra-mo/sly
+  url: https://git.kramo.page/sly
   desc: Edit your images easily
   color: ff5233
   on-macos: true
