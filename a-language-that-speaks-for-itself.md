@@ -48,3 +48,5 @@ If the smallest building blocks of our languages represented concepts still rele
 ---
 
 I wish for a language that encourages thinking, one that helps us live in the same world.
+
+[Next: Designers as Teachers →](/designers-as-teachers)

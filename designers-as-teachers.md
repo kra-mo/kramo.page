@@ -26,3 +26,5 @@ Designers are teachers. Not of users, but the tools we create. We tell them what
 - What if the software crashes? How does it explain itself to the user?
 
 We should teach computers to adapt to users, not the other way around.
+
+[← Previous: A Language That Speaks for Itself](/a-language-that-speaks-for-itself)
