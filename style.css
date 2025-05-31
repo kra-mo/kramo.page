@@ -35,7 +35,20 @@
   }
 }
 
-@keyframes body-appear {
+@keyframes switch {
+  from {
+    transform: none;
+  }
+  30% {
+    transform: scale(0.9);
+  }
+  to {
+    transform: none;
+    margin: 0 0.2em;
+  }
+}
+
+@keyframes main-appear {
   from {
     opacity: 0;
   }
@@ -44,6 +57,21 @@
   }
   to {
     opacity: 1;
+  }
+}
+
+@keyframes card-appear {
+  from {
+    transform: translateY(5em);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(-0.2em);
+    opacity: 100;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 100;
   }
 }
 
@@ -68,13 +96,6 @@
   border-radius: 2px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --fg: snow;
-    --bg: #110f0f;
-  }
-}
-
 ::selection {
   color: var(--bg);
   background: var(--fg);
@@ -96,9 +117,9 @@ body {
   margin: 0 auto 0;
   height: 100%;
   text-align: center;
+  min-width: 22em;
 
   /* Text */
-  text-wrap: balance;
   font-family: var(--regular);
   text-underline-offset: 0.15em;
 
@@ -110,10 +131,6 @@ body {
   /* Colors */
   background-color: var(--bg);
   color: var(--fg);
-
-  /* Animation */
-  opacity: 0;
-  animation: body-appear 0.5s forwards;
 }
 
 body#plain-body {
@@ -123,6 +140,9 @@ body#plain-body {
 
 main {
   flex: 1 0 auto;
+  opacity: 0;
+  animation: main-appear 0.5s forwards;
+  padding-bottom: 4em;
 }
 
 main#content {
@@ -204,7 +224,7 @@ a[href^="http"] {
 }
 
 a[href^="http"]:not(:has(.arrow)):not(:has(img)):not(:has(svg))::after {
-  margin: 0 0.1em 0 0.2em;
+  margin: 0 0.1em 0 0.25em;
   content: "";
   display: inline-block;
   width: 0.75em;
@@ -221,11 +241,55 @@ a[href^="http"]:not(:has(.arrow)):not(:has(img)):not(:has(svg))::after {
   cursor: initial;
 }
 
+/* Navigation */
+
+nav {
+  display: flex;
+  padding: 0.8em 0 0;
+  justify-content: center;
+}
+
+nav li:not(.selected) > a {
+  color: rgb(from var(--fg) r g b / 70%);
+}
+
+nav li > a:hover {
+  color: var(--accent);
+}
+
+nav ul {
+  font-family: var(--medium);
+  list-style: none;
+  display: flex;
+  background-color: rgb(from var(--fg) r g b / 6%);
+  border: 1px solid rgb(from var(--fg) r g b / 3%);
+  border-radius: 9999px;
+  padding: 0.2em 0;
+}
+
+nav ul > li {
+  padding: 0.4em 0.7em;
+  border-radius: 9999px;
+}
+
+nav ul > li.selected {
+  padding: 0.4em 1em;
+  background-color: white;
+  animation: switch 0.5s forwards;
+}
+
+nav ul > li:first-child:not(.selected) {
+  margin-left: 0.5em;
+}
+
+nav ul > li:last-child:not(.selected) {
+  margin-right: 0.5em;
+}
+
 /* Footer */
 
 footer {
   flex-shrink: 0;
-  margin-top: 5em;
   background-color: rgb(from var(--fg) r g b / 5%);
   border-top: 1px solid rgb(from var(--fg) r g b / 5%);
 }
@@ -238,7 +302,6 @@ footer > div {
 
 footer > div > ul {
   list-style-type: none;
-  white-space: nowrap;
   padding: 0;
 }
 
@@ -260,12 +323,17 @@ footer a:hover {
   color: var(--accent);
 }
 
+/* Cards */
+.card {
+  border-radius: 36px;
+  animation: card-appear forwards;
+}
+
 /* Posts */
 
 main.post {
   max-width: 45em;
   text-align: left;
-  text-wrap: initial;
   align-self: center;
 
   -webkit-user-select: initial;
@@ -293,6 +361,22 @@ main.post h6 {
 
 /* Media Queries */
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fg: snow;
+    --bg: #110f0f;
+  }
+
+  nav ul > li.selected {
+    background-color: rgb(255 255 255 / 10%);
+  }
+
+  nav ul li:hover > a,
+  nav li.selected > a {
+    color: var(--fg);
+  }
+}
+
 @media (pointer: fine) {
   a:hover {
     color: var(--fg);
@@ -307,7 +391,7 @@ main.post h6 {
   }
 
   a.button:active {
-    transform: scale(0.9);
+    transform: scale(0.95);
   }
 }
 
@@ -321,26 +405,24 @@ main.post h6 {
     transition-duration: 0s;
   }
 
-  a:hover {
-    text-decoration: underline;
-  }
-
   a:hover .arrow {
-    margin-left: initial;
+    margin-left: 0.3em;
   }
 
   .button:hover {
     transform: initial;
-    text-decoration: underline;
   }
 
   .button:active {
     transform: initial;
   }
-}
 
-@media (prefers-contrast: more) {
-  a {
-    text-decoration: underline;
+  .card {
+    animation: initial;
+  }
+
+  nav ul > li.selected {
+    margin: 0 0.2em;
+    animation: initial;
   }
 }

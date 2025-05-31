@@ -1,14 +1,1 @@
-<svg
-    style="display: block"
-    alt="Windows"
-    aria-hidden="true"
-    xmlns="http://www.w3.org/2000/svg"
-    width="48"
-    height="48"
-    fill="none"
->
-    <path
-        fill="currentColor"
-        d="M22.86 9H9v13.86h13.86zM38.242 9h-13.86v13.86h13.86zM22.86 24.383H9v13.86h13.86zM38.242 24.383h-13.86v13.86h13.86z"
-    />
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" aria-hidden="true" style="display:block"><path fill="currentColor" d="M22.86 9H9v13.86h13.86zm15.382 0h-13.86v13.86h13.86zM22.86 24.383H9v13.86h13.86zm15.382 0h-13.86v13.86h13.86z"/></svg>

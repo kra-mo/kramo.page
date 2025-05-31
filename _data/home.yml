@@ -10,9 +10,8 @@
     <p class="selectable" style="margin-bottom: 1.5em">
         Free software designer and developer
     </p>
-    <p style="white-space: nowrap; margin-bottom: 0em">
-        <a class="button" href="/links">Contact</a>
-        <a class="button suggested" href="/portfolio">Portfolio</a>
+    <p style="margin-bottom: 0em">
+      <a class="button" href="https://liberapay.com/kramo">Support Me</a>
     </p>
   bg: color-mix(in srgb, var(--accent) 85%, black)
 
@@ -35,7 +34,7 @@
   bg: "linear-gradient(#813d9c, #613583)"
 
 - name: CommitEdit
-  url: /commitedit
+  url: https://git.kramo.page/CommitEdit
   desc: Edit Your Commit Messages
   img: width="128" height="128" src="/images/commitedit.webp"
   bg: "linear-gradient(#4486e2, #356fdc)"
@@ -47,7 +46,7 @@
   bg: "linear-gradient(#62a0ea, #3584e4)"
 
 - name: Quick Touchpad Toggle
-  url: /quick-touchpad-toggle
+  url: https://extensions.gnome.org/extension/5292/quick-touchpad-toggle/
   desc: Get the Extension
   bg: left / cover url(/images/quick-touchpad-toggle-banner.webp)
 

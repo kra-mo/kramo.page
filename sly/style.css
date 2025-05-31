@@ -81,10 +81,6 @@ h1 {
   margin-bottom: -1em;
 }
 
-#title {
-  white-space: nowrap;
-}
-
 #title > span {
   display: inline-block;
   opacity: 0;
@@ -105,7 +101,8 @@ h1 {
 
 main {
   max-width: 80em;
-  margin: 30px auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #cards {
@@ -187,10 +184,6 @@ main {
 #icon {
   width: 120px;
   margin-top: 60px;
-}
-
-#os-buttons {
-  white-space: nowrap;
 }
 
 #os-buttons > button {

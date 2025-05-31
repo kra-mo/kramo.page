@@ -4,10 +4,13 @@ description: "Icons I designed for several applications"
 layout: default
 ---
 <style>
-  .icons {
+  .card {
+    padding: 1em 2em 2em;
     max-width: 462px;
-    padding: 40px;
-    border-radius: 18px;
+    margin: 0 auto 2em;
+  }
+
+  .icons {
     display: flex;
     margin: auto;
     flex-wrap: wrap-reverse;
@@ -25,55 +28,58 @@ layout: default
   }
 </style>
 {% for app in apps %}
-  <h1 class="selectable">
-    <a style="font-family: var(--bold)" href="{{ app.url }}">{{ app.name }}</a>
-  </h1>
-  <p class="selectable">{{ app.desc }}</p>
-  <br>
   <div
-    class="icons"
+    class="card"
     style="
-      background-color: color-mix(in srgb, var(--bg), #{{ app.color }} 30%);
-      border: 1px color-mix(in srgb, var(--bg), #{{ app.color }} 40%) solid;
+      color: color-mix(in srgb, var(--fg), #{{ app.color }} 80%);
+      background-color: color-mix(in srgb, var(--bg), #{{ app.color }} 10%);
+      border: 1px color-mix(in srgb, var(--bg), #{{ app.color }} 20%) solid;
+      animation-duration: {{ forloop.index0 | times: 0.15 | plus: 0.7 }}s;
     "
   >
-    <img
-      alt="Symbolic App Icon"
-      width="16"
-      height="16"
-      src="/images/app-icons/{{ app.name | downcase | replace: ' ', '-' }}-symbolic.svg"
-      class="symbolic"
-    >
-    <img
-      alt="App Icon"
-      width="32"
-      height="32"
-      src="/images/app-icons/{{ app.name | downcase | replace: ' ', '-' }}.svg"
-    >
-    <img
-      alt="App Icon"
-      width="64"
-      height="64"
-      src="/images/app-icons/{{ app.name | downcase | replace: ' ', '-' }}.svg"
-    >
-    <img
-      alt="App Icon"
-      width="128"
-      height="128"
-      src="/images/app-icons/{{ app.name | downcase | replace: ' ', '-' }}.svg"
-    >
-    {% if app['on-macos'] == true %}
+    <hgroup>
+      <h1 class="selectable">
+        <a style="font-family: var(--bold); color: inherit;" href="{{ app.url }}">{{ app.name }}</a>
+      </h1>
+      <p class="selectable">{{ app.desc }}</p>
+    </hgroup>
+    <br>
+    <div class="icons">
+      <img
+        alt="Symbolic App Icon"
+        width="16"
+        height="16"
+        src="/images/app-icons/{{ app.name | downcase | replace: ' ', '-' }}-symbolic.svg"
+        class="symbolic"
+      >
       <img
         alt="App Icon"
-        width="150"
-        height="150"
-        src="/images/app-icons/{{ app.name | downcase | replace: ' ', '-' }}-macos.webp"
+        width="32"
+        height="32"
+        src="/images/app-icons/{{ app.name | downcase | replace: ' ', '-' }}.svg"
       >
-    {% endif %}
+      <img
+        alt="App Icon"
+        width="64"
+        height="64"
+        src="/images/app-icons/{{ app.name | downcase | replace: ' ', '-' }}.svg"
+      >
+      <img
+        alt="App Icon"
+        width="128"
+        height="128"
+        src="/images/app-icons/{{ app.name | downcase | replace: ' ', '-' }}.svg"
+      >
+      {% if app['on-macos'] == true %}
+        <img
+          alt="App Icon"
+          width="150"
+          height="150"
+          src="/images/app-icons/{{ app.name | downcase | replace: ' ', '-' }}-macos.webp"
+        >
+      {% endif %}
+    </div>
   </div>
-  <br>
-  <br>
-  <br>
 {% endfor %}
 <p class="selectable" style="margin: 0 auto">
   I hang out in the GNOME

@@ -28,7 +28,7 @@
 - name: Housemaid
   url: https://gitlab.gnome.org/World/housemaid
   desc: Clean your SVGs
-  color: 373b42
+  color: 77767b
 
 - name: Hyperplane
   url: https://git.kramo.page/hyperplane
@@ -48,7 +48,7 @@
 - name: Libfancy
   url: https://gitlab.gnome.org/TheEvilSkeleton/libfancy
   desc: Accessible yet cute widgets
-  color: e5b7d5
+  color: 6b69b6
 
 - name: Morphosis
   url: https://gitlab.gnome.org/World/morphosis
@@ -73,7 +73,7 @@
 - name: Showtime
   url: https://gitlab.gnome.org/GNOME/Incubator/showtime
   desc: Watch without distraction
-  color: 5d6dcd
+  color: 9b65cd
   on-macos: true
 
 - name: Sly
@@ -85,7 +85,7 @@
 - name: Vanilla OS First Setup
   url: https://github.com/vanilla-OS/first-setup
   desc: First-setup wizard
-  color: f6c567
+  color: ffb327
 
 - name: Wildcard
   url: https://gitlab.gnome.org/World/Wildcard

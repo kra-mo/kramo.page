@@ -1,35 +1,20 @@
 ---
 title: kramo
 description: "The homepage of Laura Kramolis: projects, portfolio, and contact information"
-layout: plain
+layout: default
 ---
 <style>
-  @keyframes card-appear {
-    from {
-      transform: translateY(25px);
-    }
-    to {
-      transform: translateY(0);
-    }
-  }
-
-  body {
-    min-width: 22em;
-    margin-top: 1em;
-  }
-
   main {
     align-self: center;
     display: flex;
     flex-direction: column;
-    row-gap: 1.8em;
+    row-gap: 1.5em;
   }
 
   .card {
-    padding: 2.5em 4vw;
-    border-radius: 18px;
-    animation: card-appear forwards;
+    padding: 2em 1em 2.5em;
     color: white;
+    text-wrap: wrap;
   }
 
   .card a,
@@ -47,62 +32,42 @@ layout: plain
     background-color: white;
     color: black;
   }
-
-  @media (prefers-reduced-motion) {
-    .card {
-      animation: initial;
-    }
-  }
 </style>
 
-<main id="content">
-  {% for item in home %}
-    {% if item.url %}
-      <a href="{{ item.url }}">
-    {% endif %}
+{% for item in home %}
+  {% if item.url %}
+    <a href="{{ item.url }}">
+  {% endif %}
 
-    <div
-      class="card"
-      style="
-        animation-duration: {{ forloop.index0 | times: 0.1 | plus: 0.6 }}s;
-        background: {{ item.bg }};
-      "
-    >
-      {{ item.content }}
-      {% unless item.content %}
-        {% if item.img %}
-          <img alt="" {{ item.img }}>
-        {% else %}
-          <p style="height: 14em" />
-        {% endif %}
-        <div style="opacity: 0.75">
-          <h1>{{ item.name }}</h1>
-          <p>
-            {{ item.desc -}}
-            <span class="arrow" aria-hidden="true">→</span>
-          </p>
-        </div>
-      {% endunless %}
-    </div>
+  <div
+    class="card"
+    style="
+      animation-duration: {{ forloop.index0 | times: 0.15 | plus: 0.7 }}s;
+      background: {{ item.bg }};
+    "
+  >
+    {{ item.content }}
+    {% unless item.content %}
+      {% if item.img %}
+        <img alt="" {{ item.img }}>
+      {% else %}
+        <p style="height: 13em" />
+      {% endif %}
+      <div style="opacity: 0.75">
+        <h1>{{ item.name }}</h1>
+        <p>
+          {{ item.desc -}}
+          <span class="arrow" aria-hidden="true">→</span>
+        </p>
+      </div>
+    {% endunless %}
+  </div>
 
-    {% if item.url %}
-      </a>
-    {% endif %}
-  {% endfor %}
+  {% if item.url %}
+    </a>
+  {% endif %}
+{% endfor %}
 
-  {% include 'back-to-top' %}
-</main>
-<footer>
-  <p class="selectable" style="padding: 2em 0.5em 1em">
-    You can support my work on
-    <a href="https://liberapay.com/kramo">Liberapay</a>
-    or
-    <a href="https://github.com/sponsors/kra-mo">GitHub Sponsors</a>
-  </p>
-  <p class="selectable" style="padding: 0 0.5em 2em">
-    This site’s source code is available on
-    <a href="https://codeberg.org/kramo/kramo.page">Codeberg</a>
-    under the
-    <a href="https://www.gnu.org/licenses/agpl-3.0.en.html">AGPL-3.0</a>
-  </p>
-</footer>
+{% include 'back-to-top' %}
+
+<a href="https://git.kramo.page/kramo.page">Website Source</a>

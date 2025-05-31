@@ -1,16 +1,46 @@
----
-layout: plain
----
-<br>
-<main id="content" class="{{ tags }}">{{ content }}</main>
-<footer>
-  <div>
-    <ul>
-      <li>
-        <a href="/">{% include 'kramo' %}</a>
-      </li>
-      <li><a href="/links">Contact</a></li>
-      <li><a href="/portfolio">Portfolio</a></li>
-    </ul>
-  </div>
-</footer>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="{{ description }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="canonical" href="https://kramo.page{{ page.url }}">
+
+    <title>{{ title }}</title>
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="stylesheet" type="text/css" href="/style.css?v=3.0">
+
+    <!-- Open Graph metadata -->
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:description" content="{{ description }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kramo.page{{ page.url }}">
+    <meta property="og:image" content="https://kramo.page/images/apple-touch-icon.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:alt" content="A geometric fox logo">
+
+    <!-- Mastodon verification -->
+    <link rel="me" href="https://chaos.social/@kramo">
+    <link rel="me" href="https://mastodon.social/@kramo">
+  </head>
+  <body id="plain-body">
+    <header>
+      <nav id="nav">
+        <ul>
+          {% assign portfolio = page.url == "/portfolio" %}
+          {% assign contact = page.url == "/links" %}
+          {% assign blog = tags contains "post" %}
+          {% assign any = portfolio or contact or blog %}
+          <li class="{% if not any %}selected{% endif %}"><a title="Home" href="/">{% include 'home.svg' %}</a></li>
+          <li class="{% if portfolio %}selected{% endif %}"><a href="/portfolio">Portfolio</a></li>
+          <li class="{% if contact %}selected{% endif %}"><a href="/links">Contact</a></li>
+          <li class="{% if blog %}selected{% endif %}"><a href="/designers-as-teachers">Blog</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="content" class="{{ tags }}">{{ content }}</main>
+  </body>
+</html>

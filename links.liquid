@@ -4,23 +4,7 @@ description: "Links to my social media and git forges"
 layout: default
 ---
 <style>
-  @keyframes bounce {
-    from {
-      transform: translateY(5em);
-      opacity: 0;
-    }
-    50% {
-      transform: translateY(-0.5em);
-      opacity: 100;
-    }
-    to {
-      transform: translateY(0);
-      opacity: 100;
-    }
-  }
-
   main {
-    justify-content: center;
     display: flex;
     flex-direction: column;
     row-gap: 1em;
@@ -33,7 +17,7 @@ layout: default
     margin: 0 auto;
     padding: 1.1em 0em;
     border: initial;
-    animation-name: bounce;
+    animation-name: card-appear;
   }
 
   main a.button.suggested:hover {
@@ -57,7 +41,7 @@ layout: default
   }
 
   @media (prefers-reduced-motion) {
-    main a.button {
+    main a.button.suggested {
       animation: initial;
     }
   }
