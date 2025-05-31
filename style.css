@@ -219,7 +219,7 @@ a .arrow {
   transition: margin-left 0.4s;
 }
 
-a[href^="http"] {
+a[href^="http"]:not(:has(.arrow)):not(:has(img)):not(:has(svg)) {
   white-space: nowrap;
 }
 

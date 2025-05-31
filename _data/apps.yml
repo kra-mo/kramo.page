@@ -82,9 +82,9 @@
   color: ff5233
   on-macos: true
 
-- name: Vanilla OS First Setup
+- name: First Setup
   url: https://github.com/vanilla-OS/first-setup
-  desc: First-setup wizard
+  desc: First-setup wizard for Vanilla OS
   color: ffb327
 
 - name: Wildcard
