@@ -1,13 +1,10 @@
 ---
 tags: post
 title: A Language That Speaks for Itself
-description: "I wish for a language that encourages thinking"
+description: I wish for a language that encourages thinking
+date: 2025-04-26
 layout: default
 ---
-
-2025-04-26
-
-# A Language That Speaks for Itself
 
 Linguistics is not my field of expertise, yet I spend a good amount of my time thinking about the code we use to communicate. Something I reflected on recently during an afternoon walk, much to my girlfriend’s dismay, was how precision of language — and what we choose to be precise about — influences receivers’ impulse to reflect on what we’re saying.
 
@@ -45,8 +42,4 @@ What does the word “immigrant” mean? Something along the lines of “A perso
 
 If the smallest building blocks of our languages represented concepts still relevant today, maybe we could speak about the concepts themselves more freely and reduce the time it takes to establish a shared reality.
 
----
-
 I wish for a language that encourages thinking, one that helps us live in the same world.
-
-[Next: Designers as Teachers →](/designers-as-teachers)

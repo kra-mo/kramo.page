@@ -1,4 +1,5 @@
 import yaml from "js-yaml";
+import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 
 export default function (eleventyConfig) {
   eleventyConfig.addDataExtension("yml,yaml", (contents) =>
@@ -25,5 +26,18 @@ export default function (eleventyConfig) {
     if (page.url.endsWith(".html")) {
       return page.url.slice(0, -1 * ".html".length);
     }
+  });
+
+  eleventyConfig.addPlugin(feedPlugin, {
+    type: "atom",
+    outputPath: "/feed.xml",
+    collection: { name: "post" },
+    metadata: {
+      language: "en",
+      title: "kramo's blog",
+      subtitle: "Reflections on how things work",
+      base: "https://kramo.page/",
+      author: { name: "Laura Kramolis" },
+    },
   });
 }

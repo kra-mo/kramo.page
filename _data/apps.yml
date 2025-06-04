@@ -84,7 +84,7 @@
 
 - name: First Setup
   url: https://github.com/vanilla-OS/first-setup
-  desc: First-setup wizard for Vanilla OS
+  desc: First-setup wizard for Vanilla&nbsp;OS
   color: ffb327
 
 - name: Wildcard

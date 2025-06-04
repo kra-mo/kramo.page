@@ -11,7 +11,7 @@
     <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
     <link rel="icon" type="image/png" href="/images/favicon.png">
     <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-    <link rel="stylesheet" type="text/css" href="/style.css?v=3.1">
+    <link rel="stylesheet" type="text/css" href="/style.css?v=3.2">
 
     <!-- Open Graph metadata -->
     <meta property="og:title" content="{{ title }}">
@@ -27,20 +27,32 @@
     <link rel="me" href="https://mastodon.social/@kramo">
   </head>
   <body id="plain-body">
+    {% assign portfolio = page.url == "/portfolio" %}
+    {% assign contact = page.url == "/links" %}
+    {% assign post = tags contains "post" %}
+    {% assign any = portfolio or contact or post %}
     <header>
       <nav id="nav">
         <ul>
-          {% assign portfolio = page.url == "/portfolio" %}
-          {% assign contact = page.url == "/links" %}
-          {% assign blog = tags contains "post" %}
-          {% assign any = portfolio or contact or blog %}
           <li class="{% if not any %}selected{% endif %}"><a title="Home" href="/">{% include 'home.svg' %}</a></li>
           <li class="{% if portfolio %}selected{% endif %}"><a href="/portfolio">Portfolio</a></li>
           <li class="{% if contact %}selected{% endif %}"><a href="/links">Contact</a></li>
-          <li class="{% if blog %}selected{% endif %}"><a href="/designers-as-teachers">Blog</a></li>
+          <li class="{% if post %}selected{% endif %}"><a href="/designers-as-teachers">Blog</a></li>
         </ul>
       </nav>
     </header>
-    <main id="content" class="{{ tags }}">{{ content }}</main>
+    <main id="content" class="{{ tags }}">
+      {% if post %}
+        <p>{{ page.date | date: "%B %-d, %Y" }} <a href="/feed.xml">{% include 'rss.svg'  %}</a></p>
+        <h1>{{ title }}</h1>
+        {{ content }}
+        {% assign previousPost = collections.post | getPreviousCollectionItem %}
+        {% assign nextPost = collections.post | getNextCollectionItem %}
+        {% if previousPost %}<p><a href="{{ previousPost.url }}">← {{ previousPost.data.title }}</a></p>{% endif %}
+        {% if nextPost %}<p><a href="{{ nextPost.url }}">{{ nextPost.data.title }} →</a></p>{% endif %}
+      {% else %}
+        {{ content }}
+      {% endif %}
+    </main>
   </body>
 </html>

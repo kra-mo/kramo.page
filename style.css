@@ -177,10 +177,6 @@ video.rounded {
   border-radius: 12px;
 }
 
-hr {
-  margin: 2em 0 2.5em;
-}
-
 /* Links */
 
 a {
@@ -345,10 +341,6 @@ main.post p,
 main.post li {
   line-height: 1.5em;
   color: rgb(from var(--fg) r g b / 85%);
-}
-
-main.post hr {
-  color: rgb(from var(--fg) r g b / 50%);
 }
 
 main.post h2,

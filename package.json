@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@11ty/eleventy-plugin-rss": "^2.0.4",
     "js-yaml": "^4.1.0"
   },
   "devDependencies": {
