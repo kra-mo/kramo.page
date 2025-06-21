@@ -37,7 +37,7 @@
           <li class="{% if not any %}selected{% endif %}"><a title="Home" href="/">{% include 'home.svg' %}</a></li>
           <li class="{% if portfolio %}selected{% endif %}"><a href="/portfolio">Portfolio</a></li>
           <li class="{% if contact %}selected{% endif %}"><a href="/links">Contact</a></li>
-          <li class="{% if post %}selected{% endif %}"><a href="/designers-as-teachers">Blog</a></li>
+          <li class="{% if post %}selected{% endif %}"><a href="{{ collections.post[-1].url }}">Blog</a></li>
         </ul>
       </nav>
     </header>
