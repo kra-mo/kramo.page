@@ -161,6 +161,11 @@ h6 {
   font-family: var(--bold);
 }
 
+hr {
+  border: 1px solid rgb(from var(--fg) r g b / 30%);
+  border-radius: 1px;
+}
+
 img,
 video {
   max-width: clamp(0px, 90%, 60em);
