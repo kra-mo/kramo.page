@@ -9,41 +9,29 @@ layout: default
     flex-direction: column;
     justify-content: center;
     row-gap: 1em;
-  }
 
-  main a.button.suggested {
-    color: white;
-    width: 100%;
-    max-width: 25em;
-    margin: 0 auto;
-    padding: 1.1em 0em;
-    border: initial;
-    animation-name: card-appear;
-  }
+    & a.button.suggested {
+      color: white;
+      width: 100%;
+      max-width: 25em;
+      margin: 0 auto;
+      padding: 1.1em 0em;
+      border: initial;
 
-  main a.button.suggested:hover {
-    color: white;
-  }
+      &:hover {
+        color: white;
+      }
 
-  main a.button.suggested img {
-    height: 1.2em;
-    display: inline;
-    vertical-align: text-top;
-    margin-right: 1em;
-  }
+      @media not (prefers-reduced-motion) {
+        animation-name: card-appear;
+      }
 
-  @media (pointer: fine) {
-    main a.button:hover {
-      transform: scale(1.05);
-    }
-    main a.button:active {
-      transform: scale(0.9);
-    }
-  }
-
-  @media (prefers-reduced-motion) {
-    main a.button.suggested {
-      animation: initial;
+      & img {
+        height: 1.2em;
+        display: inline;
+        vertical-align: text-top;
+        margin-right: 1em;
+      }
     }
   }
 </style>

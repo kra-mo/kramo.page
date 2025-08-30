@@ -4,12 +4,6 @@ description: UI and UX work I've conducted and engaged in
 layout: default
 ---
 <style>
-  .card img,
-  .card video {
-    max-width: 100%;
-    border-radius: 12px;
-  }
-
   .card {
     margin: 0 auto 1.5em;
     max-width: 40em;
@@ -18,16 +12,22 @@ layout: default
     text-wrap: balance;
     background-color: rgb(from var(--fg) r g b / 3%);
     border: 1px solid rgb(from var(--fg) r g b / 7%);
-  }
 
-  .card p,
-  .card h1,
-  .card h2,
-  .card h3,
-  .card h4,
-  .card h5,
-  .card h6 {
-    padding: 0 1em;
+    & img,
+    & video {
+      max-width: 100%;
+      border-radius: 12px;
+    }
+
+    & p,
+    & h1,
+    & h2,
+    & h3,
+    & h4,
+    & h5,
+    & h6 {
+      padding: 0 1em;
+    }
   }
 </style>
 

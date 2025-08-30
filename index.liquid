@@ -14,22 +14,25 @@ layout: default
   .card {
     padding: 2em 1em 2.5em;
     color: white;
-  }
 
-  .card a,
-  .card a:hover {
-    color: inherit;
-  }
+    & a {
+      color: inherit;
 
-  .card a.button {
-    border-color: rgb(255 255 255 / 7%);
-    background-color: rgb(255 255 255 / 15%);
-    color: white;
-  }
+      &:hover {
+        color: inherit;
+      }
 
-  .card a.button.suggested {
-    background-color: white;
-    color: black;
+      &.button {
+        border-color: rgb(255 255 255 / 7%);
+        background-color: rgb(255 255 255 / 15%);
+        color: white;
+
+        &.suggested {
+          background-color: white;
+          color: black;
+        }
+      }
+    }
   }
 </style>
 

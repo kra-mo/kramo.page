@@ -79,9 +79,12 @@ h1 {
 
 #title > span {
   display: inline-block;
-  opacity: 0;
-  transform: translateY(15px);
-  animation: slide-appear 0.5s forwards;
+
+  @media not (prefers-reduced-motion) {
+    opacity: 0;
+    transform: translateY(15px);
+    animation: slide-appear 0.5s forwards;
+  }
 }
 
 #hero {
@@ -90,7 +93,10 @@ h1 {
 
 .button {
   margin-top: 24px;
-  animation: slide-appear-button 3.5s;
+
+  @media not (prefers-reduced-motion) {
+    animation: slide-appear-button 3.5s;
+  }
 }
 
 main {
@@ -154,6 +160,10 @@ main {
       background-color: color-mix(in srgb, var(--card-bg), var(--fg) 5%);
       cursor: pointer;
     }
+
+    @media (prefers-contrast: more) {
+      border: 1px solid var(--fg);
+    }
   }
 }
 
@@ -191,8 +201,16 @@ main {
       margin: 0 auto;
     }
 
+    &[aria-pressed="true"] {
+      @media (prefers-contrast: more) {
+        border: 1px solid var(--fg);
+      }
+    }
+
     &[aria-pressed="false"] > * {
-      opacity: 0.4;
+      @media not (prefers-contrast: more) {
+        opacity: 0.4;
+      }
     }
   }
 
@@ -254,26 +272,5 @@ main {
     display: block;
     text-align: start;
     padding: 10px;
-  }
-}
-
-@media (prefers-reduced-motion) {
-  #title > span,
-  .button {
-    opacity: initial;
-    transform: initial;
-    animation: initial;
-    animation-delay: initial;
-  }
-}
-
-@media (prefers-contrast: more) {
-  #carousel > button,
-  #os-buttons > button[aria-pressed="true"] {
-    border: 1px solid var(--fg);
-  }
-
-  #os-buttons > button[aria-pressed="false"] > * {
-    opacity: initial;
   }
 }
