@@ -83,6 +83,11 @@
   --extrabold: "Inter ExtraBold", sans-serif;
 
   color-scheme: light dark;
+
+  @media (prefers-color-scheme: dark) {
+    --fg: snow;
+    --bg: #110f0f;
+  }
 }
 
 :focus-visible {
@@ -124,12 +129,15 @@ body {
 
 main {
   flex: 1 0 auto;
-  opacity: 0;
-  animation: main-appear 0.5s forwards;
   padding-bottom: 4em;
 
   &#content {
     margin: 1em 1em 0;
+  }
+
+  @media not (prefers-reduced-motion) {
+    opacity: 0;
+    animation: main-appear 0.5s forwards;
   }
 }
 
@@ -179,6 +187,18 @@ a {
   text-decoration: none;
   transition-duration: 0.4s;
 
+  &:hover {
+    @media (pointer: fine) {
+      color: var(--fg);
+    }
+
+    & .arrow {
+      @media (pointer: fine) and (prefers-reduced-motion: no-preference) {
+        margin-left: 0.6em;
+      }
+    }
+  }
+
   &::selection {
     color: white;
     background: var(--accent-dim);
@@ -196,6 +216,16 @@ a {
 
     &:hover {
       color: var(--fg);
+
+      @media (pointer: fine) and (prefers-reduced-motion: no-preference) {
+        transform: scale(1.1);
+      }
+    }
+
+    &:active {
+      @media (pointer: fine) and (prefers-reduced-motion: no-preference) {
+        transform: scale(0.95);
+      }
     }
 
     &.suggested {
@@ -228,6 +258,10 @@ a {
     mask-size: contain;
     background-color: currentColor;
   }
+
+  @media (prefers-reduced-motion) {
+    transition-duration: 0s;
+  }
 }
 
 nav {
@@ -236,6 +270,12 @@ nav {
   justify-content: center;
 
   & li {
+    &.selected > a {
+      @media (prefers-color-scheme: dark) {
+        color: var(--fg);
+      }
+    }
+
     &:not(.selected) > a {
       color: rgb(from var(--fg) r g b / 70%);
     }
@@ -261,7 +301,18 @@ nav {
       &.selected {
         padding: 0.4em 1em;
         background-color: white;
-        animation: switch 0.5s forwards;
+
+        @media (prefers-color-scheme: dark) {
+          background-color: rgb(255 255 255 / 10%);
+        }
+
+        @media (prefers-reduced-motion) {
+          margin: 0 0.2em;
+        }
+
+        @media not (prefers-reduced-motion) {
+          animation: switch 0.5s forwards;
+        }
       }
 
       &:first-child:not(.selected) {
@@ -270,6 +321,12 @@ nav {
 
       &:last-child:not(.selected) {
         margin-right: 0.5em;
+      }
+
+      &:hover > a {
+        @media (prefers-color-scheme: dark) {
+          color: var(--fg);
+        }
       }
     }
   }
@@ -312,7 +369,10 @@ footer {
 
 .card {
   border-radius: 36px;
-  animation: card-appear forwards;
+
+  @media not (prefers-reduced-motion) {
+    animation: card-appear forwards;
+  }
 }
 
 main.post {
@@ -335,79 +395,5 @@ main.post {
   & h5,
   & h6 {
     margin-top: 1.5em;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --fg: snow;
-    --bg: #110f0f;
-  }
-
-  nav {
-    & ul > li.selected {
-      background-color: rgb(255 255 255 / 10%);
-    }
-
-    & ul li:hover > a,
-    & li.selected > a {
-      color: var(--fg);
-    }
-  }
-}
-
-@media (pointer: fine) {
-  a {
-    &:hover {
-      color: var(--fg);
-
-      & .arrow {
-        margin-left: 0.6em;
-      }
-    }
-
-    &.button {
-      &:hover {
-        transform: scale(1.1);
-      }
-
-      &:active {
-        transform: scale(0.95);
-      }
-    }
-  }
-}
-
-@media (prefers-reduced-motion) {
-  body {
-    opacity: initial;
-    animation: initial;
-  }
-
-  a {
-    transition-duration: 0s;
-
-    &:hover .arrow {
-      margin-left: 0.3em;
-    }
-  }
-
-  .button {
-    &:hover {
-      transform: initial;
-    }
-
-    &:active {
-      transform: initial;
-    }
-  }
-
-  .card {
-    animation: initial;
-  }
-
-  nav ul > li.selected {
-    margin: 0 0.2em;
-    animation: initial;
   }
 }
