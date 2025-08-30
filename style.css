@@ -22,15 +22,6 @@
   font-display: swap;
 }
 
-@keyframes appear {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 @keyframes switch {
   from {
     transform: none;
@@ -41,18 +32,6 @@
   to {
     transform: none;
     margin: 0 0.2em;
-  }
-}
-
-@keyframes main-appear {
-  from {
-    opacity: 0;
-  }
-  20% {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
   }
 }
 
@@ -72,8 +51,8 @@
 }
 
 :root {
-  --fg: #302a25;
-  --bg: snow;
+  --fg: light-dark(#302a25, snow);
+  --bg: light-dark(snow, #110f0f);
   --accent: #ff4000;
   --accent-dim: color-mix(in srgb, var(--accent) 80%, var(--fg));
 
@@ -83,11 +62,6 @@
   --extrabold: "Inter ExtraBold", sans-serif;
 
   color-scheme: light dark;
-
-  @media (prefers-color-scheme: dark) {
-    --fg: snow;
-    --bg: #110f0f;
-  }
 }
 
 :focus-visible {
@@ -136,8 +110,11 @@ main {
   }
 
   @media not (prefers-reduced-motion) {
-    opacity: 0;
-    animation: main-appear 0.5s forwards;
+    transition: opacity 0.3s;
+
+    @starting-style {
+      opacity: 0;
+    }
   }
 }
 
@@ -300,11 +277,7 @@ nav {
 
       &.selected {
         padding: 0.4em 1em;
-        background-color: white;
-
-        @media (prefers-color-scheme: dark) {
-          background-color: rgb(255 255 255 / 10%);
-        }
+        background-color: light-dark(white, rgb(255 255 255 / 10%));
 
         @media (prefers-reduced-motion) {
           margin: 0 0.2em;
