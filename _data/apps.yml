@@ -71,7 +71,7 @@
   color: 4b82dd
 
 - name: Showtime
-  url: https://gitlab.gnome.org/GNOME/Incubator/showtime
+  url: https://gitlab.gnome.org/GNOME/showtime
   desc: Watch without distraction
   color: 9b65cd
   on-macos: true
