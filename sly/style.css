@@ -16,7 +16,7 @@ a {
   color: var(--fg);
 
   &:hover {
-    color: var(--accent);
+    color: var(--accent-bright);
   }
 }
 

@@ -1,75 +1,102 @@
 ---
 title: kramo
-description: "The homepage of Laura Kramolis: projects, portfolio, and contact information"
+description: "The homepage of Laura Kramolis: projects, blog, and contact information"
 layout: default
 ---
 <style>
-  main {
-    align-self: center;
-    display: flex;
-    flex-direction: column;
-    row-gap: 1.5em;
+  #logo {
+    margin: 1em auto;
+    width: 64px;
+    height: 64px;
+    color: var(--accent-bright);
+
+    @media not (prefers-reduced-motion) {
+      transition:
+        opacity 0.3s,
+        transform 0.7s;
+
+      @starting-style {
+        opacity: 0;
+        transform: translateY(-0.5em);
+      }
+    }
+
+    & > svg {
+      transform-origin: top;
+      transform: scale(4);
+    }
   }
 
-  .card {
-    padding: 2em 1em 2.5em;
-    color: white;
+  #title {
+    margin: 0;
+    color: var(--accent);
 
-    & a {
-      color: inherit;
+    @media not (prefers-reduced-motion) {
+      transition: opacity 0.4s;
 
-      &:hover {
-        color: inherit;
+      @starting-style {
+        opacity: 0;
       }
+    }
+  }
 
-      &.button {
-        border-color: rgb(255 255 255 / 7%);
-        background-color: rgb(255 255 255 / 15%);
-        color: white;
+  #bio {
+    @media not (prefers-reduced-motion) {
+      transition: opacity 0.3s;
 
-        &.suggested {
-          background-color: white;
-          color: black;
-        }
+      @starting-style {
+        opacity: 0;
+      }
+    }
+  }
+
+  #icons {
+    display: flex;
+    justify-content: center;
+    margin: 2em 0 2em;
+    gap: 1em;
+  }
+
+  #icons > a {
+    @media not (prefers-reduced-motion) {
+      animation: bounce-appear;
+    }
+  }
+
+  #source {
+    @media not (prefers-reduced-motion) {
+      transition: opacity 1s;
+
+      @starting-style {
+        opacity: 0;
       }
     }
   }
 </style>
 
-{% for item in home %}
-  {% if item.url %}
-    <a href="{{ item.url }}">
-  {% endif %}
+<div id="logo">{% include 'kramo.svg' %}</div>
+<h2 id="title" class="selectable">Laura Kramolis</h2>
+<p id="bio" class="selectable">
+  A Free Software designer and developer,<br>
+  motivated by the joy of helping others
+</p>
 
-  <div
-    class="card"
-    style="
-      animation-duration: {{ forloop.index0 | times: 0.1 | plus: 0.7 }}s;
-      background: {{ item.bg }};
-    "
-  >
-    {{ item.content }}
-    {% unless item.content %}
-      {% if item.img %}
-        <img alt="" {{ item.img }}>
-      {% else %}
-        <p style="height: 13em" />
-      {% endif %}
-      <div style="opacity: 0.75">
-        <h1>{{ item.name }}</h1>
-        <p>
-          {{ item.desc -}}
-          <span class="arrow" aria-hidden="true">→</span>
-        </p>
-      </div>
-    {% endunless %}
-  </div>
-
-  {% if item.url %}
+<div id="icons">
+  {% for link in links %}
+    <a
+      class="dim"
+      href="{{ link.url }}"
+      title="{{ link.name }}"
+      style="
+        animation-duration: {{ forloop.index0 | times: 0.1 | plus: 0.5 }}s;
+        --accent-bright: #{{ link.color }};
+      "
+    >
+      {% include 'icons/{{ link.name | downcase | replace: " ", "-" }}.svg' %}
     </a>
-  {% endif %}
-{% endfor %}
+  {% endfor %}
+</div>
 
-{% include 'back-to-top' %}
-
-<a href="https://git.kramo.page/kramo.page">Website Source</a>
+<div id="source">
+  <a class="dim" href="https://git.kramo.page/kramo.page">Website Source</a>
+</div>

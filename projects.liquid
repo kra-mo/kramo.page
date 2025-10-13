@@ -1,0 +1,70 @@
+---
+title: kramo’s Projects
+description: "Laura Kramolis’ app, extensions, and graphics"
+layout: default
+---
+<style>
+  main {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5em;
+  }
+
+  .card {
+    padding: 2em 1em 2.5em;
+    color: white;
+
+    & a {
+      color: inherit;
+
+      &:hover {
+        color: inherit;
+      }
+
+      &.button {
+        border-color: rgb(255 255 255 / 7%);
+        background-color: rgb(255 255 255 / 15%);
+        color: white;
+
+        &.suggested {
+          background-color: white;
+          color: black;
+        }
+      }
+    }
+  }
+</style>
+
+{% for project in projects %}
+  {% if project.url %}
+    <a href="{{ project.url }}">
+  {% endif %}
+
+  <div
+    class="card"
+    style="
+      animation-duration: {{ forloop.index0 | times: 0.1 | plus: 0.7 }}s;
+      background: {{ project.bg }};
+    "
+  >
+    {% if project.img %}
+      <img alt="" {{ project.img }}>
+    {% else %}
+      <p style="height: 13em" />
+    {% endif %}
+    <div style="opacity: 0.75">
+      <h1>{{ project.name }}</h1>
+      <p>
+        {{ project.desc -}}
+        <span class="arrow" aria-hidden="true">→</span>
+      </p>
+    </div>
+  </div>
+
+  {% if project.url %}
+    </a>
+  {% endif %}
+{% endfor %}
+
+{% include 'back-to-top' %}

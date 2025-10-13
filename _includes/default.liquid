@@ -11,7 +11,7 @@
     <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
     <link rel="icon" type="image/png" href="/images/favicon.png">
     <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-    <link rel="stylesheet" type="text/css" href="/style.css?v=3.5">
+    <link rel="stylesheet" type="text/css" href="/style.css?v=4.0">
 
     <!-- Open Graph metadata -->
     <meta property="og:title" content="{{ title }}">
@@ -27,17 +27,17 @@
     <link rel="me" href="https://mastodon.social/@kramo">
   </head>
   <body id="plain-body">
-    {% assign portfolio = page.url == "/portfolio" %}
-    {% assign contact = page.url == "/links" %}
+    {% assign home = page.url == "/" %}
+    {% assign icons = page.url == "/app-icon-design" %}
     {% assign post = tags contains "post" %}
-    {% assign any = portfolio or contact or post %}
+    {% assign any = home or icons or post %}
     <header>
       <nav id="nav">
         <ul>
-          <li class="{% if not any %}selected{% endif %}"><a title="Home" href="/">{% include 'home.svg' %}</a></li>
-          <li class="{% if portfolio %}selected{% endif %}"><a href="/portfolio">Portfolio</a></li>
-          <li class="{% if contact %}selected{% endif %}"><a href="/links">Contact</a></li>
-          <li class="{% if post %}selected{% endif %}"><a href="{{ collections.post[-1].url }}">Blog</a></li>
+          <li class="{% if home %}selected{% endif %}"><a class="dim" title="Home" href="/">{% include 'home.svg' %}</a></li>
+          <li class="{% if not any %}selected{% endif %}"><a class="dim" href="/projects">Projects</a></li>
+          <li class="{% if icons %}selected{% endif %}"><a class="dim" href="/app-icon-design">Icons</a></li>
+          <li class="{% if post %}selected{% endif %}"><a class="dim" href="{{ collections.post[-1].url }}">Blog</a></li>
         </ul>
       </nav>
     </header>

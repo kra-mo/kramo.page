@@ -2,6 +2,14 @@
   url: https://codeberg.org/kramo
   color: 2185d0
 
+- name: GitHub
+  url: https://github.com/kra-mo
+  color: b14cff
+
+- name: Liberapay
+  url: http://liberapay.com/kramo
+  color: d89b00
+
 - name: GNOME GitLab
   url: https://gitlab.gnome.org/kramo
   color: 4a86cf
@@ -10,18 +18,10 @@
   url: https://chaos.social/@kramo
   color: 6364ff
 
+- name: Email
+  url: "&#109;a&#105;&#108;&#116;&#111;&#58;&#99;&#111;&#110;&#116;&#97;&#99;&#116;&#64;&#107;&#114;&#97;&#109;o&period;&#112;&#97;&#103;&#101;"
+  color: 2978f5
+
 - name: Matrix
   url: https://matrix.to/#/@kramo:matrix.org
   color: 2ba278
-
-- name: Email
-  url: "&#109;a&#105;&#108;&#116;&#111;&#58;&#99;&#111;&#110;&#116;&#97;&#99;&#116;&#64;&#107;&#114;&#97;&#109;o&period;&#112;&#97;&#103;&#101;"
-  color: f27600
-
-- name: GitLab
-  url: https://gitlab.com/kra-mo
-  color: e64700
-
-- name: GitHub
-  url: https://github.com/kra-mo
-  color: 424a52

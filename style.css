@@ -35,7 +35,7 @@
   }
 }
 
-@keyframes card-appear {
+@keyframes bounce-appear {
   from {
     transform: translateY(5em);
     opacity: 0;
@@ -53,8 +53,8 @@
 :root {
   --fg: light-dark(#302a25, snow);
   --bg: light-dark(snow, #110f0f);
-  --accent: #ff4000;
-  --accent-dim: color-mix(in srgb, var(--accent) 80%, var(--fg));
+  --accent-bright: #ff4000;
+  --accent: color-mix(in srgb, var(--accent-bright) 80%, var(--fg));
 
   --regular: "Inter Regular", sans-serif;
   --medium: "Inter Medium", sans-serif;
@@ -65,7 +65,7 @@
 }
 
 :focus-visible {
-  outline: solid 1px var(--accent);
+  outline: solid 1px var(--accent-bright);
   border-radius: 2px;
 }
 
@@ -159,10 +159,10 @@ video {
 }
 
 a {
-  color: var(--accent-dim);
+  color: var(--accent);
   font-family: var(--medium);
   text-decoration: none;
-  transition-duration: 0.4s;
+  transition-duration: 0.2s;
 
   &:hover {
     @media (pointer: fine) {
@@ -178,7 +178,15 @@ a {
 
   &::selection {
     color: white;
-    background: var(--accent-dim);
+    background: var(--accent);
+  }
+
+  &.dim {
+    color: rgb(from var(--fg) r g b / 70%);
+
+    &:hover {
+      color: var(--accent-bright);
+    }
   }
 
   &.button {
@@ -246,22 +254,6 @@ nav {
   padding: 0.8em 0 0;
   justify-content: center;
 
-  & li {
-    &.selected > a {
-      @media (prefers-color-scheme: dark) {
-        color: var(--fg);
-      }
-    }
-
-    &:not(.selected) > a {
-      color: rgb(from var(--fg) r g b / 70%);
-    }
-
-    & > a:hover {
-      color: var(--accent);
-    }
-  }
-
   & ul {
     font-family: var(--medium);
     list-style: none;
@@ -275,6 +267,12 @@ nav {
       padding: 0.4em 0.7em;
       border-radius: 9999px;
 
+      & > a.dim:hover {
+        @media (prefers-color-scheme: dark) {
+          color: var(--fg);
+        }
+      }
+
       &.selected {
         padding: 0.4em 1em;
         background-color: light-dark(white, rgb(255 255 255 / 10%));
@@ -286,6 +284,14 @@ nav {
         @media not (prefers-reduced-motion) {
           animation: switch 0.5s forwards;
         }
+
+        & > a {
+          color: var(--accent);
+
+          @media (prefers-color-scheme: dark) {
+            color: var(--fg);
+          }
+        }
       }
 
       &:first-child:not(.selected) {
@@ -294,12 +300,6 @@ nav {
 
       &:last-child:not(.selected) {
         margin-right: 0.5em;
-      }
-
-      &:hover > a {
-        @media (prefers-color-scheme: dark) {
-          color: var(--fg);
-        }
       }
     }
   }
@@ -335,7 +335,7 @@ footer {
     color: var(--fg);
 
     &:hover {
-      color: var(--accent);
+      color: var(--accent-bright);
     }
   }
 }
@@ -344,7 +344,7 @@ footer {
   border-radius: 36px;
 
   @media not (prefers-reduced-motion) {
-    animation: card-appear forwards;
+    animation: bounce-appear forwards;
   }
 }
 
