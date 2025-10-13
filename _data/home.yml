@@ -15,17 +15,23 @@
     </p>
   bg: color-mix(in srgb, var(--accent) 85%, black)
 
+- name: Showtime
+  url: https://apps.gnome.org/Showtime/
+  desc: Elegant Video Player
+  img: 'width="128" height="128" src="/images/showtime.webp" style="filter: drop-shadow(0px 3px 2px #00000059)"'
+  bg: "linear-gradient(#60539c, #584990)"
+
 - name: Sly
   url: /sly
   desc: Delightful Image Editor
   img: 'width="200" src="/images/sly.webp" style="margin-top: 6px; margin-bottom: -24px"'
   bg: "linear-gradient(#ec6649, #d24e32)"
 
-- name: Showtime
-  url: https://apps.gnome.org/Showtime/
-  desc: Elegant Video Player
-  img: 'width="128" height="128" src="/images/showtime.webp" style="filter: drop-shadow(0px 3px 2px #00000059)"'
-  bg: "linear-gradient(#60539c, #584990)"
+- name: App Icons
+  url: /app-icon-design
+  desc: Icons I Designed
+  img: width="154" height="146" src="/images/app-icon-design.svg"
+  bg: "linear-gradient(#62a0ea, #3584e4)"
 
 - name: Cartridges
   url: https://apps.gnome.org/Cartridges/
@@ -36,14 +42,8 @@
 - name: CommitEdit
   url: https://git.kramo.page/CommitEdit
   desc: Native Commit Message Editor
-  img: width="128" height="128" src="/images/commitedit.webp"
-  bg: "linear-gradient(#4486e2, #356fdc)"
-
-- name: App Icons
-  url: /app-icon-design
-  desc: Icons I Designed
-  img: width="154" height="146" src="/images/app-icon-design.svg"
-  bg: "linear-gradient(#62a0ea, #3584e4)"
+  img: 'width="128" height="128" src="/images/commitedit.webp" style="filter: drop-shadow(0px 3px 5px #00000020)"'
+  bg: "linear-gradient(#1784c4, #3048a8)"
 
 - name: Quick Touchpad Toggle
   url: https://extensions.gnome.org/extension/5292/quick-touchpad-toggle/
