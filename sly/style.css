@@ -57,12 +57,12 @@ header {
   max-width: 1500px;
   margin: 0 auto;
 
-  & > div {
+  > div {
     min-width: 400px;
     padding-bottom: 300px;
   }
 
-  & > img {
+  > img {
     width: 900px;
   }
 }
@@ -114,7 +114,7 @@ main {
   justify-content: center;
   align-content: center;
 
-  & > .card {
+  > .card {
     text-align: start;
   }
 }
@@ -141,7 +141,7 @@ main {
     height: initial;
   }
 
-  & > button {
+  > button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -187,7 +187,7 @@ main {
 }
 
 #os-buttons {
-  & > button {
+  > button {
     background-color: transparent;
     border: none;
     padding: 10px;
@@ -197,7 +197,7 @@ main {
       background-color: var(--card-bg);
     }
 
-    & > * {
+    > * {
       margin: 0 auto;
     }
 
@@ -226,7 +226,7 @@ main {
   margin: 0 auto;
   padding: 0 20px;
 
-  & > * {
+  > * {
     transition: opacity 0.5s ease;
     opacity: 0;
 
@@ -235,7 +235,7 @@ main {
     }
   }
 
-  & > .card.js-disabled {
+  > .card.js-disabled {
     margin-top: 20px;
   }
 }
@@ -246,7 +246,7 @@ main {
     margin-top: 92px;
     padding-left: initial;
 
-    & > div {
+    > div {
       padding-bottom: 40px;
     }
   }
@@ -254,7 +254,7 @@ main {
   #cards {
     flex-direction: column;
 
-    & > .card {
+    > .card {
       max-width: 500px;
     }
   }

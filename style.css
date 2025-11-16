@@ -170,7 +170,7 @@ a {
       color: var(--fg);
     }
 
-    & .arrow {
+    .arrow {
       @media (pointer: fine) and (prefers-reduced-motion: no-preference) {
         margin-left: 0.6em;
       }
@@ -224,7 +224,7 @@ a {
     }
   }
 
-  & .arrow {
+  .arrow {
     margin-left: 0.3em;
     transition: margin-left 0.4s;
   }
@@ -255,7 +255,7 @@ nav {
   padding: 0.8em 0 0;
   justify-content: center;
 
-  & ul {
+  ul {
     font-family: var(--medium);
     list-style: none;
     display: flex;
@@ -264,11 +264,11 @@ nav {
     border-radius: 9999px;
     padding: 0.2em 0;
 
-    & > li {
+    > li {
       padding: 0.4em 0.7em;
       border-radius: 9999px;
 
-      & > a.dim:hover {
+      > a.dim:hover {
         @media (prefers-color-scheme: dark) {
           color: var(--fg);
         }
@@ -286,7 +286,7 @@ nav {
           animation: switch 0.5s forwards;
         }
 
-        & > a {
+        > a {
           color: var(--accent);
 
           @media (prefers-color-scheme: dark) {
@@ -311,28 +311,28 @@ footer {
   background-color: rgb(from var(--fg) r g b / 5%);
   border-top: 1px solid rgb(from var(--fg) r g b / 5%);
 
-  & > div {
+  > div {
     display: flex;
     justify-content: center;
     column-gap: 2em;
 
-    & > ul {
+    > ul {
       list-style-type: none;
       padding: 0;
 
-      & > li {
+      > li {
         display: inline-block;
         padding: 1em;
       }
     }
   }
 
-  & > p {
+  > p {
     margin: 0 1.25em;
     padding: 1em 0 1.5em;
   }
 
-  & a {
+  a {
     color: var(--fg);
 
     &:hover {
@@ -357,17 +357,17 @@ main.post {
   -webkit-user-select: text;
   user-select: text;
 
-  & p,
-  & li {
+  p,
+  li {
     line-height: 1.5em;
     color: rgb(from var(--fg) r g b / 85%);
   }
 
-  & h2,
-  & h3,
-  & h4,
-  & h5,
-  & h6 {
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     margin-top: 1.5em;
   }
 }
