@@ -77,7 +77,6 @@
 html {
   height: 100%;
   scroll-behavior: smooth;
-  scrollbar-color: var(--fg) var(--bg);
 }
 
 body {
@@ -150,7 +149,7 @@ video {
   }
 
   video& {
-    border-radius: 12px;
+    border-radius: 9px;
   }
 }
 
@@ -369,5 +368,10 @@ main.post {
   h5,
   h6 {
     margin-top: 1.5em;
+  }
+
+  img,
+  video {
+    max-width: 100%;
   }
 }

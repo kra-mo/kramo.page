@@ -29,7 +29,7 @@ export default function (eleventyConfig) {
   });
 
   eleventyConfig.addPlugin(feedPlugin, {
-    type: "atom",
+    type: "rss",
     outputPath: "/feed.xml",
     collection: { name: "post" },
     metadata: {
