@@ -20,6 +20,11 @@
   desc: Play audio files
   color: ee8031
 
+- name: Deer
+  url: https://codeberg.org/ggenois/deer
+  desc: A Nextcloud Talk client
+  color: 0082c9
+
 - name: Footage
   url: https://gitlab.com/adhami3310/Footage
   desc: Polish your videos
@@ -47,7 +52,7 @@
 
 - name: Libfancy
   url: https://gitlab.gnome.org/TheEvilSkeleton/libfancy
-  desc: Accessible yet cute widgets
+  desc: Cute and accessible widgets
   color: 6b69b6
 
 - name: Morphosis
