@@ -4,32 +4,8 @@ description: "The homepage of Laura Kramolis: projects, blog, and contact inform
 layout: default
 ---
 <style>
-  #logo {
-    margin: min(10dvh, 5em) auto 1em;
-    width: 64px;
-    height: 64px;
-    color: var(--accent-bright);
-
-    @media not (prefers-reduced-motion) {
-      transition:
-        opacity 0.3s,
-        transform 0.7s;
-
-      @starting-style {
-        opacity: 0;
-        transform: translateY(-0.5em);
-      }
-    }
-
-    > svg {
-      transform-origin: top;
-      transform: scale(4);
-    }
-  }
-
   #title {
     margin: 0;
-    color: var(--accent);
 
     @media not (prefers-reduced-motion) {
       transition: opacity 0.4s;
@@ -74,7 +50,7 @@ layout: default
   }
 </style>
 
-<div id="logo">{% include 'kramo.svg' %}</div>
+<img alt="" src="/images/fox.webp" width="250" height="250" />
 <h2 id="title" class="selectable">Laura Kramolis</h2>
 <p id="bio" class="selectable">
   A Free Software designer and developer,<br>
