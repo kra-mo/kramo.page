@@ -8,6 +8,13 @@ layout: default
     padding: 1em 2em 2em;
     max-width: 462px;
     margin: 0 auto 2em;
+    color: oklch(from var(--app-color) 0.5 c h);
+    background-color: color-mix(in srgb, var(--bg), var(--app-color) 10%);
+    border: 1px color-mix(in srgb, var(--bg), var(--app-color) 20%) solid;
+
+    @media (prefers-color-scheme: dark) {
+      color: oklch(from var(--app-color) 0.7 c h);
+    }
   }
 
   .icons {
@@ -31,10 +38,8 @@ layout: default
   <div
     class="card"
     style="
-      color: oklch(from #{{ app.color }} 0.5 c h);
-      background-color: color-mix(in srgb, var(--bg), #{{ app.color }} 10%);
-      border: 1px color-mix(in srgb, var(--bg), #{{ app.color }} 20%) solid;
       animation-duration: {{ forloop.index0 | times: 0.1 | plus: 0.7 }}s;
+      --app-color: #{{ app.color }}
     "
   >
     <hgroup>
