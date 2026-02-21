@@ -43,7 +43,7 @@
     </header>
     <main id="content" class="{{ tags }}">
       {% if post %}
-        <p>{{ page.date | date: "%B %-d, %Y" }} <a href="/feed.xml">{% include 'rss.svg'  %}</a></p>
+        <p>{{ page.date | date: "%B %-d, %Y" }} <a title="Feed" href="/feed.xml">{% include 'rss.svg'  %}</a></p>
         <h1>{{ title }}</h1>
         {{ content }}
         {% assign previousPost = collections.post | getPreviousCollectionItem %}
