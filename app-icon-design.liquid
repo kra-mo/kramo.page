@@ -31,7 +31,7 @@ layout: default
   <div
     class="card"
     style="
-      color: color-mix(in srgb, var(--fg), #{{ app.color }} 80%);
+      color: oklch(from #{{ app.color }} 0.5 c h);
       background-color: color-mix(in srgb, var(--bg), #{{ app.color }} 10%);
       border: 1px color-mix(in srgb, var(--bg), #{{ app.color }} 20%) solid;
       animation-duration: {{ forloop.index0 | times: 0.1 | plus: 0.7 }}s;
