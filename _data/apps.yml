@@ -30,6 +30,12 @@
   desc: Polish your videos
   color: 9d6dca
 
+- name: Gram
+  url: https://codeberg.org/GramEditor/gram
+  desc: A code editor for humanoid apes and grumpy toads
+  color: 72926c
+  on-macos: true
+
 - name: Housemaid
   url: https://gitlab.gnome.org/World/housemaid
   desc: Clean your SVGs
