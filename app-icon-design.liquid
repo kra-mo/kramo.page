@@ -3,95 +3,49 @@ title: App Icons
 description: Icons I designed for several applications
 layout: default
 ---
+
 <style>
-  .card {
-    padding: 1em 2em 2em;
-    max-width: 462px;
-    margin: 0 auto 2em;
-    color: oklch(from var(--app-color) 0.5 c h);
-    background-color: color-mix(in srgb, var(--bg), var(--app-color) 10%);
-    border: 1px color-mix(in srgb, var(--bg), var(--app-color) 20%) solid;
-
-    @media (prefers-color-scheme: dark) {
-      color: oklch(from var(--app-color) 0.7 c h);
-    }
+  /* https://gitlab.gnome.org/GNOME/libadwaita/-/blob/da740214b6c4af456996e620be59f91f19e216f5/src/stylesheet/_common.scss#L98 */
+  .icon-dropshadow {
+    filter: drop-shadow(0 1px 12px rgb(0 0 6 / 5%))
+      drop-shadow(0 -1px rgb(0 0 6 / 5%)) drop-shadow(1px 0 rgb(0 0 6 / 10%))
+      drop-shadow(0 1px rgb(0 0 6 / 30%)) drop-shadow(-1px 0 rgb(0 0 6 / 10%));
   }
 
-  .icons {
-    display: flex;
+  #icons {
+    max-width: 750px;
     margin: auto;
-    flex-wrap: wrap-reverse;
-    gap: 18px;
 
-    img:not(.symbolic) {
-      filter: drop-shadow(0 0 3px rgb(0 0 0 / 25%));
-    }
-  }
+    > a {
+      > img {
+        margin: 0.5em;
+        display: inline;
 
-  .symbolic {
-    @media (prefers-color-scheme: dark) {
-      filter: invert(100%);
+        @media not (prefers-reduced-motion) {
+          transition: margin 0.3s;
+          animation: bounce-appear;
+
+          &:hover:not(:active) {
+            margin-top: 0;
+            margin-bottom: 1em;
+          }
+        }
+      }
     }
   }
 </style>
-{% for app in apps %}
-  <div
-    class="card"
-    style="
-      animation-duration: {{ forloop.index0 | times: 0.1 | plus: 0.7 }}s;
-      --app-color: #{{ app.color }}
-    "
-  >
-    <hgroup>
-      <h1 class="selectable">
-        <a style="font-family: var(--bold); color: inherit;" href="{{ app.url }}">{{ app.name }}</a>
-      </h1>
-      <p class="selectable">{{ app.desc }}</p>
-    </hgroup>
-    <br>
-    <div class="icons">
-      <img
-        alt=""
-        width="16"
-        height="16"
-        src="/images/app-icons/{{ app.name | downcase | replace: ' ', '-' }}-symbolic.svg"
-        class="symbolic"
-      >
-      <img
-        alt=""
-        width="32"
-        height="32"
-        src="/images/app-icons/{{ app.name | downcase | replace: ' ', '-' }}.svg"
-      >
-      <img
-        alt=""
-        width="64"
-        height="64"
-        src="/images/app-icons/{{ app.name | downcase | replace: ' ', '-' }}.svg"
-      >
-      <img
-        alt=""
-        width="128"
-        height="128"
-        src="/images/app-icons/{{ app.name | downcase | replace: ' ', '-' }}.svg"
-      >
-      {% if app['on-macos'] == true %}
-        <img
-          alt=""
-          width="150"
-          height="150"
-          src="/images/app-icons/{{ app.name | downcase | replace: ' ', '-' }}-macos.webp"
-        >
-      {% endif %}
-    </div>
-  </div>
-{% endfor %}
-<p class="selectable" style="margin: 0 auto">
-  I hang out in the GNOME
-  <a href="https://matrix.to/#/#appicondesign:gnome.org">App Icon Design</a>
-  Matrix room.
-  <br>
-  If you want to request an icon, you can find me there.
-</p>
-<br>
-{% include 'back-to-top' %}
+
+<div id="icons">
+  {% for app in apps %}
+  <a title="{{ app.name }}" href="{{ app.url }}">
+    <img
+      alt=""
+      width="128"
+      height="128"
+      class="icon-dropshadow"
+      style="animation-duration: {{ forloop.index0 | times: 0.05 | plus: 0.5 }}s;"
+      src="/images/app-icons/{{ app.name | downcase | replace: ' ', '-' }}.svg"
+    />
+  </a>
+  {% endfor %}
+</div>
