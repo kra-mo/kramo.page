@@ -21,7 +21,7 @@ layout: default
         margin: 0.5em;
         display: inline;
 
-        @media not (prefers-reduced-motion) {
+        @media (pointer: fine) and (prefers-reduced-motion: no-preference) {
           transition: margin 0.3s;
           animation: bounce-appear;
 
