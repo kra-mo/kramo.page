@@ -44,7 +44,7 @@
   url: https://gitlab.gnome.org/World/navigator
 
 - name: OpenEmail
-  url: https://github.com/Open-Email/OpenEmail-GTK
+  url: https://github.com/Open-Email
 
 - name: PSequel
   url: https://github.com/ppvan/psequel
